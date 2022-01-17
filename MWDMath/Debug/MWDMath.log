@@ -1,0 +1,7 @@
+﻿  MWDMath.cpp
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDSystem.h(39,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDMath.h(17,1): warning C4005: “MWDMATH_EXPORTS”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\pch.cpp : message : 参见“MWDMATH_EXPORTS”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDMath.cpp(36,12): warning C5033: “register”不再为受支持的存储类
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDMath.cpp(37,12): warning C5033: “register”不再为受支持的存储类
+  MWDMath.vcxproj -> C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\Debug\MWDMath.dll

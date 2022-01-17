@@ -1,0 +1,264 @@
+﻿  main.cpp
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(499,1): warning C4005: “glActiveTexture”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3048): message : 参见“glActiveTexture”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(500,1): warning C4005: “glAttachShader”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3411): message : 参见“glAttachShader”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(501,1): warning C4005: “glBindBuffer”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3359): message : 参见“glBindBuffer”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(502,1): warning C4005: “glBindSampler”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(4073): message : 参见“glBindSampler”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(503,1): warning C4005: “glBindTexture”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2968): message : 参见“glBindTexture”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(504,1): warning C4005: “glBindVertexArray”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3941): message : 参见“glBindVertexArray”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(505,1): warning C4005: “glBlendEquation”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3328): message : 参见“glBlendEquation”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(506,1): warning C4005: “glBlendEquationSeparate”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3396): message : 参见“glBlendEquationSeparate”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(507,1): warning C4005: “glBlendFuncSeparate”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3190): message : 参见“glBlendFuncSeparate”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(508,1): warning C4005: “glBufferData”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3371): message : 参见“glBufferData”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(509,1): warning C4005: “glClear”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2058): message : 参见“glClear”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(510,1): warning C4005: “glClearColor”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2061): message : 参见“glClearColor”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(511,1): warning C4005: “glCompileShader”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3417): message : 参见“glCompileShader”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(512,1): warning C4005: “glCreateProgram”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3420): message : 参见“glCreateProgram”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(513,1): warning C4005: “glCreateShader”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3423): message : 参见“glCreateShader”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(514,1): warning C4005: “glDeleteBuffers”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3362): message : 参见“glDeleteBuffers”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(515,1): warning C4005: “glDeleteProgram”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3426): message : 参见“glDeleteProgram”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(516,1): warning C4005: “glDeleteShader”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3429): message : 参见“glDeleteShader”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(517,1): warning C4005: “glDeleteTextures”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2971): message : 参见“glDeleteTextures”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(518,1): warning C4005: “glDeleteVertexArrays”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3944): message : 参见“glDeleteVertexArrays”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(519,1): warning C4005: “glDetachShader”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3432): message : 参见“glDetachShader”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(520,1): warning C4005: “glDisable”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2079): message : 参见“glDisable”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(521,1): warning C4005: “glDrawElements”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2941): message : 参见“glDrawElements”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(522,1): warning C4005: “glDrawElementsBaseVertex”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3997): message : 参见“glDrawElementsBaseVertex”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(523,1): warning C4005: “glEnable”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2082): message : 参见“glEnable”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(524,1): warning C4005: “glEnableVertexAttribArray”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3438): message : 参见“glEnableVertexAttribArray”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(525,1): warning C4005: “glGenBuffers”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3365): message : 参见“glGenBuffers”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(526,1): warning C4005: “glGenTextures”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2974): message : 参见“glGenTextures”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(527,1): warning C4005: “glGenVertexArrays”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3947): message : 参见“glGenVertexArrays”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(528,1): warning C4005: “glGetAttribLocation”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3450): message : 参见“glGetAttribLocation”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(529,1): warning C4005: “glGetError”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2124): message : 参见“glGetError”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(530,1): warning C4005: “glGetIntegerv”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2130): message : 参见“glGetIntegerv”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(531,1): warning C4005: “glGetProgramInfoLog”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3456): message : 参见“glGetProgramInfoLog”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(532,1): warning C4005: “glGetProgramiv”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3453): message : 参见“glGetProgramiv”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(533,1): warning C4005: “glGetShaderInfoLog”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3462): message : 参见“glGetShaderInfoLog”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(534,1): warning C4005: “glGetShaderiv”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3459): message : 参见“glGetShaderiv”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(535,1): warning C4005: “glGetString”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2133): message : 参见“glGetString”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(536,1): warning C4005: “glGetStringi”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3872): message : 参见“glGetStringi”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(537,1): warning C4005: “glGetUniformLocation”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3468): message : 参见“glGetUniformLocation”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(538,1): warning C4005: “glIsEnabled”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2151): message : 参见“glIsEnabled”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(539,1): warning C4005: “glLinkProgram”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3495): message : 参见“glLinkProgram”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(540,1): warning C4005: “glPixelStorei”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2109): message : 参见“glPixelStorei”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(541,1): warning C4005: “glPolygonMode”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2031): message : 参见“glPolygonMode”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(542,1): warning C4005: “glReadPixels”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2115): message : 参见“glReadPixels”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(543,1): warning C4005: “glScissor”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2034): message : 参见“glScissor”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(544,1): warning C4005: “glShaderSource”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3498): message : 参见“glShaderSource”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(545,1): warning C4005: “glTexImage2D”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2052): message : 参见“glTexImage2D”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(546,1): warning C4005: “glTexParameteri”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2043): message : 参见“glTexParameteri”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(547,1): warning C4005: “glUniform1i”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3516): message : 参见“glUniform1i”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(548,1): warning C4005: “glUniformMatrix4fv”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3558): message : 参见“glUniformMatrix4fv”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(549,1): warning C4005: “glUseProgram”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3501): message : 参见“glUseProgram”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(550,1): warning C4005: “glVertexAttribPointer”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3672): message : 参见“glVertexAttribPointer”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(551,1): warning C4005: “glViewport”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2157): message : 参见“glViewport”的前一个定义
+D:\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: “APIENTRY”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(42): message : 参见“APIENTRY”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDSystem.h(39,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDFile.h(13,1): warning C4302: “类型强制转换”: 从“const char *”到“TCHAR”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDLog.h(9,37): warning C4302: “类型强制转换”: 从“const char *”到“TCHAR”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\MWDString.h(101,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(56,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(57,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(66,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(67,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(81,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(93,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(100,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(109,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(121,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(175,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(186,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\组件\MWDLight.h(181,14): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\组件\MWDLight.h(184,15): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\组件\MWDLight.h(256,31): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\组件\MWDLight.h(330,31): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(35,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(38,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(41,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(44,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(141,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(148,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(155,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(162,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(172,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(179,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(186,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(193,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(208,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(218,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(240,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(250,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(271,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(281,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(307,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(311,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(315,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(319,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(323,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(327,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(331,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDWorld.h(40,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDWorld.h(48,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDWorld.h(60,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDWorld.h(68,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDWorld.h(83,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDWorld.h(91,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDWorld.h(120,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDWorld.h(129,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDWorld.h(145,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDWorld.h(149,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDApplication.h(394,1): warning C4305: “return”: 从“int”到“bool”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDApplication.h(403,1): warning C4305: “return”: 从“int”到“bool”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDApplication.h(409,1): warning C4305: “return”: 从“int”到“bool”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(131,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(143): message : 查看对正在编译的函数 模板 实例化“T *MWDEngine::MWDEntity::GetComponentByType<T>(void)”的引用
+          with
+          [
+              T=MWDEngine::MWDTransform
+          ]
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDCamera.h(43): message : 查看对正在编译的函数 模板 实例化“void MWDEngine::MWDEntity::AddComponent<MWDEngine::MWDTransform>(T &)”的引用
+          with
+          [
+              T=MWDEngine::MWDTransform
+          ]
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1285): warning C4717: “MWDEngine::MWD::GetParameter”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1288): warning C4717: “MWDEngine::MWD::Transform”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1296): warning C4717: “MWDEngine::MWD::RelationWith”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1307): warning C4717: “MWDEngine::MWD::RelationWith”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1315): warning C4717: “MWDEngine::MWD::RelationWith”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1345): warning C4717: “MWDEngine::MWD::RelationWith”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1330): warning C4717: “MWDEngine::MWD::RelationWith”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1360): warning C4717: “MWDEngine::MWD::RelationWith”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1375): warning C4717: “MWDEngine::MWD::SquaredDistance”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1411): warning C4717: “MWDEngine::MWD::SquaredDistance”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1421): warning C4717: “MWDEngine::MWD::SquaredDistance”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1430): warning C4717: “MWDEngine::MWD::SquaredDistance”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1448): warning C4717: “MWDEngine::MWD::SquaredDistance”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1461): warning C4717: “MWDEngine::MWD::GetParameter”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1478): warning C4717: “MWDEngine::MWD::RelationWith”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1488): warning C4717: “MWDEngine::MWD::RelationWith”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1495): warning C4717: “MWDEngine::MWD::RelationWith”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1513): warning C4717: “MWDEngine::MWD::RelationWith”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1531): warning C4717: “MWDEngine::MWD::RelationWith”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1549): warning C4717: “MWDEngine::MWD::RelationWith”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1566): warning C4717: “MWDEngine::MWD::SquaredDistance”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1606): warning C4717: “MWDEngine::MWD::SquaredDistance”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1618): warning C4717: “MWDEngine::MWD::SquaredDistance”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1595): warning C4717: “MWDEngine::MWD::SquaredDistance”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1634): warning C4717: “MWDEngine::MWD::SquaredDistance”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+    正在创建库 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\Debug\MWDApplication.lib 和对象 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\Debug\MWDApplication.exp
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSetErrorCallback，函数 "bool __cdecl ImGui_ImplGlfw_Init(struct GLFWwindow *,bool,enum GlfwClientApi)" (?ImGui_ImplGlfw_Init@@YA_NPAUGLFWwindow@@_NW4GlfwClientApi@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwGetMonitors，函数 "void __cdecl ImGui_ImplGlfw_UpdateMonitors(void)" (?ImGui_ImplGlfw_UpdateMonitors@@YAXXZ) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwGetMonitorPos，函数 "void __cdecl ImGui_ImplGlfw_UpdateMonitors(void)" (?ImGui_ImplGlfw_UpdateMonitors@@YAXXZ) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwGetMonitorWorkarea，函数 "void __cdecl ImGui_ImplGlfw_UpdateMonitors(void)" (?ImGui_ImplGlfw_UpdateMonitors@@YAXXZ) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwGetMonitorContentScale，函数 "void __cdecl ImGui_ImplGlfw_UpdateMonitors(void)" (?ImGui_ImplGlfw_UpdateMonitors@@YAXXZ) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSetMonitorCallback，函数 "bool __cdecl ImGui_ImplGlfw_Init(struct GLFWwindow *,bool,enum GlfwClientApi)" (?ImGui_ImplGlfw_Init@@YA_NPAUGLFWwindow@@_NW4GlfwClientApi@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwGetVideoMode，函数 "void __cdecl ImGui_ImplGlfw_UpdateMonitors(void)" (?ImGui_ImplGlfw_UpdateMonitors@@YAXXZ) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwWindowHint，函数 "void __cdecl ImGui_ImplGlfw_CreateWindow(struct ImGuiViewport *)" (?ImGui_ImplGlfw_CreateWindow@@YAXPAUImGuiViewport@@@Z) 中引用了该符号
+main.obj : error LNK2001: 无法解析的外部符号 _glfwWindowHint
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwCreateWindow，函数 "void __cdecl ImGui_ImplGlfw_CreateWindow(struct ImGuiViewport *)" (?ImGui_ImplGlfw_CreateWindow@@YAXPAUImGuiViewport@@@Z) 中引用了该符号
+main.obj : error LNK2001: 无法解析的外部符号 _glfwCreateWindow
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwDestroyWindow，函数 "void __cdecl ImGui_ImplGlfw_DestroyWindow(struct ImGuiViewport *)" (?ImGui_ImplGlfw_DestroyWindow@@YAXPAUImGuiViewport@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSetWindowTitle，函数 "void __cdecl ImGui_ImplGlfw_SetWindowTitle(struct ImGuiViewport *,char const *)" (?ImGui_ImplGlfw_SetWindowTitle@@YAXPAUImGuiViewport@@PBD@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwGetWindowPos，函数 "struct ImVec2 __cdecl ImGui_ImplGlfw_GetWindowPos(struct ImGuiViewport *)" (?ImGui_ImplGlfw_GetWindowPos@@YA?AUImVec2@@PAUImGuiViewport@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSetWindowPos，函数 "void __cdecl ImGui_ImplGlfw_CreateWindow(struct ImGuiViewport *)" (?ImGui_ImplGlfw_CreateWindow@@YAXPAUImGuiViewport@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwGetWindowSize，函数 "struct ImVec2 __cdecl ImGui_ImplGlfw_GetWindowSize(struct ImGuiViewport *)" (?ImGui_ImplGlfw_GetWindowSize@@YA?AUImVec2@@PAUImGuiViewport@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSetWindowSize，函数 "void __cdecl ImGui_ImplGlfw_SetWindowSize(struct ImGuiViewport *,struct ImVec2)" (?ImGui_ImplGlfw_SetWindowSize@@YAXPAUImGuiViewport@@UImVec2@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwGetFramebufferSize，函数 "void __cdecl ImGui_ImplGlfw_NewFrame(void)" (?ImGui_ImplGlfw_NewFrame@@YAXXZ) 中引用了该符号
+main.obj : error LNK2001: 无法解析的外部符号 _glfwGetFramebufferSize
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSetWindowOpacity，函数 "void __cdecl ImGui_ImplGlfw_SetWindowAlpha(struct ImGuiViewport *,float)" (?ImGui_ImplGlfw_SetWindowAlpha@@YAXPAUImGuiViewport@@M@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwShowWindow，函数 "void __cdecl ImGui_ImplGlfw_ShowWindow(struct ImGuiViewport *)" (?ImGui_ImplGlfw_ShowWindow@@YAXPAUImGuiViewport@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwFocusWindow，函数 "void __cdecl ImGui_ImplGlfw_SetWindowFocus(struct ImGuiViewport *)" (?ImGui_ImplGlfw_SetWindowFocus@@YAXPAUImGuiViewport@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwGetWindowAttrib，函数 "bool __cdecl ImGui_ImplGlfw_GetWindowFocus(struct ImGuiViewport *)" (?ImGui_ImplGlfw_GetWindowFocus@@YA_NPAUImGuiViewport@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSetWindowPosCallback，函数 "void __cdecl ImGui_ImplGlfw_CreateWindow(struct ImGuiViewport *)" (?ImGui_ImplGlfw_CreateWindow@@YAXPAUImGuiViewport@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSetWindowSizeCallback，函数 "void __cdecl ImGui_ImplGlfw_CreateWindow(struct ImGuiViewport *)" (?ImGui_ImplGlfw_CreateWindow@@YAXPAUImGuiViewport@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSetWindowCloseCallback，函数 "void __cdecl ImGui_ImplGlfw_CreateWindow(struct ImGuiViewport *)" (?ImGui_ImplGlfw_CreateWindow@@YAXPAUImGuiViewport@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSetWindowFocusCallback，函数 "void __cdecl ImGui_ImplGlfw_CreateWindow(struct ImGuiViewport *)" (?ImGui_ImplGlfw_CreateWindow@@YAXPAUImGuiViewport@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwGetInputMode，函数 "void __cdecl ImGui_ImplGlfw_UpdateMouseCursor(void)" (?ImGui_ImplGlfw_UpdateMouseCursor@@YAXXZ) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSetInputMode，函数 "void __cdecl ImGui_ImplGlfw_UpdateMouseCursor(void)" (?ImGui_ImplGlfw_UpdateMouseCursor@@YAXXZ) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwGetMouseButton，函数 "void __cdecl ImGui_ImplGlfw_UpdateMousePosAndButtons(void)" (?ImGui_ImplGlfw_UpdateMousePosAndButtons@@YAXXZ) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwGetCursorPos，函数 "void __cdecl ImGui_ImplGlfw_UpdateMousePosAndButtons(void)" (?ImGui_ImplGlfw_UpdateMousePosAndButtons@@YAXXZ) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSetCursorPos，函数 "void __cdecl ImGui_ImplGlfw_UpdateMousePosAndButtons(void)" (?ImGui_ImplGlfw_UpdateMousePosAndButtons@@YAXXZ) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwCreateStandardCursor，函数 "bool __cdecl ImGui_ImplGlfw_Init(struct GLFWwindow *,bool,enum GlfwClientApi)" (?ImGui_ImplGlfw_Init@@YA_NPAUGLFWwindow@@_NW4GlfwClientApi@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwDestroyCursor，函数 "void __cdecl ImGui_ImplGlfw_Shutdown(void)" (?ImGui_ImplGlfw_Shutdown@@YAXXZ) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSetCursor，函数 "void __cdecl ImGui_ImplGlfw_UpdateMouseCursor(void)" (?ImGui_ImplGlfw_UpdateMouseCursor@@YAXXZ) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSetKeyCallback，函数 "void __cdecl ImGui_ImplGlfw_CreateWindow(struct ImGuiViewport *)" (?ImGui_ImplGlfw_CreateWindow@@YAXPAUImGuiViewport@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSetCharCallback，函数 "void __cdecl ImGui_ImplGlfw_CreateWindow(struct ImGuiViewport *)" (?ImGui_ImplGlfw_CreateWindow@@YAXPAUImGuiViewport@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSetMouseButtonCallback，函数 "void __cdecl ImGui_ImplGlfw_CreateWindow(struct ImGuiViewport *)" (?ImGui_ImplGlfw_CreateWindow@@YAXPAUImGuiViewport@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSetCursorEnterCallback，函数 "void __cdecl ImGui_ImplGlfw_CreateWindow(struct ImGuiViewport *)" (?ImGui_ImplGlfw_CreateWindow@@YAXPAUImGuiViewport@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSetScrollCallback，函数 "void __cdecl ImGui_ImplGlfw_CreateWindow(struct ImGuiViewport *)" (?ImGui_ImplGlfw_CreateWindow@@YAXPAUImGuiViewport@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwGetJoystickAxes，函数 "void __cdecl ImGui_ImplGlfw_UpdateGamepads(void)" (?ImGui_ImplGlfw_UpdateGamepads@@YAXXZ) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwGetJoystickButtons，函数 "void __cdecl ImGui_ImplGlfw_UpdateGamepads(void)" (?ImGui_ImplGlfw_UpdateGamepads@@YAXXZ) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSetClipboardString，函数 "void __cdecl ImGui_ImplGlfw_SetClipboardText(void *,char const *)" (?ImGui_ImplGlfw_SetClipboardText@@YAXPAXPBD@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwGetClipboardString，函数 "char const * __cdecl ImGui_ImplGlfw_GetClipboardText(void *)" (?ImGui_ImplGlfw_GetClipboardText@@YAPBDPAX@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwGetTime，函数 "void __cdecl ImGui_ImplGlfw_NewFrame(void)" (?ImGui_ImplGlfw_NewFrame@@YAXXZ) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwMakeContextCurrent，函数 "void __cdecl ImGui_ImplGlfw_CreateWindow(struct ImGuiViewport *)" (?ImGui_ImplGlfw_CreateWindow@@YAXPAUImGuiViewport@@@Z) 中引用了该符号
+main.obj : error LNK2001: 无法解析的外部符号 _glfwMakeContextCurrent
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSwapBuffers，函数 "void __cdecl ImGui_ImplGlfw_SwapBuffers(struct ImGuiViewport *,void *)" (?ImGui_ImplGlfw_SwapBuffers@@YAXPAUImGuiViewport@@PAX@Z) 中引用了该符号
+main.obj : error LNK2001: 无法解析的外部符号 _glfwSwapBuffers
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwSwapInterval，函数 "void __cdecl ImGui_ImplGlfw_CreateWindow(struct ImGuiViewport *)" (?ImGui_ImplGlfw_CreateWindow@@YAXPAUImGuiViewport@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwGetWin32Window，函数 "void __cdecl ImGui_ImplGlfw_CreateWindow(struct ImGuiViewport *)" (?ImGui_ImplGlfw_CreateWindow@@YAXPAUImGuiViewport@@@Z) 中引用了该符号
+imgui_impl_glfw.obj : error LNK2019: 无法解析的外部符号 _glfwCreateWindowSurface，函数 "int __cdecl ImGui_ImplGlfw_CreateVkSurface(struct ImGuiViewport *,unsigned __int64,void const *,unsigned __int64 *)" (?ImGui_ImplGlfw_CreateVkSurface@@YAHPAUImGuiViewport@@_KPBXPA_K@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwInit，函数 "public: virtual bool __thiscall MWDEngine::MWDApplication::Main(int,char * * const)" (?Main@MWDApplication@MWDEngine@@UAE_NHQAPAD@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwTerminate，函数 "void __cdecl ImGuiTerminate(void)" (?ImGuiTerminate@@YAXXZ) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwWindowShouldClose，函数 "public: virtual bool __thiscall MWDEngine::MWDApplication::Main(int,char * * const)" (?Main@MWDApplication@MWDEngine@@UAE_NHQAPAD@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwPollEvents，函数 "void __cdecl ImGuiFrameEnd(struct GLFWwindow *)" (?ImGuiFrameEnd@@YAXPAUGLFWwindow@@@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwGetCurrentContext，函数 "void __cdecl ImGuiFrameEnd(struct GLFWwindow *)" (?ImGuiFrameEnd@@YAXPAUGLFWwindow@@@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwGetProcAddress，函数 "public: virtual bool __thiscall MWDEngine::MWDApplication::Main(int,char * * const)" (?Main@MWDApplication@MWDEngine@@UAE_NHQAPAD@Z) 中引用了该符号
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glfw\lib-vc2019\glfw3.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glfw\lib-vc2019\glfw3dll.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\Debug\MWDApplication.exe : fatal error LNK1120: 53 个无法解析的外部命令

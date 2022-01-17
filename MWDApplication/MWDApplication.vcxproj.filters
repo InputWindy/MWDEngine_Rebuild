@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Graphic">
+      <UniqueIdentifier>{84e997ab-9507-455f-973d-a5c88fb4199b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\Core">
+      <UniqueIdentifier>{a9eb6e55-c792-4dd3-871e-51a22feb0b6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\场景管理">
+      <UniqueIdentifier>{b17797ec-e328-48b7-9dca-bfa4e3825f96}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\渲染器">
+      <UniqueIdentifier>{8293cc6c-2b16-4b25-8a10-43ab9381613f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\渲染器\OpenglApi">
+      <UniqueIdentifier>{03098824-a237-4e5a-b7d9-b7e9ef2c88c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\场景管理\实体">
+      <UniqueIdentifier>{9f8b0170-db6b-4a4a-b242-791d6dba7cd4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\场景管理\组件">
+      <UniqueIdentifier>{0c9766bb-4925-434c-b9e4-768944dcccae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\imgui">
+      <UniqueIdentifier>{45de2d23-2114-4006-9dbe-1458d224173b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\渲染器\渲染状态">
+      <UniqueIdentifier>{b8e6001a-83f5-4458-8696-b6efce25e8a6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Core\MWDGraphic.cpp">
+      <Filter>Graphic\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Core\MWDName.cpp">
+      <Filter>Graphic\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Core\MWDPriority.cpp">
+      <Filter>Graphic\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Core\MWDProperty.cpp">
+      <Filter>Graphic\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Core\MWDRtti.cpp">
+      <Filter>Graphic\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Core\MWDMain.cpp">
+      <Filter>Graphic\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Core\MWDObject.cpp">
+      <Filter>Graphic\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\场景管理\组件\MWDComponent.cpp">
+      <Filter>Graphic\场景管理\组件</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\场景管理\Entity\MWDEntity.cpp">
+      <Filter>Graphic\场景管理\实体</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\场景管理\组件\MWDLight.cpp">
+      <Filter>Graphic\场景管理\组件</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\场景管理\组件\MWDTransform.cpp">
+      <Filter>Graphic\场景管理\组件</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\场景管理\Entity\MWDCamera.cpp">
+      <Filter>Graphic\场景管理\实体</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\场景管理\Entity\MWDLightEntity.cpp">
+      <Filter>Graphic\场景管理\实体</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\场景管理\MWDScene.cpp">
+      <Filter>Graphic\场景管理</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\场景管理\MWDWorld.cpp">
+      <Filter>Graphic\场景管理</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depend\glad\src\glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depend\imgui\imgui.cpp">
+      <Filter>头文件\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depend\imgui\imgui_demo.cpp">
+      <Filter>头文件\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depend\imgui\imgui_draw.cpp">
+      <Filter>头文件\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depend\imgui\imgui_impl_glfw.cpp">
+      <Filter>头文件\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depend\imgui\imgui_impl_opengl3.cpp">
+      <Filter>头文件\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depend\imgui\imgui_tables.cpp">
+      <Filter>头文件\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\depend\imgui\imgui_widgets.cpp">
+      <Filter>头文件\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDEBO.cpp">
+      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDFBO.cpp">
+      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDOpenglShader.cpp">
+      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDOpenglShaderProgram.cpp">
+      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDOpenglTexture.cpp">
+      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDRBO.cpp">
+      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDVAO.cpp">
+      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDVBO.cpp">
+      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\渲染器\MWDBind.cpp">
+      <Filter>Graphic\渲染器</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\渲染器\渲染状态\MWDBlendState.cpp">
+      <Filter>Graphic\渲染器\渲染状态</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\渲染器\渲染状态\MWDDepthStencilState.cpp">
+      <Filter>Graphic\渲染器\渲染状态</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\渲染器\渲染状态\MWDRasterizerState.cpp">
+      <Filter>Graphic\渲染器\渲染状态</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\渲染器\渲染状态\MWDRenderState.cpp">
+      <Filter>Graphic\渲染器\渲染状态</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\渲染器\渲染状态\MWDSamplerState.cpp">
+      <Filter>Graphic\渲染器\渲染状态</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Graphic\Core\MWDGraphic.h">
+      <Filter>Graphic\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Core\MWDName.h">
+      <Filter>Graphic\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Core\MWDPointer.h">
+      <Filter>Graphic\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Core\MWDPriority.h">
+      <Filter>Graphic\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Core\MWDReference.h">
+      <Filter>Graphic\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Core\MWDType.h">
+      <Filter>Graphic\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Core\MWDProperty.h">
+      <Filter>Graphic\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Core\MWDRtti.h">
+      <Filter>Graphic\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Core\MWDMain.h">
+      <Filter>Graphic\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Core\MWDObject.h">
+      <Filter>Graphic\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\场景管理\组件\MWDComponent.h">
+      <Filter>Graphic\场景管理\组件</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\场景管理\Entity\MWDEntity.h">
+      <Filter>Graphic\场景管理\实体</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\场景管理\组件\MWDLight.h">
+      <Filter>Graphic\场景管理\组件</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\场景管理\组件\MWDTransform.h">
+      <Filter>Graphic\场景管理\组件</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\场景管理\Entity\MWDCamera.h">
+      <Filter>Graphic\场景管理\实体</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\场景管理\Entity\MWDLightEntity.h">
+      <Filter>Graphic\场景管理\实体</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\场景管理\MWDScene.h">
+      <Filter>Graphic\场景管理</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\场景管理\MWDWorld.h">
+      <Filter>Graphic\场景管理</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\imgui\imconfig.h">
+      <Filter>头文件\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\imgui\imgui.h">
+      <Filter>头文件\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\imgui\imgui_impl_glfw.h">
+      <Filter>头文件\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\imgui\imgui_impl_opengl3.h">
+      <Filter>头文件\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\imgui\imgui_impl_opengl3_loader.h">
+      <Filter>头文件\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\imgui\imgui_internal.h">
+      <Filter>头文件\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\imgui\imstb_rectpack.h">
+      <Filter>头文件\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\imgui\imstb_textedit.h">
+      <Filter>头文件\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\depend\imgui\imstb_truetype.h">
+      <Filter>头文件\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDApplication.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDCommand.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDEBO.h">
+      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDFBO.h">
+      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDOpenglShader.h">
+      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDOpenglShaderProgram.h">
+      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDOpenglTexture.h">
+      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDRBO.h">
+      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDVAO.h">
+      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDVBO.h">
+      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\渲染器\OpenGLAPI\OpenglAPIInclude.h">
+      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\渲染器\MWDBind.h">
+      <Filter>Graphic\渲染器</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\渲染器\渲染状态\MWDBlendState.h">
+      <Filter>Graphic\渲染器\渲染状态</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\渲染器\渲染状态\MWDDepthStencilState.h">
+      <Filter>Graphic\渲染器\渲染状态</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\渲染器\渲染状态\MWDRasterizerState.h">
+      <Filter>Graphic\渲染器\渲染状态</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\渲染器\渲染状态\MWDRenderState.h">
+      <Filter>Graphic\渲染器\渲染状态</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\渲染器\渲染状态\MWDSamplerState.h">
+      <Filter>Graphic\渲染器\渲染状态</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\depend\imgui\imgui.ini">
+      <Filter>头文件\imgui</Filter>
+    </None>
+  </ItemGroup>
+</Project>

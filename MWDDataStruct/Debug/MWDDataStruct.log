@@ -1,0 +1,19 @@
+﻿  MWDArray.cpp
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDSystem.h(39,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\MWDContainer.h(5,1): warning C4005: “MWDDATASTRUCT_EXPORTS”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\pch.cpp : message : 参见“MWDDATASTRUCT_EXPORTS”的前一个定义
+  MWDBitArray.cpp
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDSystem.h(39,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\MWDContainer.h(5,1): warning C4005: “MWDDATASTRUCT_EXPORTS”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\pch.cpp : message : 参见“MWDDATASTRUCT_EXPORTS”的前一个定义
+  MWDContainer.cpp
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDSystem.h(39,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\MWDContainer.h(5,1): warning C4005: “MWDDATASTRUCT_EXPORTS”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\pch.cpp : message : 参见“MWDDATASTRUCT_EXPORTS”的前一个定义
+  MWDString.cpp
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDSystem.h(39,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\MWDContainer.h(5,1): warning C4005: “MWDDATASTRUCT_EXPORTS”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\pch.cpp : message : 参见“MWDDATASTRUCT_EXPORTS”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\MWDString.h(101,22): warning C4018: “<”: 有符号/无符号不匹配
+  正在生成代码...
+  MWDDataStruct.vcxproj -> C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\Debug\MWDDataStruct.dll

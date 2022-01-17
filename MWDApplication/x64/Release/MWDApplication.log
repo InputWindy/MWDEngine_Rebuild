@@ -1,0 +1,554 @@
+﻿  main.cpp
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(499,1): warning C4005: “glActiveTexture”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3048): message : 参见“glActiveTexture”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(500,1): warning C4005: “glAttachShader”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3411): message : 参见“glAttachShader”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(501,1): warning C4005: “glBindBuffer”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3359): message : 参见“glBindBuffer”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(502,1): warning C4005: “glBindSampler”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(4073): message : 参见“glBindSampler”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(503,1): warning C4005: “glBindTexture”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2968): message : 参见“glBindTexture”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(504,1): warning C4005: “glBindVertexArray”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3941): message : 参见“glBindVertexArray”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(505,1): warning C4005: “glBlendEquation”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3328): message : 参见“glBlendEquation”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(506,1): warning C4005: “glBlendEquationSeparate”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3396): message : 参见“glBlendEquationSeparate”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(507,1): warning C4005: “glBlendFuncSeparate”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3190): message : 参见“glBlendFuncSeparate”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(508,1): warning C4005: “glBufferData”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3371): message : 参见“glBufferData”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(509,1): warning C4005: “glClear”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2058): message : 参见“glClear”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(510,1): warning C4005: “glClearColor”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2061): message : 参见“glClearColor”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(511,1): warning C4005: “glCompileShader”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3417): message : 参见“glCompileShader”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(512,1): warning C4005: “glCreateProgram”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3420): message : 参见“glCreateProgram”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(513,1): warning C4005: “glCreateShader”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3423): message : 参见“glCreateShader”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(514,1): warning C4005: “glDeleteBuffers”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3362): message : 参见“glDeleteBuffers”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(515,1): warning C4005: “glDeleteProgram”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3426): message : 参见“glDeleteProgram”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(516,1): warning C4005: “glDeleteShader”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3429): message : 参见“glDeleteShader”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(517,1): warning C4005: “glDeleteTextures”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2971): message : 参见“glDeleteTextures”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(518,1): warning C4005: “glDeleteVertexArrays”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3944): message : 参见“glDeleteVertexArrays”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(519,1): warning C4005: “glDetachShader”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3432): message : 参见“glDetachShader”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(520,1): warning C4005: “glDisable”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2079): message : 参见“glDisable”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(521,1): warning C4005: “glDrawElements”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2941): message : 参见“glDrawElements”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(522,1): warning C4005: “glDrawElementsBaseVertex”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3997): message : 参见“glDrawElementsBaseVertex”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(523,1): warning C4005: “glEnable”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2082): message : 参见“glEnable”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(524,1): warning C4005: “glEnableVertexAttribArray”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3438): message : 参见“glEnableVertexAttribArray”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(525,1): warning C4005: “glGenBuffers”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3365): message : 参见“glGenBuffers”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(526,1): warning C4005: “glGenTextures”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2974): message : 参见“glGenTextures”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(527,1): warning C4005: “glGenVertexArrays”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3947): message : 参见“glGenVertexArrays”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(528,1): warning C4005: “glGetAttribLocation”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3450): message : 参见“glGetAttribLocation”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(529,1): warning C4005: “glGetError”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2124): message : 参见“glGetError”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(530,1): warning C4005: “glGetIntegerv”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2130): message : 参见“glGetIntegerv”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(531,1): warning C4005: “glGetProgramInfoLog”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3456): message : 参见“glGetProgramInfoLog”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(532,1): warning C4005: “glGetProgramiv”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3453): message : 参见“glGetProgramiv”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(533,1): warning C4005: “glGetShaderInfoLog”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3462): message : 参见“glGetShaderInfoLog”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(534,1): warning C4005: “glGetShaderiv”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3459): message : 参见“glGetShaderiv”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(535,1): warning C4005: “glGetString”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2133): message : 参见“glGetString”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(536,1): warning C4005: “glGetStringi”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3872): message : 参见“glGetStringi”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(537,1): warning C4005: “glGetUniformLocation”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3468): message : 参见“glGetUniformLocation”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(538,1): warning C4005: “glIsEnabled”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2151): message : 参见“glIsEnabled”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(539,1): warning C4005: “glLinkProgram”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3495): message : 参见“glLinkProgram”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(540,1): warning C4005: “glPixelStorei”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2109): message : 参见“glPixelStorei”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(541,1): warning C4005: “glPolygonMode”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2031): message : 参见“glPolygonMode”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(542,1): warning C4005: “glReadPixels”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2115): message : 参见“glReadPixels”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(543,1): warning C4005: “glScissor”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2034): message : 参见“glScissor”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(544,1): warning C4005: “glShaderSource”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3498): message : 参见“glShaderSource”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(545,1): warning C4005: “glTexImage2D”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2052): message : 参见“glTexImage2D”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(546,1): warning C4005: “glTexParameteri”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2043): message : 参见“glTexParameteri”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(547,1): warning C4005: “glUniform1i”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3516): message : 参见“glUniform1i”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(548,1): warning C4005: “glUniformMatrix4fv”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3558): message : 参见“glUniformMatrix4fv”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(549,1): warning C4005: “glUseProgram”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3501): message : 参见“glUseProgram”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(550,1): warning C4005: “glVertexAttribPointer”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3672): message : 参见“glVertexAttribPointer”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(551,1): warning C4005: “glViewport”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(2157): message : 参见“glViewport”的前一个定义
+D:\Windows Kits\10\Include\10.0.19041.0\shared\minwindef.h(130,1): warning C4005: “APIENTRY”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(42): message : 参见“APIENTRY”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDSystem.h(39,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDFile.h(13,1): warning C4302: “类型强制转换”: 从“const char *”到“TCHAR”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(220,1): warning C4311: “类型强制转换”: 从“MWDEngine::MWDHeapMemManager::FMem *”到“INT”的指针截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(220,1): warning C4302: “类型强制转换”: 从“MWDEngine::MWDHeapMemManager::FMem *”到“INT”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(220,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“MWDEngine::MWDHeapMemManager::FPool *”
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(290,1): warning C4311: “类型强制转换”: 从“void *”到“INT”的指针截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(290,1): warning C4302: “类型强制转换”: 从“void *”到“INT”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(290,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“MWDEngine::MWDHeapMemManager::FPool *”
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(326,1): warning C4311: “类型强制转换”: 从“BYTE *”到“unsigned int”的指针截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(326,1): warning C4302: “类型强制转换”: 从“BYTE *”到“unsigned int”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(326,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“BYTE *”
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(338,1): warning C4311: “类型强制转换”: 从“BYTE *”到“unsigned int”的指针截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(338,1): warning C4302: “类型强制转换”: 从“BYTE *”到“unsigned int”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(338,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“BYTE *”
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDLog.h(9,37): warning C4302: “类型强制转换”: 从“const char *”到“TCHAR”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\MWDString.h(111,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\MWDString.h(569,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\MWDString.h(577,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(56,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(57,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(66,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(67,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(81,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(93,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(100,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(109,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(121,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(175,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(186,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\组件\MWDLight.h(181,14): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\组件\MWDLight.h(184,15): warning C4244: “return”: 从“double”转换到“float”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\组件\MWDLight.h(256,31): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\组件\MWDLight.h(330,31): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(35,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(38,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(41,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(44,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(141,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(148,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(155,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(162,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(172,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(179,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(186,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(193,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(208,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(218,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(240,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(250,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(271,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(281,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(307,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(311,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(315,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(319,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(323,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(327,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDScene.h(331,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDWorld.h(40,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDWorld.h(48,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDWorld.h(60,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDWorld.h(68,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDWorld.h(83,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDWorld.h(91,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDWorld.h(120,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDWorld.h(129,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDWorld.h(145,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\MWDWorld.h(149,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\渲染器\OpenGLAPI\MWDVBO.h(70,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“void *”
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\渲染器\OpenGLAPI\MWDOpenglShader.h(21,1): warning C4267: “初始化”: 从“size_t”转换到“GLint”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\渲染器\OpenGLAPI\MWDOpenglShader.h(31,1): warning C4267: “初始化”: 从“size_t”转换到“GLint”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDApplication.h(405,1): warning C4305: “return”: 从“int”到“bool”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDApplication.h(414,1): warning C4305: “return”: 从“int”到“bool”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDApplication.h(420,1): warning C4305: “return”: 从“int”到“bool”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(131,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDEntity.h(143): message : 查看对正在编译的函数 模板 实例化“T *MWDEngine::MWDEntity::GetComponentByType<T>(void)”的引用
+          with
+          [
+              T=MWDEngine::MWDTransform
+          ]
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\场景管理\Entity\MWDCamera.h(43): message : 查看对正在编译的函数 模板 实例化“void MWDEngine::MWDEntity::AddComponent<MWDEngine::MWDTransform>(T &)”的引用
+          with
+          [
+              T=MWDEngine::MWDTransform
+          ]
+MWDFBO.obj : error LNK2005: stbi_is_16_bit_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_is_16_bit_from_memory 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_info_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_info_from_memory 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_is_16_bit_from_file 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_is_16_bit 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_info_from_file 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_info 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_convert_iphone_png_to_rgb_thread 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: "void __cdecl stbi__unpremultiply_on_load_thread(int)" (?stbi__unpremultiply_on_load_thread@@YAXH@Z) 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_convert_iphone_png_to_rgb 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_set_unpremultiply_on_load 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_zlib_decode_noheader_buffer 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_zlib_decode_noheader_malloc 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_zlib_decode_buffer 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_zlib_decode_malloc_guesssize_headerflag 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_zlib_decode_malloc 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_zlib_decode_malloc_guesssize 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_hdr_to_ldr_scale 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_hdr_to_ldr_gamma 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_ldr_to_hdr_scale 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_ldr_to_hdr_gamma 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_is_hdr_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_is_hdr_from_file 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_is_hdr 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_is_hdr_from_memory 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_loadf_from_file 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_loadf 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_loadf_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_loadf_from_memory 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_load_gif_from_memory 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_load_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_load_from_memory 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_load_16_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_load_16_from_memory 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_load_16 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_load_from_file_16 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_load_from_file 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_load 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_set_flip_vertically_on_load_thread 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_set_flip_vertically_on_load 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_image_free 已经在 MWDEBO.obj 中定义
+MWDFBO.obj : error LNK2005: stbi_failure_reason 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_is_16_bit_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_is_16_bit_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_info_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_info_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_is_16_bit_from_file 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_is_16_bit 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_info_from_file 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_info 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_convert_iphone_png_to_rgb_thread 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: "void __cdecl stbi__unpremultiply_on_load_thread(int)" (?stbi__unpremultiply_on_load_thread@@YAXH@Z) 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_convert_iphone_png_to_rgb 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_set_unpremultiply_on_load 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_zlib_decode_noheader_buffer 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_zlib_decode_noheader_malloc 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_zlib_decode_buffer 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_zlib_decode_malloc_guesssize_headerflag 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_zlib_decode_malloc 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_zlib_decode_malloc_guesssize 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_hdr_to_ldr_scale 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_hdr_to_ldr_gamma 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_ldr_to_hdr_scale 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_ldr_to_hdr_gamma 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_is_hdr_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_is_hdr_from_file 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_is_hdr 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_is_hdr_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_loadf_from_file 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_loadf 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_loadf_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_loadf_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_load_gif_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_load_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_load_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_load_16_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_load_16_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_load_16 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_load_from_file_16 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_load_from_file 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_load 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_set_flip_vertically_on_load_thread 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_set_flip_vertically_on_load 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_image_free 已经在 MWDEBO.obj 中定义
+MWDOpenglShader.obj : error LNK2005: stbi_failure_reason 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_is_16_bit_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_is_16_bit_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_info_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_info_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_is_16_bit_from_file 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_is_16_bit 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_info_from_file 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_info 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_convert_iphone_png_to_rgb_thread 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: "void __cdecl stbi__unpremultiply_on_load_thread(int)" (?stbi__unpremultiply_on_load_thread@@YAXH@Z) 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_convert_iphone_png_to_rgb 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_set_unpremultiply_on_load 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_zlib_decode_noheader_buffer 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_zlib_decode_noheader_malloc 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_zlib_decode_buffer 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_zlib_decode_malloc_guesssize_headerflag 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_zlib_decode_malloc 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_zlib_decode_malloc_guesssize 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_hdr_to_ldr_scale 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_hdr_to_ldr_gamma 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_ldr_to_hdr_scale 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_ldr_to_hdr_gamma 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_is_hdr_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_is_hdr_from_file 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_is_hdr 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_is_hdr_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_loadf_from_file 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_loadf 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_loadf_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_loadf_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_load_gif_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_load_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_load_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_load_16_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_load_16_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_load_16 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_load_from_file_16 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_load_from_file 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_load 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_set_flip_vertically_on_load_thread 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_set_flip_vertically_on_load 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_image_free 已经在 MWDEBO.obj 中定义
+MWDOpenglShaderProgram.obj : error LNK2005: stbi_failure_reason 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_is_16_bit_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_is_16_bit_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_info_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_info_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_is_16_bit_from_file 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_is_16_bit 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_info_from_file 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_info 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_convert_iphone_png_to_rgb_thread 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: "void __cdecl stbi__unpremultiply_on_load_thread(int)" (?stbi__unpremultiply_on_load_thread@@YAXH@Z) 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_convert_iphone_png_to_rgb 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_set_unpremultiply_on_load 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_zlib_decode_noheader_buffer 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_zlib_decode_noheader_malloc 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_zlib_decode_buffer 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_zlib_decode_malloc_guesssize_headerflag 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_zlib_decode_malloc 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_zlib_decode_malloc_guesssize 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_hdr_to_ldr_scale 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_hdr_to_ldr_gamma 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_ldr_to_hdr_scale 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_ldr_to_hdr_gamma 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_is_hdr_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_is_hdr_from_file 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_is_hdr 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_is_hdr_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_loadf_from_file 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_loadf 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_loadf_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_loadf_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_load_gif_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_load_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_load_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_load_16_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_load_16_from_memory 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_load_16 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_load_from_file_16 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_load_from_file 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_load 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_set_flip_vertically_on_load_thread 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_set_flip_vertically_on_load 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_image_free 已经在 MWDEBO.obj 中定义
+MWDOpenglTexture.obj : error LNK2005: stbi_failure_reason 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_is_16_bit_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_is_16_bit_from_memory 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_info_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_info_from_memory 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_is_16_bit_from_file 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_is_16_bit 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_info_from_file 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_info 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_convert_iphone_png_to_rgb_thread 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: "void __cdecl stbi__unpremultiply_on_load_thread(int)" (?stbi__unpremultiply_on_load_thread@@YAXH@Z) 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_convert_iphone_png_to_rgb 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_set_unpremultiply_on_load 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_zlib_decode_noheader_buffer 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_zlib_decode_noheader_malloc 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_zlib_decode_buffer 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_zlib_decode_malloc_guesssize_headerflag 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_zlib_decode_malloc 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_zlib_decode_malloc_guesssize 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_hdr_to_ldr_scale 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_hdr_to_ldr_gamma 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_ldr_to_hdr_scale 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_ldr_to_hdr_gamma 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_is_hdr_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_is_hdr_from_file 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_is_hdr 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_is_hdr_from_memory 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_loadf_from_file 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_loadf 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_loadf_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_loadf_from_memory 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_load_gif_from_memory 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_load_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_load_from_memory 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_load_16_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_load_16_from_memory 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_load_16 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_load_from_file_16 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_load_from_file 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_load 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_set_flip_vertically_on_load_thread 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_set_flip_vertically_on_load 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_image_free 已经在 MWDEBO.obj 中定义
+MWDRBO.obj : error LNK2005: stbi_failure_reason 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_is_16_bit_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_is_16_bit_from_memory 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_info_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_info_from_memory 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_is_16_bit_from_file 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_is_16_bit 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_info_from_file 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_info 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_convert_iphone_png_to_rgb_thread 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: "void __cdecl stbi__unpremultiply_on_load_thread(int)" (?stbi__unpremultiply_on_load_thread@@YAXH@Z) 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_convert_iphone_png_to_rgb 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_set_unpremultiply_on_load 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_zlib_decode_noheader_buffer 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_zlib_decode_noheader_malloc 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_zlib_decode_buffer 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_zlib_decode_malloc_guesssize_headerflag 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_zlib_decode_malloc 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_zlib_decode_malloc_guesssize 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_hdr_to_ldr_scale 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_hdr_to_ldr_gamma 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_ldr_to_hdr_scale 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_ldr_to_hdr_gamma 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_is_hdr_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_is_hdr_from_file 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_is_hdr 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_is_hdr_from_memory 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_loadf_from_file 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_loadf 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_loadf_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_loadf_from_memory 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_load_gif_from_memory 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_load_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_load_from_memory 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_load_16_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_load_16_from_memory 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_load_16 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_load_from_file_16 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_load_from_file 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_load 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_set_flip_vertically_on_load_thread 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_set_flip_vertically_on_load 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_image_free 已经在 MWDEBO.obj 中定义
+MWDVAO.obj : error LNK2005: stbi_failure_reason 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_is_16_bit_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_is_16_bit_from_memory 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_info_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_info_from_memory 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_is_16_bit_from_file 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_is_16_bit 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_info_from_file 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_info 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_convert_iphone_png_to_rgb_thread 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: "void __cdecl stbi__unpremultiply_on_load_thread(int)" (?stbi__unpremultiply_on_load_thread@@YAXH@Z) 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_convert_iphone_png_to_rgb 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_set_unpremultiply_on_load 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_zlib_decode_noheader_buffer 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_zlib_decode_noheader_malloc 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_zlib_decode_buffer 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_zlib_decode_malloc_guesssize_headerflag 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_zlib_decode_malloc 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_zlib_decode_malloc_guesssize 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_hdr_to_ldr_scale 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_hdr_to_ldr_gamma 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_ldr_to_hdr_scale 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_ldr_to_hdr_gamma 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_is_hdr_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_is_hdr_from_file 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_is_hdr 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_is_hdr_from_memory 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_loadf_from_file 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_loadf 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_loadf_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_loadf_from_memory 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_load_gif_from_memory 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_load_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_load_from_memory 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_load_16_from_callbacks 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_load_16_from_memory 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_load_16 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_load_from_file_16 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_load_from_file 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_load 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_set_flip_vertically_on_load_thread 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_set_flip_vertically_on_load 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_image_free 已经在 MWDEBO.obj 中定义
+MWDVBO.obj : error LNK2005: stbi_failure_reason 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_is_16_bit_from_callbacks 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_is_16_bit_from_memory 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_info_from_callbacks 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_info_from_memory 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_is_16_bit_from_file 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_is_16_bit 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_info_from_file 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_info 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_convert_iphone_png_to_rgb_thread 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: "void __cdecl stbi__unpremultiply_on_load_thread(int)" (?stbi__unpremultiply_on_load_thread@@YAXH@Z) 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_convert_iphone_png_to_rgb 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_set_unpremultiply_on_load 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_zlib_decode_noheader_buffer 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_zlib_decode_noheader_malloc 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_zlib_decode_buffer 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_zlib_decode_malloc_guesssize_headerflag 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_zlib_decode_malloc 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_zlib_decode_malloc_guesssize 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_hdr_to_ldr_scale 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_hdr_to_ldr_gamma 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_ldr_to_hdr_scale 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_ldr_to_hdr_gamma 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_is_hdr_from_callbacks 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_is_hdr_from_file 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_is_hdr 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_is_hdr_from_memory 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_loadf_from_file 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_loadf 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_loadf_from_callbacks 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_loadf_from_memory 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_load_gif_from_memory 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_load_from_callbacks 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_load_from_memory 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_load_16_from_callbacks 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_load_16_from_memory 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_load_16 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_load_from_file_16 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_load_from_file 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_load 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_set_flip_vertically_on_load_thread 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_set_flip_vertically_on_load 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_image_free 已经在 MWDEBO.obj 中定义
+main.obj : error LNK2005: stbi_failure_reason 已经在 MWDEBO.obj 中定义
+    正在创建库 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\x64\Release\MWDApplication.lib 和对象 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\x64\Release\MWDApplication.exp
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+glfw3.lib(input.obj) : error LNK2001: 无法解析的外部符号 __imp_strspn
+glfw3.lib(wgl_context.obj) : error LNK2001: 无法解析的外部符号 __imp_calloc
+glfw3.lib(egl_context.obj) : error LNK2001: 无法解析的外部符号 __imp_calloc
+glfw3.lib(osmesa_context.obj) : error LNK2001: 无法解析的外部符号 __imp_calloc
+glfw3.lib(win32_init.obj) : error LNK2001: 无法解析的外部符号 __imp_calloc
+glfw3.lib(win32_window.obj) : error LNK2001: 无法解析的外部符号 __imp_calloc
+glfw3.lib(init.obj) : error LNK2001: 无法解析的外部符号 __imp_calloc
+glfw3.lib(win32_joystick.obj) : error LNK2001: 无法解析的外部符号 __imp_calloc
+glfw3.lib(win32_monitor.obj) : error LNK2001: 无法解析的外部符号 __imp_calloc
+glfw3.lib(input.obj) : error LNK2001: 无法解析的外部符号 __imp_calloc
+glfw3.lib(window.obj) : error LNK2001: 无法解析的外部符号 __imp_calloc
+glfw3.lib(vulkan.obj) : error LNK2001: 无法解析的外部符号 __imp_calloc
+glfw3.lib(monitor.obj) : error LNK2001: 无法解析的外部符号 __imp_calloc
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\x64\Release\MWDApplication.exe : fatal error LNK1120: 2 个无法解析的外部命令

@@ -1,0 +1,18 @@
+﻿  MWDImage.cpp
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDSystem.h(12,1): warning C4005: “MWDSYSTEM_EXPORTS”: 宏重定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\pch.cpp : message : 参见“MWDSYSTEM_EXPORTS”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDSystem.h(39,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(220,1): warning C4311: “类型强制转换”: 从“MWDEngine::MWDHeapMemManager::FMem *”到“INT”的指针截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(220,1): warning C4302: “类型强制转换”: 从“MWDEngine::MWDHeapMemManager::FMem *”到“INT”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(220,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“MWDEngine::MWDHeapMemManager::FPool *”
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(290,1): warning C4311: “类型强制转换”: 从“void *”到“INT”的指针截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(290,1): warning C4302: “类型强制转换”: 从“void *”到“INT”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(290,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“MWDEngine::MWDHeapMemManager::FPool *”
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(326,1): warning C4311: “类型强制转换”: 从“BYTE *”到“unsigned int”的指针截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(326,1): warning C4302: “类型强制转换”: 从“BYTE *”到“unsigned int”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(326,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“BYTE *”
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(338,1): warning C4311: “类型强制转换”: 从“BYTE *”到“unsigned int”的指针截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(338,1): warning C4302: “类型强制转换”: 从“BYTE *”到“unsigned int”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(338,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“BYTE *”
+    正在创建库 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\x64\Debug\MWDSystem.lib 和对象 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\x64\Debug\MWDSystem.exp
+  MWDSystem.vcxproj -> C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\x64\Debug\MWDSystem.dll
