@@ -2,7 +2,7 @@
 #include "../MWDBind.h"
 namespace MWDEngine {
 	class MWDStream;
-	//维护一个渲染目标
+	//维护深度，模板测试状态
 	class  MWDDepthStencilDesc : public MWDObject
 	{
 		DECLARE_CLASS_FUNCTION(MWDDepthStencilDesc)
@@ -36,12 +36,12 @@ namespace MWDEngine {
 			OT_DECREMENT_STA,
 			OT_MAX
 		};
+		//默认开启深度测试，深度写入。默认关闭模板测试
 		MWDDepthStencilDesc()
 		{
 			m_bDepthEnable = true;
 			m_bDepthWritable = true;
 			m_uiDepthCompareMethod = CM_LESSEQUAL;
-
 
 			m_bStencilEnable = false;
 			m_uiStencilCompareMethod = CM_ALWAYS;
@@ -63,10 +63,14 @@ namespace MWDEngine {
 
 		}
 
+		//深度测试使能
 		bool m_bDepthEnable;
 		bool m_bDepthWritable;
+
+		//深度测试方法
 		unsigned char m_uiDepthCompareMethod;
 
+		//模板测试使能
 		bool m_bStencilEnable;
 		unsigned char m_uiStencilCompareMethod;
 		unsigned char m_uiReference;
@@ -82,6 +86,7 @@ namespace MWDEngine {
 		unsigned char m_uiCCW_SFailZPassOP;
 		bool m_bTwoSideStencilMode;
 
+		//获取深度，模板测试状态数据
 		void* GetCRC32Data(unsigned int& DataSize)const
 		{
 			DataSize = sizeof(MWDDepthStencilDesc) - sizeof(MWDObject);

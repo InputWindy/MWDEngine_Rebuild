@@ -170,6 +170,10 @@
     <ClCompile Include="Graphic\Core\MWDPriority.cpp" />
     <ClCompile Include="Graphic\Core\MWDProperty.cpp" />
     <ClCompile Include="Graphic\Core\MWDRtti.cpp" />
+    <ClCompile Include="Graphic\Vertex&amp;Index\MWDDataBuffer.cpp" />
+    <ClCompile Include="Graphic\Vertex&amp;Index\MWDIndexBuffer.cpp" />
+    <ClCompile Include="Graphic\Vertex&amp;Index\MWDVertexBuffer.cpp" />
+    <ClCompile Include="Graphic\Vertex&amp;Index\MWDVertexFormat.cpp" />
     <ClCompile Include="Graphic\场景管理\Entity\MWDCamera.cpp" />
     <ClCompile Include="Graphic\场景管理\Entity\MWDEntity.cpp" />
     <ClCompile Include="Graphic\场景管理\Entity\MWDLightEntity.cpp" />
@@ -225,6 +229,10 @@
     <ClInclude Include="Graphic\Core\MWDReference.h" />
     <ClInclude Include="Graphic\Core\MWDRtti.h" />
     <ClInclude Include="Graphic\Core\MWDType.h" />
+    <ClInclude Include="Graphic\Vertex&amp;Index\MWDDataBuffer.h" />
+    <ClInclude Include="Graphic\Vertex&amp;Index\MWDIndexBuffer.h" />
+    <ClInclude Include="Graphic\Vertex&amp;Index\MWDVertexBuffer.h" />
+    <ClInclude Include="Graphic\Vertex&amp;Index\MWDVertexFormat.h" />
     <ClInclude Include="Graphic\场景管理\Entity\MWDCamera.h" />
     <ClInclude Include="Graphic\场景管理\Entity\MWDEntity.h" />
     <ClInclude Include="Graphic\场景管理\Entity\MWDLightEntity.h" />

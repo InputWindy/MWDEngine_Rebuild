@@ -40,6 +40,12 @@
     <Filter Include="Graphic\渲染器\渲染状态">
       <UniqueIdentifier>{b8e6001a-83f5-4458-8696-b6efce25e8a6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Graphic\渲染器\RenderTarget">
+      <UniqueIdentifier>{e743278d-7e5e-4340-a396-384f054dbd3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\渲染器\Vertex&amp;Index">
+      <UniqueIdentifier>{a3e73e17-c712-40fb-90cc-9a6c01ee377f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -155,6 +161,18 @@
     </ClCompile>
     <ClCompile Include="Graphic\渲染器\渲染状态\MWDSamplerState.cpp">
       <Filter>Graphic\渲染器\渲染状态</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Vertex&amp;Index\MWDDataBuffer.cpp">
+      <Filter>Graphic\渲染器\Vertex&amp;Index</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Vertex&amp;Index\MWDIndexBuffer.cpp">
+      <Filter>Graphic\渲染器\Vertex&amp;Index</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Vertex&amp;Index\MWDVertexBuffer.cpp">
+      <Filter>Graphic\渲染器\Vertex&amp;Index</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\Vertex&amp;Index\MWDVertexFormat.cpp">
+      <Filter>Graphic\渲染器\Vertex&amp;Index</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -289,6 +307,18 @@
     </ClInclude>
     <ClInclude Include="Graphic\渲染器\渲染状态\MWDSamplerState.h">
       <Filter>Graphic\渲染器\渲染状态</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Vertex&amp;Index\MWDDataBuffer.h">
+      <Filter>Graphic\渲染器\Vertex&amp;Index</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Vertex&amp;Index\MWDIndexBuffer.h">
+      <Filter>Graphic\渲染器\Vertex&amp;Index</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Vertex&amp;Index\MWDVertexBuffer.h">
+      <Filter>Graphic\渲染器\Vertex&amp;Index</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\Vertex&amp;Index\MWDVertexFormat.h">
+      <Filter>Graphic\渲染器\Vertex&amp;Index</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

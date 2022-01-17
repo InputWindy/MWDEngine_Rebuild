@@ -41,9 +41,9 @@ namespace MWDEngine {
 			GetAll(&RenderState);
 			return *this;
 		}
+		//浅拷贝
 		void GetAll(const MWDRenderState* pRenderState)
 		{
-
 			MWDMAC_ASSERT(pRenderState);
 			if (pRenderState)
 			{
@@ -97,9 +97,7 @@ namespace MWDEngine {
 			if (m_pBlendState != pBlendState)
 			{
 				m_pBlendState = pBlendState;
-				m_BlendDesc = pBlendState->GetBlendDesc();
 			}
-
 		}
 		void SetDepthStencilState(MWDDepthStencilState* pDepthStencilState)
 		{
@@ -110,7 +108,6 @@ namespace MWDEngine {
 			if (m_pDepthStencilState != pDepthStencilState)
 			{
 				m_pDepthStencilState = pDepthStencilState;
-				m_DepthStencilDesc = pDepthStencilState->GetDepthStencilDesc();
 			}
 		}
 		void SetRasterizerState(MWDRasterizerState* pRasterizerState)
@@ -122,7 +119,6 @@ namespace MWDEngine {
 			if (m_pRasterizerState != pRasterizerState)
 			{
 				m_pRasterizerState = pRasterizerState;
-				m_RasterizerDesc = pRasterizerState->GetRasterizerDesc();
 			}
 		}
 		const MWDDepthStencilState* GetDepthStencilState()const
@@ -141,10 +137,6 @@ namespace MWDEngine {
 		MWDDepthStencilStatePtr		m_pDepthStencilState;
 		MWDBlendStatePtr			m_pBlendState;
 		MWDRasterizerStatePtr		m_pRasterizerState;
-
-		MWDDepthStencilDesc			m_DepthStencilDesc;
-		MWDRasterizerDesc			m_RasterizerDesc;
-		MWDBlendDesc				m_BlendDesc;
 
 		//2D裁剪平面数组
 		MWDArray<MWDRect2> m_RectArray;

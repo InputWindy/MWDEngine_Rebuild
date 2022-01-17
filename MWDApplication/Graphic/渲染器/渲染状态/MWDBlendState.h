@@ -2,7 +2,7 @@
 #include "../MWDBind.h"
 namespace MWDEngine {
 	class MWDStream;
-	//最多支持8通道，每个通道是一个渲染目标
+	//最多支持8张texture混合
 	class  MWDBlendDesc : public MWDObject
 	{
 		DECLARE_CLASS_FUNCTION(MWDBlendDesc)
@@ -118,7 +118,7 @@ namespace MWDEngine {
 
 
 
-	//维护一个MWDBlendDesc
+	//维护一个MWDBlendDesc（8套混合状态）
 	class  MWDBlendState : public MWDBind
 	{
 		DECLARE_CLASS_FUNCTION(MWDBlendState)

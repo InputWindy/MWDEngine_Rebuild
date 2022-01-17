@@ -2,6 +2,8 @@
 #include "../MWDBind.h"
 namespace MWDEngine {
 	class MWDStream;
+	//维护texture参数，minmap层数，各向异性层数，UVW采样模式
+	//一个MWDSamplerDesc维护一套texture采样方式
 	class  MWDSamplerDesc : public MWDObject
 	{
 		DECLARE_CLASS_FUNCTION(MWDSamplerDesc)
@@ -58,8 +60,11 @@ namespace MWDEngine {
 		unsigned char m_uiCoordU;
 		unsigned char m_uiCoordV;
 		unsigned char m_uiCoordW;
+
 		MWDREAL       m_MipLODBias;
+
 		MWDColorRGBA  m_BorderColor;
+
 		void* GetCRC32Data(unsigned int& DataSize)const
 		{
 			DataSize = sizeof(MWDSamplerDesc) - sizeof(MWDObject);
@@ -92,36 +97,42 @@ namespace MWDEngine {
 		static inline MWDPointer<MWDSamplerState> m_BorderARGB0SamplerState ;
 		static inline MWDPointer<MWDSamplerState> m_LightFunctionSamplerState ;
 	public:
+		//默认采样方式
 		static MWDPointer<MWDSamplerState> GetDefaultSamplerState() {
 			if (m_DefaultSamplerState.IsNULL()) {
 				*m_DefaultSamplerState = *new MWDSamplerState();
 			}
 			return m_DefaultSamplerState;
 		}
+		//三线性插值采样
 		static MWDPointer<MWDSamplerState> GetTriLineSamplerState() {
 			if (m_TriLineSamplerState.IsNULL()) {
 				*m_TriLineSamplerState = *new MWDSamplerState();
 			}
 			return m_TriLineSamplerState;
 		}
+		//双线性插值采样
 		static MWDPointer<MWDSamplerState> GetDoubleLineSamplerState() {
 			if (m_DoubleLineSamplerState.IsNULL()) {
 				*m_DoubleLineSamplerState = *new MWDSamplerState();
 			}
 			return m_DoubleLineSamplerState;
 		}
+		//阴影贴图采样
 		static MWDPointer<MWDSamplerState> GetShadowMapSamplerState() {
 			if (m_ShadowMapSamplerState.IsNULL()) {
 				*m_ShadowMapSamplerState = *new MWDSamplerState();
 			}
 			return m_ShadowMapSamplerState;
 		}
+		//边界采样
 		static MWDPointer<MWDSamplerState> GetBorderARGB0SamplerState() {
 			if (m_BorderARGB0SamplerState.IsNULL()) {
 				*m_BorderARGB0SamplerState = *new MWDSamplerState();
 			}
 			return m_BorderARGB0SamplerState;
 		}
+		//光照函数采样
 		static MWDPointer<MWDSamplerState> GetLightFunctionSamplerState() {
 			if (m_LightFunctionSamplerState.IsNULL()) {
 				*m_LightFunctionSamplerState = *new MWDSamplerState();

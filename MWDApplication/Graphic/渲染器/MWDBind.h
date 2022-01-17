@@ -197,7 +197,7 @@ namespace MWDEngine
 
 			m_uiCurID = 0;
 		};
-		//ÇÐ»»×ÊÔ´
+		//ÇÐ»»»º³å
 		void SwitchResource() {
 			if (!m_bIsStatic && m_uiSwapChainNum == 2)
 			{

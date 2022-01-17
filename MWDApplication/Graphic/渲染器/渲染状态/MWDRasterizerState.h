@@ -72,7 +72,7 @@ namespace MWDEngine{
 	public:
 		friend class MWDResourceManager;
 
-		FORCEINLINE const MWDRasterizerDesc& GetRasterizerDesc()const
+		FORCEINLINE MWDRasterizerDesc& GetRasterizerDesc()
 		{
 			return m_RasterizerDesc;
 		}
