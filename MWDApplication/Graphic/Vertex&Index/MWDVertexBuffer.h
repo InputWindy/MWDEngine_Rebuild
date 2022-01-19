@@ -1,11 +1,14 @@
 #pragma once
 #include "MWDDataBuffer.h"
 #include "MWDVertexFormat.h"
+#include "../OpenGLAPI/MWDVBO.h"
 namespace MWDEngine {
 	//维护一个Mesh的所有顶点属性，11种顶点属性（其中顶点UV可以有很多套，用于不同阶段）
 	//步骤：往MWDVertexBuffer填充各种顶点属性之后，直接GetVertexFormat()自动获取解析格式表，
 	//		从该格式表中找到对应属性的解析方式，填充进VBO。
 	//		把MWDVertexBuffer横向组合可以得到VBO所需的顶点数据
+	//		①Loop(SetData()) ----> LoadDataToVBO			
+	//		②Loop(SetData()) ----> GetVertexFormat() ----> GenerateVboData() ----> LoadDataToVBO()
 	class  MWDVertexBuffer : public MWDBind
 	{
 		DECLARE_CLASS_FUNCTION(MWDVertexBuffer)
@@ -14,11 +17,13 @@ namespace MWDEngine {
 	public:
 		friend class MWDVertexFormat;
 		friend class MWDResourceManager;
-		MWDVertexBuffer(bool bIsStatic) {
+		MWDVertexBuffer(bool bIsStatic,MWDVBO::Target target = MWDVBO::Target::ElementArrayBuffer,MWDVBO::Usage usage = MWDVBO::Usage::StaticDraw) {
 			m_bIsStatic = bIsStatic;
+			m_vbo = new MWDVBO(target, usage);
 		};
-		MWDVertexBuffer(MWDArray<MWDVertexFormat::VERTEXFORMAT_TYPE>& FormatArray, unsigned int uiNum) {
+		MWDVertexBuffer(MWDArray<MWDVertexFormat::VERTEXFORMAT_TYPE>& FormatArray, unsigned int uiNum, MWDVBO::Target target, MWDVBO::Usage usage) {
 			MWDMAC_ASSERT(FormatArray.GetNum() && uiNum);
+			m_vbo = new MWDVBO(target, usage);
 			m_pVertexFormat = NULL;
 			m_uiOneVertexSize = 0;
 			m_uiVertexNum = uiNum;
@@ -32,6 +37,8 @@ namespace MWDEngine {
 			m_pVertexFormat = pVertexFormat;
 		};
 		virtual ~MWDVertexBuffer() {
+			MWDMAC_DELETE(m_vbo)
+			m_vbo = NULL;
 			ReleaseResource();
 			for (unsigned int i = 0; i < MWDVertexFormat::VF_MAX; i++)
 			{
@@ -159,7 +166,6 @@ namespace MWDEngine {
 			else
 				return GetSemanticsNum(uiVF);
 		};
-
 		FORCEINLINE MWDDataBuffer* GetPositionData()const {
 			if (m_pData[MWDVertexFormat::VF_PSIZE].GetNum())
 				return m_pData[MWDVertexFormat::VF_PSIZE][0];
@@ -240,7 +246,6 @@ namespace MWDEngine {
 		FORCEINLINE unsigned int GetTexCoordLevel()const {
 			return GetSemanticsNum(MWDVertexFormat::VF_TEXCOORD);
 		};
-
 		FORCEINLINE unsigned int GetVertexNum()const {
 			return m_uiVertexNum;
 		};
@@ -396,6 +401,9 @@ namespace MWDEngine {
 		};
 		//要在GetVertexFormat()之后使用，否则生成失败返回NULL
 		char* GenerateVboData() {
+			if (vbo_data) {
+				return vbo_data;
+			}
 			if (!m_uiVertexNum) {
 				return NULL;
 			}
@@ -416,13 +424,30 @@ namespace MWDEngine {
 				}
 				MWDStrcat(vbo, m_uiOneVertexSize, one_vertex_data);
 			}
-			return MWDString::TCHARToChar(vbo);
-			
+			vbo_data = MWDString::TCHARToChar(vbo);
+			return vbo_data;
+		}
+		void LoadData() {
+			m_vbo->SetData(vbo_data, m_uiVertexNum* m_uiOneVertexSize);//填充vbo数据
+			int attribute_num = m_pVertexFormat->m_FormatArray.GetNum();
+			unsigned int datatype, offset, semantics, semantics_index;
+			for (int i = 0; i < attribute_num; ++i) {
+				datatype = m_pVertexFormat->m_FormatArray[i].DataType;
+				offset = m_pVertexFormat->m_FormatArray[i].OffSet;
+				semantics = m_pVertexFormat->m_FormatArray[i].Semantics;
+				semantics_index = m_pVertexFormat->m_FormatArray[i].SemanticsIndex;
+				m_vbo->SetAttributePointer(semantics,MWDDataBuffer::ms_uiDataTypeByte[datatype],GL_UNSIGNED_INT,false,m_uiOneVertexSize,offset);//设置vbo解析格式
+			}
+		}
+		void LoadDataToVBO() {
+			MWDArray<MWDVertexFormat::VERTEXFORMAT_TYPE> tmp = MWDArray<MWDVertexFormat::VERTEXFORMAT_TYPE>();
+			GetVertexFormat(tmp);
+			GenerateVboData();
+			LoadData();
 		}
 		FORCEINLINE MWDVertexFormat* GetVertexFormat()const {
 			return m_pVertexFormat;
 		};
-
 		FORCEINLINE unsigned int GetOneVertexSize()const {
 			return m_uiOneVertexSize;
 		};
@@ -692,6 +717,10 @@ namespace MWDEngine {
 		//指向一个顶点结构（解析buffer的方案）
 		MWDVertexFormatPtr m_pVertexFormat;
 
+		MWDVBO* m_vbo;
+
+		char* vbo_data;
+
 		//锁定的数据
 		void* m_pLockData;
 
@@ -699,7 +728,7 @@ namespace MWDEngine {
 
 		virtual	bool LoadResource(MWDRenderer* pRender);
 
-		void* Lock();
+		void* Lock() ;
 		void UnLock();
 		FORCEINLINE void* GetLockDataPtr()const
 		{

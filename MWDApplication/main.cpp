@@ -112,9 +112,10 @@ int  main(int argc, char* argv[])
 //REGISTER_RETURN_FUNCTION_FOURPARAMETER(testClassA, testK, 0, int, int, a, double, b, char, c, int, d)
 //#define STB_IMAGE_IMPLEMENTATION
 //#include <stb_image.h>
-
+#include "MWDBasicGeometryTriangleMeshData.h"
 int main() {
     MWDMain::Initialize(); 
+	MWDAABB3 aabb3 = *new MWDAABB3();
 	#pragma region glfw³õÊ¼»¯
 	if (!glfwInit())
 		return -1;
@@ -137,10 +138,13 @@ int main() {
 	ImGuiInit(Hwindow);
 
 	#pragma endregion
+
+
+
+
 	while (!glfwWindowShouldClose(Hwindow)) {
 		ImGuiFrameBegin();
 		//ImGui::ShowDemoWindow();
-		MWDOpenglTexture2D* tex2d = new MWDOpenglTexture2D(1);
 		MWDCamera* maincamera = MWDCamera::GetMainCamera();
 		ImGui::Begin(maincamera->GetName().MWDNameToChar());
 		ImGui::End();

@@ -1,7 +1,7 @@
 ﻿  pch.cpp
   dllmain.cpp
   MWDArray.cpp
-C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(39,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(40,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(220,1): warning C4311: “类型强制转换”: 从“MWDEngine::MWDHeapMemManager::FMem *”到“INT”的指针截断
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(220,1): warning C4302: “类型强制转换”: 从“MWDEngine::MWDHeapMemManager::FMem *”到“INT”截断
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(220,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“MWDEngine::MWDHeapMemManager::FPool *”
@@ -17,7 +17,7 @@ C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(338,1): 
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDDataStruct\MWDContainer.h(5,1): warning C4005: “MWDDATASTRUCT_EXPORTS”: 宏重定义
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDDataStruct\pch.cpp : message : 参见“MWDDATASTRUCT_EXPORTS”的前一个定义
   MWDBitArray.cpp
-C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(39,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(40,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(220,1): warning C4311: “类型强制转换”: 从“MWDEngine::MWDHeapMemManager::FMem *”到“INT”的指针截断
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(220,1): warning C4302: “类型强制转换”: 从“MWDEngine::MWDHeapMemManager::FMem *”到“INT”截断
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(220,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“MWDEngine::MWDHeapMemManager::FPool *”
@@ -33,7 +33,7 @@ C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(338,1): 
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDDataStruct\MWDContainer.h(5,1): warning C4005: “MWDDATASTRUCT_EXPORTS”: 宏重定义
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDDataStruct\pch.cpp : message : 参见“MWDDATASTRUCT_EXPORTS”的前一个定义
   MWDContainer.cpp
-C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(39,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(40,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(220,1): warning C4311: “类型强制转换”: 从“MWDEngine::MWDHeapMemManager::FMem *”到“INT”的指针截断
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(220,1): warning C4302: “类型强制转换”: 从“MWDEngine::MWDHeapMemManager::FMem *”到“INT”截断
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(220,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“MWDEngine::MWDHeapMemManager::FPool *”
@@ -49,7 +49,7 @@ C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(338,1): 
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDDataStruct\MWDContainer.h(5,1): warning C4005: “MWDDATASTRUCT_EXPORTS”: 宏重定义
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDDataStruct\pch.cpp : message : 参见“MWDDATASTRUCT_EXPORTS”的前一个定义
   MWDString.cpp
-C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(39,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(40,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(220,1): warning C4311: “类型强制转换”: 从“MWDEngine::MWDHeapMemManager::FMem *”到“INT”的指针截断
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(220,1): warning C4302: “类型强制转换”: 从“MWDEngine::MWDHeapMemManager::FMem *”到“INT”截断
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(220,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“MWDEngine::MWDHeapMemManager::FPool *”

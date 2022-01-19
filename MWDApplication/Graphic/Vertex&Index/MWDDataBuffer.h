@@ -11,6 +11,7 @@ namespace MWDEngine {
 		DECLARE_RTTI(MWDDataBuffer, MWDObject)
 		DECLARE_INITIAL_WITH_INIT_TERMINAL(MWDDataBuffer)
 	public:
+		friend class MWDIndexBuffer;
 		enum	//Data Type
 		{
 			DataType_FLOAT32_1,// 1D MWDREAL expanded to (value, 0., 0., 1.)

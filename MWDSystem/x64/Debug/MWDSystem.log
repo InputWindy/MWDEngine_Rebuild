@@ -1,14 +1,14 @@
 ﻿  pch.cpp
   dllmain.cpp
   MWDFile.cpp
-C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(12,1): warning C4005: “MWDSYSTEM_EXPORTS”: 宏重定义
+C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(13,1): warning C4005: “MWDSYSTEM_EXPORTS”: 宏重定义
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\pch.cpp : message : 参见“MWDSYSTEM_EXPORTS”的前一个定义
-C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(39,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(40,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDFile.h(13,1): warning C4302: “类型强制转换”: 从“const char *”到“TCHAR”截断
   MWDImage.cpp
-C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(12,1): warning C4005: “MWDSYSTEM_EXPORTS”: 宏重定义
+C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(13,1): warning C4005: “MWDSYSTEM_EXPORTS”: 宏重定义
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\pch.cpp : message : 参见“MWDSYSTEM_EXPORTS”的前一个定义
-C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(39,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(40,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(220,1): warning C4311: “类型强制转换”: 从“MWDEngine::MWDHeapMemManager::FMem *”到“INT”的指针截断
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(220,1): warning C4302: “类型强制转换”: 从“MWDEngine::MWDHeapMemManager::FMem *”到“INT”截断
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(220,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“MWDEngine::MWDHeapMemManager::FPool *”
@@ -22,15 +22,15 @@ C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(338,1): 
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(338,1): warning C4302: “类型强制转换”: 从“BYTE *”到“unsigned int”截断
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(338,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“BYTE *”
   MWDLog.cpp
-C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(12,1): warning C4005: “MWDSYSTEM_EXPORTS”: 宏重定义
+C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(13,1): warning C4005: “MWDSYSTEM_EXPORTS”: 宏重定义
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\pch.cpp : message : 参见“MWDSYSTEM_EXPORTS”的前一个定义
-C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(39,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(40,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDFile.h(13,1): warning C4302: “类型强制转换”: 从“const char *”到“TCHAR”截断
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDLog.h(9,37): warning C4302: “类型强制转换”: 从“const char *”到“TCHAR”截断
   MWDMemManager.cpp
-C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(12,1): warning C4005: “MWDSYSTEM_EXPORTS”: 宏重定义
+C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(13,1): warning C4005: “MWDSYSTEM_EXPORTS”: 宏重定义
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\pch.cpp : message : 参见“MWDSYSTEM_EXPORTS”的前一个定义
-C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(39,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(40,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(220,1): warning C4311: “类型强制转换”: 从“MWDEngine::MWDHeapMemManager::FMem *”到“INT”的指针截断
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(220,1): warning C4302: “类型强制转换”: 从“MWDEngine::MWDHeapMemManager::FMem *”到“INT”截断
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.h(220,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“MWDEngine::MWDHeapMemManager::FPool *”
@@ -56,17 +56,17 @@ C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.cpp(244,55
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.cpp(244,75): warning C4311: “类型强制转换”: 从“void *”到“DWORD”的指针截断
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDMemManager.cpp(244,75): warning C4302: “类型强制转换”: 从“void *”到“DWORD”截断
   MWDSynchronize.cpp
-C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(12,1): warning C4005: “MWDSYSTEM_EXPORTS”: 宏重定义
+C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(13,1): warning C4005: “MWDSYSTEM_EXPORTS”: 宏重定义
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\pch.cpp : message : 参见“MWDSYSTEM_EXPORTS”的前一个定义
-C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(39,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(40,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
   MWDSystem.cpp
-C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(12,1): warning C4005: “MWDSYSTEM_EXPORTS”: 宏重定义
+C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(13,1): warning C4005: “MWDSYSTEM_EXPORTS”: 宏重定义
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\pch.cpp : message : 参见“MWDSYSTEM_EXPORTS”的前一个定义
-C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(39,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(40,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
   MWDThread.cpp
-C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(12,1): warning C4005: “MWDSYSTEM_EXPORTS”: 宏重定义
+C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(13,1): warning C4005: “MWDSYSTEM_EXPORTS”: 宏重定义
 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\pch.cpp : message : 参见“MWDSYSTEM_EXPORTS”的前一个定义
-C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(39,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\MWDSystem\MWDSystem.h(40,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
   正在生成代码...
     正在创建库 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\x64\Debug\MWDSystem.lib 和对象 C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\x64\Debug\MWDSystem.exp
   MWDSystem.vcxproj -> C:\Users\InputWindy\Desktop\MWDEngine_Rebuild\x64\Debug\MWDSystem.dll

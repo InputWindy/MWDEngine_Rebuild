@@ -239,7 +239,7 @@ namespace MWDEngine {
 				}
 				m_CurUse = 0;
 			};
-			//这个是清空数据并且释放内存
+			//这个是清空数据并且释放内存(调用析构)
 			void Destroy() { 
 				Clear(); 
 				MWDContainer<T, MMFun>::Delete(m_Buffer, m_CurUse);

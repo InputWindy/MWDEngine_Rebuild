@@ -1,7 +1,7 @@
 #pragma once
 #include "OpenglAPIInclude.h"
 namespace MWDEngine {
-
+	//VBO对应着一个一个Mesh的所有顶点数据
 	//VBO维护每一个顶点的数据和数据解析格式:先(bind)SetData设置数据(unbind)，(bind)再依次设置每个属性的解析方式(unbind)
 	//一个VBO代表着一套对应的shader，一个VBO内的所有顶点使用同样的渲染方式
 	class  MWDVBO :public MWDOpenglResource

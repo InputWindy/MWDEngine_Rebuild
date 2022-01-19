@@ -3,6 +3,7 @@
 #include "MWDEntity.h"
 namespace MWDEngine {
     INITIAL_WITH_INIT_TERMINAL_BEGIN(MWDCamera)
+    ADD_PRIORITY(MWDEntity)
     ADD_INITIAL_FUNCTION(InitialClassFactory)
     INITIAL_WITH_INIT_TERMINAL_END(MWDCamera)
 

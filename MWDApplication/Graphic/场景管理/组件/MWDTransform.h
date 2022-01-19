@@ -9,7 +9,11 @@ namespace MWDEngine {
 		DECLARE_RTTI(MWDTransform, MWDComponent)
 		DECLARE_INITIAL_WITH_INIT_TERMINAL(MWDTransform)
 	private:
-		
+		//动态趋势
+		MWDVector3 m_fScale;
+		MWDMatrix3X3 m_mRotate;
+		MWDVector3 m_vTranslate;
+
 		//世界坐标
 		MWDVector3 m_WorldPosition;
 		MWDVector3 m_WorldScale;
@@ -61,6 +65,11 @@ namespace MWDEngine {
 			m_ChildCount = 0;
 		}
 		MWDTransform& operator = (const MWDTransform& trans) {
+			//动态趋势
+			m_fScale = trans.m_fScale;
+			m_mRotate = trans.m_mRotate;
+			m_vTranslate = trans.m_vTranslate;
+
 			//世界坐标
 			m_WorldPosition = trans.m_WorldPosition;
 			m_WorldScale = trans.m_WorldScale;
@@ -95,6 +104,42 @@ namespace MWDEngine {
 			//m_WorldUp，m_WorldRight，m_WorldForward;
 		}
 		
+		//动态趋势
+		MWDVector3 GetScale()const {
+			return m_fScale;
+		} ;
+		//动态趋势
+		MWDMatrix3X3 GetRotate()const {
+			return m_mRotate;
+		} 
+		//动态趋势
+		MWDVector3 GetTranslate()const {
+			return m_vTranslate;
+		} 
+
+		FORCEINLINE void GetDir(MWDVector3& Dir, MWDVector3& Up, MWDVector3& Right)const {
+			Right.x = m_mRotate._00;
+			Right.y = m_mRotate._01;
+			Right.z = m_mRotate._02;
+
+			Up.x = m_mRotate._10;
+			Up.y = m_mRotate._11;
+			Up.z = m_mRotate._12;
+
+			Dir.x = m_mRotate._20;
+			Dir.y = m_mRotate._21;
+			Dir.z = m_mRotate._22;
+		};
+		FORCEINLINE void SetScale(const MWDVector3& fScale) {
+			m_fScale = fScale;
+		};
+		FORCEINLINE void SetTranslate(const MWDVector3& Translate) {
+			m_vTranslate = Translate;
+		};
+		FORCEINLINE void SetRotate(const MWDMatrix3X3& Rotate) {
+			m_mRotate = Rotate;
+		};
+
 		MWDVector3 GetWorldPosition()const {
 			return m_WorldPosition;
 		}
@@ -210,6 +255,11 @@ namespace MWDEngine {
 
 		};
 
+		void SetMatrix(const MWDMatrix3X3W& MWDMat) {
+			m_mRotate = MWDMat.Get3X3();
+			m_vTranslate = MWDMat.GetTranslation();
+			m_mRotate.GetScaleAndRotated(m_fScale);
+		}
 
 	};
 

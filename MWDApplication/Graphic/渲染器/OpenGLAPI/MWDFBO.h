@@ -70,7 +70,7 @@ namespace MWDEngine {
 		MWDMap<MWDRBO*, Attachment> m_rboMap;
 	public:
 		//第一个参数设定
-		MWDFBO( Attachment attach,MWDOpenglTexture2D* texture = NULL,unsigned int width=600,unsigned int height=800,Target targ = FrameBuffer) {
+		MWDFBO( Attachment attach,MWDOpenglTexture2D* texture = NULL,unsigned int bit_depth=24,unsigned int texture_unit = 0,unsigned int width=600,unsigned int height=800,Target targ = FrameBuffer) {
 			m_target = targ;
 			m_attachment = attach;
 			m_texture = texture;
@@ -78,7 +78,7 @@ namespace MWDEngine {
 			if (texture == NULL) {
 				m_GenByOuterTexture = false;
 				m_GenByOuterRbo = false;
-				m_texture = new MWDOpenglTexture2D(0,width,height);
+				m_texture = new MWDOpenglTexture2D(MWDOpenglTexture::Filter_Mode::Mag, MWDOpenglTexture::Sampling_Mode::ClampLinear, bit_depth, texture_unit,width,height);
 				m_width = width;
 				m_height = height;
 			}

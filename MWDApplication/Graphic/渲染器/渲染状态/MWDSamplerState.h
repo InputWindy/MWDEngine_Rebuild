@@ -28,7 +28,6 @@ namespace MWDEngine {
 			FM_LINE,
 			FM_ANISOTROPIC,
 			FM_MAX
-
 		};
 		MWDSamplerDesc()
 		{
@@ -48,8 +47,6 @@ namespace MWDEngine {
 		{
 
 		}
-
-
 
 		unsigned char m_uiMag;
 		unsigned char m_uiMin;
@@ -72,7 +69,6 @@ namespace MWDEngine {
 		}
 	};
 	MWDTYPE_MARCO(MWDSamplerDesc);
-
 
 
 	class  MWDSamplerState : public MWDBind
@@ -143,7 +139,7 @@ namespace MWDEngine {
 		static bool InitialDefaultState() { return true; };
 		static bool TerminalDefaultState() { return true; };
 	public:
-		const MWDSamplerDesc& GetSamplerDesc()const
+		 MWDSamplerDesc& GetSamplerDesc()
 		{
 			return m_SamplerDesc;
 		}

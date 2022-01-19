@@ -182,6 +182,8 @@
     <ClCompile Include="Graphic\场景管理\组件\MWDComponent.cpp" />
     <ClCompile Include="Graphic\场景管理\组件\MWDLight.cpp" />
     <ClCompile Include="Graphic\场景管理\组件\MWDTransform.cpp" />
+    <ClCompile Include="Graphic\材质\MWDShaderConstant.cpp" />
+    <ClCompile Include="Graphic\材质\MWDShaderSampler.cpp" />
     <ClCompile Include="Graphic\渲染器\MWDBind.cpp" />
     <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDEBO.cpp" />
     <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDFBO.cpp" />
@@ -197,6 +199,12 @@
     <ClCompile Include="Graphic\渲染器\渲染状态\MWDRenderState.cpp" />
     <ClCompile Include="Graphic\渲染器\渲染状态\MWDSamplerState.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="MWDBasicGeometryTriangleMeshData.cpp" />
+    <ClCompile Include="MWDLineMeshData.cpp" />
+    <ClCompile Include="MWDMeshData.cpp" />
+    <ClCompile Include="MWDPointMeshData.cpp" />
+    <ClCompile Include="MWDTexture.cpp" />
+    <ClCompile Include="MWDTriangleMeshData.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MWDDataStruct\MWDDataStruct.vcxproj">
@@ -241,6 +249,8 @@
     <ClInclude Include="Graphic\场景管理\组件\MWDComponent.h" />
     <ClInclude Include="Graphic\场景管理\组件\MWDLight.h" />
     <ClInclude Include="Graphic\场景管理\组件\MWDTransform.h" />
+    <ClInclude Include="Graphic\材质\MWDShaderConstant.h" />
+    <ClInclude Include="Graphic\材质\MWDShaderSampler.h" />
     <ClInclude Include="Graphic\渲染器\MWDBind.h" />
     <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDEBO.h" />
     <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDFBO.h" />
@@ -257,7 +267,13 @@
     <ClInclude Include="Graphic\渲染器\渲染状态\MWDRenderState.h" />
     <ClInclude Include="Graphic\渲染器\渲染状态\MWDSamplerState.h" />
     <ClInclude Include="MWDApplication.h" />
+    <ClInclude Include="MWDBasicGeometryTriangleMeshData.h" />
     <ClInclude Include="MWDCommand.h" />
+    <ClInclude Include="MWDLineMeshData.h" />
+    <ClInclude Include="MWDMeshData.h" />
+    <ClInclude Include="MWDPointMeshData.h" />
+    <ClInclude Include="MWDTexture.h" />
+    <ClInclude Include="MWDTriangleMeshData.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\depend\imgui\imgui.ini" />

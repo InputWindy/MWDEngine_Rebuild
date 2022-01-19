@@ -2,6 +2,7 @@
 #include "../MWDMath/MWDMath.h"
 #include "../MWDBind.h"
 #include "MWDDataBuffer.h"
+#include "../OpenGLAPI/MWDEBO.h"
 namespace MWDEngine {
 	class  MWDIndexBuffer : public MWDBind
 	{
@@ -13,12 +14,14 @@ namespace MWDEngine {
 			ReleaseResource();
 			m_pData = NULL;
 			m_pLockData = NULL;
+			MWDMAC_DELETE(m_ebo)
 		};
 		MWDIndexBuffer() {
 			m_pData = NULL;
 			m_uiNum = 0;
 			m_uiDataType = MWDDataBuffer::DataType_USHORT;
 			m_pLockData = NULL;
+			m_ebo = new MWDEBO();
 		};
 		MWDIndexBuffer(unsigned int uiNum, unsigned int uiDataType = MWDDataBuffer::DataType_USHORT) {
 			MWDMAC_ASSERT(uiNum);
@@ -27,7 +30,8 @@ namespace MWDEngine {
 			m_uiNum = uiNum;
 			m_uiDataType = uiDataType;
 			m_pLockData = NULL;
-		};;
+			m_ebo = new MWDEBO();
+		};
 		bool SetData(MWDDataBuffer* pData) {
 			if ((pData->GetDataType() != MWDDataBuffer::DataType_USHORT && pData->GetDataType() != MWDDataBuffer::DataType_UINT)
 				|| !pData->GetNum() || !pData->GetData())
@@ -38,10 +42,12 @@ namespace MWDEngine {
 			m_uiNum = pData->GetNum();
 			m_uiDataType = pData->GetDataType();
 			return 1;
-		};;
+		};
+		bool LoadDataToIBO() {
+			m_ebo->SetData(m_pData->GetData(), m_pData->GetSize());
+			return true;
+		}
 	public:
-
-
 		virtual void* Lock();
 		virtual void UnLock();
 
@@ -87,6 +93,8 @@ namespace MWDEngine {
 		unsigned int m_uiNum;
 		unsigned int m_uiDataType;
 		void* m_pLockData;
+
+		MWDEBO* m_ebo;
 	};
 	DECLARE_Ptr(MWDIndexBuffer);
 	MWDTYPE_MARCO(MWDIndexBuffer);

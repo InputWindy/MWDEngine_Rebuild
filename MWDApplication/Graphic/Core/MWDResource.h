@@ -81,36 +81,7 @@ namespace MWDEngine {
 		virtual bool IsLoaded() = 0;
 		virtual const MWDName& GetResourceName() = 0;
 		virtual unsigned int GetResourceType() = 0;
-		//加载整个loadMap，加载之后清空map
-		void LoadEvent()
-		{
-			m_bIsLoaded = true;
-			for (unsigned int i = 0; i < m_LoadedEventObject.GetNum(); i++)
-			{
-				//每种obj需要维护自己的加载逻辑
-				m_LoadedEventObject[i].Key->LoadedEvent(this, m_LoadedEventObject[i].Value);
-			}
-			m_LoadedEventObject.Destroy();
-		}
-		//添加一个需要加载的obj
-		void AddLoadEventObject(MWDObject* pObject, int Data = 0)
-		{
-			if (!pObject)
-			{
-				return;
-			}
-			//如果已经调用过了LoadEvent()，则直接加载这个obj。
-			if (m_bIsLoaded == false)
-			{
-				m_LoadedEventObject.AddElement(pObject, Data);
-			}
-			else
-			{
-				pObject->LoadedEvent(this);
-			}
-		}
 	protected:
-		MWDMap<MWDObjectPtr, int> m_LoadedEventObject;
 		bool	m_bIsLoaded;
 		MWDName	m_ResourceName;
 		void SetResourceName(const MWDName& ResourceName)

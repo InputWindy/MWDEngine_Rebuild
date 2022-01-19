@@ -11,7 +11,7 @@ namespace MWDEngine {
 		DECLARE_RTTI_NoCreateFun(MWDEntity, MWDObject)
 		DECLARE_INITIAL_WITH_INIT_TERMINAL(MWDEntity)
 	public:
-		~MWDEntity() {};
+		~MWDEntity();
 		void SetName(MWDName& name) {
 			m_Name = name;
 			m_bIsChanged = true;
@@ -24,6 +24,13 @@ namespace MWDEngine {
 			return m_Name;
 		}
 		
+		MWDAABB3 GetAABB()const {
+			return m_AABB3;
+		}
+		void SetAABB(const MWDAABB3& aabb3) {
+			m_AABB3 = aabb3;
+		}
+
 		void SetID(unsigned int ID) {
 			m_ID = ID;
 			m_bIsChanged = true;
@@ -189,7 +196,6 @@ namespace MWDEngine {
 			cout << "===============AllComponentsName_Bottom=================" << endl;
 		}
 		
-
 	protected:
 		MWDEntity() {};
 
@@ -208,7 +214,8 @@ namespace MWDEngine {
 
 		MWDAABB3 m_AABB3;
 	};
-
+	DECLARE_Ptr(MWDEntity);
+	MWDTYPE_MARCO(MWDEntity);
 }
 
 

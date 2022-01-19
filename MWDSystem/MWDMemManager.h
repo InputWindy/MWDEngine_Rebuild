@@ -503,7 +503,7 @@ private:
 };
 //==================================================================================//
 }
-#define USE_CUSTOM_NEW
+//#define USE_CUSTOM_NEW
 
 
 #ifdef USE_CUSTOM_NEW

@@ -19,17 +19,17 @@ namespace MWDEngine
 		//顶点数据类型
 		enum
 		{
-			VF_POSITION,
-			VF_TEXCOORD,
-			VF_NORMAL,
-			VF_TANGENT,
-			VF_BINORMAL,
-			VF_PSIZE,
-			VF_COLOR,
-			VF_FOG,
-			VF_DEPTH,
-			VF_BLENDWEIGHT,
-			VF_BLENDINDICES,
+			VF_POSITION,		//Location=0
+			VF_TEXCOORD,		//Location=1
+			VF_NORMAL,			//Location=2
+			VF_TANGENT,			//Location=3
+			VF_BINORMAL,		//Location=4
+			VF_PSIZE,			//Location=5
+			VF_COLOR,			//Location=6
+			VF_FOG,				//Location=7
+			VF_DEPTH,			//Location=8
+			VF_BLENDWEIGHT,		//Location=9
+			VF_BLENDINDICES,	//Location=10
 			VF_MAX
 		};
 

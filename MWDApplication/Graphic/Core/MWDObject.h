@@ -354,14 +354,14 @@ namespace MWDEngine {
 	template<class T>
 	T* DynamicCast(MWDObject* pObj)
 	{
-		return pObj && pObj->IsDerived(T::ms_Type) ? (T*)pObj : 0;
+		return pObj && pObj->IsDerived(*(T::ms_Type)) ? (T*)pObj : 0;
 	}
 
 	//只能父类转子类
 	template<class T>
 	const T* DynamicCast(const MWDObject* pObj)
 	{
-		return pObj && pObj->IsDerived(T::ms_Type) ? (const T*)pObj : 0;
+		return pObj && pObj->IsDerived(*(T::ms_Type)) ? (const T*)pObj : 0;
 	}
 #pragma endregion
 

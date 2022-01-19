@@ -1,0 +1,10 @@
+#include "MWDLineMeshData.h"
+namespace MWDEngine {
+	INITIAL_WITH_INIT_TERMINAL_BEGIN(MWDLineMeshData)
+    ADD_PRIORITY(MWDMeshData)
+    ADD_INITIAL_FUNCTION(InitialClassFactory)
+    INITIAL_WITH_INIT_TERMINAL_END(MWDLineMeshData)
+
+    BEGIN_ADD_PROPERTY(MWDLineMeshData)
+    END_ADD_PROPERTY
+}	

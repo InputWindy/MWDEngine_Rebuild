@@ -46,6 +46,21 @@
     <Filter Include="Graphic\渲染器\Vertex&amp;Index">
       <UniqueIdentifier>{a3e73e17-c712-40fb-90cc-9a6c01ee377f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Graphic\材质">
+      <UniqueIdentifier>{d1a9ee9b-e0d8-4509-a845-80ff19d2ef2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\Node">
+      <UniqueIdentifier>{6d1b1a04-6f05-4118-ab75-8f91ba5f8426}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\Node\Mesh">
+      <UniqueIdentifier>{68456531-80b6-4940-9f33-1686197968e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\Node\Model">
+      <UniqueIdentifier>{05038ec6-ed8a-4491-8db3-b4bfb41b7379}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\Node\Terrain">
+      <UniqueIdentifier>{b6d31c9a-46c4-40db-bb98-d48899fb7c5e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -173,6 +188,30 @@
     </ClCompile>
     <ClCompile Include="Graphic\Vertex&amp;Index\MWDVertexFormat.cpp">
       <Filter>Graphic\渲染器\Vertex&amp;Index</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDTexture.cpp">
+      <Filter>Graphic\渲染器</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDMeshData.cpp">
+      <Filter>Graphic\Node\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDTriangleMeshData.cpp">
+      <Filter>Graphic\Node\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDLineMeshData.cpp">
+      <Filter>Graphic\Node\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDPointMeshData.cpp">
+      <Filter>Graphic\Node\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDBasicGeometryTriangleMeshData.cpp">
+      <Filter>Graphic\Node\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\材质\MWDShaderConstant.cpp">
+      <Filter>Graphic\材质</Filter>
+    </ClCompile>
+    <ClCompile Include="Graphic\材质\MWDShaderSampler.cpp">
+      <Filter>Graphic\材质</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -319,6 +358,30 @@
     </ClInclude>
     <ClInclude Include="Graphic\Vertex&amp;Index\MWDVertexFormat.h">
       <Filter>Graphic\渲染器\Vertex&amp;Index</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDTexture.h">
+      <Filter>Graphic\渲染器</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDMeshData.h">
+      <Filter>Graphic\Node\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDTriangleMeshData.h">
+      <Filter>Graphic\Node\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDLineMeshData.h">
+      <Filter>Graphic\Node\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDPointMeshData.h">
+      <Filter>Graphic\Node\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDBasicGeometryTriangleMeshData.h">
+      <Filter>Graphic\Node\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\材质\MWDShaderConstant.h">
+      <Filter>Graphic\材质</Filter>
+    </ClInclude>
+    <ClInclude Include="Graphic\材质\MWDShaderSampler.h">
+      <Filter>Graphic\材质</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

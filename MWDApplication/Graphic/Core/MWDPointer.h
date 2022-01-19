@@ -28,8 +28,6 @@ namespace MWDEngine{
 				m_pObject = NULL;
 			}
 		};
-
-
 		T& operator* () const { return *m_pObject; };
 		T* operator-> () const { return m_pObject; };
 

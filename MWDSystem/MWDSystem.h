@@ -6,6 +6,7 @@
 #include <assert.h>
 #include <sys/stat.h>
 #include <windows.h>
+#include <iostream>
 #pragma warning(disable:4251)
 #pragma warning(disable:4595)
 #pragma warning(disable:4091)
@@ -16,7 +17,7 @@
 #else 
 #define MWDSYSTEM_API __declspec(dllimport) 
 #endif
-
+using namespace std;
 namespace  MWDEngine
 {
 	/*
@@ -51,6 +52,12 @@ namespace  MWDEngine
 		static inline TCHAR ms_sLogBuffer[LOG_BUFFER_SIZE];//日志输出
 	};
 	#pragma region 库函数封装
+#define LogBuffer(buf,size) \
+		for (int i = 0; i < size; ++i) {\
+			cout << ((int*)buf)[i] << " ";\
+		}\
+		cout << endl;
+		
 
 	FORCEINLINE bool MWDMemcpy(void* pDest, const void* pSrc, unsigned int uiCountSize, unsigned int uiDestBufferSize = 0)
 		{

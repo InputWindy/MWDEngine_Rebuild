@@ -1,6 +1,5 @@
 #include "pch.h"
 #include "MWDBind.h"
-//#include "MWDDefaultResource.h"
 namespace MWDEngine {
 
 	INITIAL_WITH_INIT_TERMINAL_BEGIN(MWDBind)
