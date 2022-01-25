@@ -4,10 +4,10 @@ using namespace std;
 #include "MWDContainer.h"
 namespace MWDEngine {
 #define TcharToChar(pTchar) \
-	MWDString::TCHARToChar(pTchar);
+	MWDString::TCHARToChar(pTchar)
 
 #define CharToTchar(pChar) \
-	MWDString::CharToTCHAR(pChar);
+	MWDString::CharToTCHAR(pChar)
 
 
 	class MWDDATASTRUCT_API MWDString

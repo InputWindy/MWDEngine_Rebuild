@@ -19,47 +19,41 @@
     <Filter Include="Graphic\Core">
       <UniqueIdentifier>{a9eb6e55-c792-4dd3-871e-51a22feb0b6e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Graphic\场景管理">
-      <UniqueIdentifier>{b17797ec-e328-48b7-9dca-bfa4e3825f96}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Graphic\渲染器">
-      <UniqueIdentifier>{8293cc6c-2b16-4b25-8a10-43ab9381613f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Graphic\渲染器\OpenglApi">
-      <UniqueIdentifier>{03098824-a237-4e5a-b7d9-b7e9ef2c88c6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Graphic\场景管理\实体">
-      <UniqueIdentifier>{9f8b0170-db6b-4a4a-b242-791d6dba7cd4}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Graphic\场景管理\组件">
-      <UniqueIdentifier>{0c9766bb-4925-434c-b9e4-768944dcccae}</UniqueIdentifier>
-    </Filter>
     <Filter Include="头文件\imgui">
       <UniqueIdentifier>{45de2d23-2114-4006-9dbe-1458d224173b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Graphic\渲染器\渲染状态">
-      <UniqueIdentifier>{b8e6001a-83f5-4458-8696-b6efce25e8a6}</UniqueIdentifier>
+    <Filter Include="Graphic\渲染器">
+      <UniqueIdentifier>{e3d883fc-9c4d-418b-a9e7-4b585741e343}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Graphic\渲染器\RenderTarget">
-      <UniqueIdentifier>{e743278d-7e5e-4340-a396-384f054dbd3d}</UniqueIdentifier>
+    <Filter Include="Graphic\渲染器\OpenglAPI">
+      <UniqueIdentifier>{573ad27f-18c5-4e48-b675-fb9db52067ec}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Graphic\渲染器\Vertex&amp;Index">
-      <UniqueIdentifier>{a3e73e17-c712-40fb-90cc-9a6c01ee377f}</UniqueIdentifier>
+    <Filter Include="Graphic\渲染器\DataBuffer">
+      <UniqueIdentifier>{d1619bee-90a6-43e1-a59e-3a969519efa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\Mesh">
+      <UniqueIdentifier>{e8f6581c-ca21-4d82-8a08-d090b65bc0c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\场景管理">
+      <UniqueIdentifier>{d00aab30-4b02-4d8d-910b-46c75a58ef1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\场景管理\组件">
+      <UniqueIdentifier>{9c5790ec-d01f-4d3e-afb6-7f6202d841d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphic\场景管理\实体">
+      <UniqueIdentifier>{87232e12-55b1-4bdf-bc64-3a7d62c88a3c}</UniqueIdentifier>
     </Filter>
     <Filter Include="Graphic\材质">
-      <UniqueIdentifier>{d1a9ee9b-e0d8-4509-a845-80ff19d2ef2c}</UniqueIdentifier>
+      <UniqueIdentifier>{1315c58e-a417-47e4-abbe-774a4847ef8b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Graphic\Node">
-      <UniqueIdentifier>{6d1b1a04-6f05-4118-ab75-8f91ba5f8426}</UniqueIdentifier>
+    <Filter Include="Graphic\材质\Shader">
+      <UniqueIdentifier>{98d08b6e-749a-474b-9f62-fe600b83bead}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Graphic\Node\Mesh">
-      <UniqueIdentifier>{68456531-80b6-4940-9f33-1686197968e7}</UniqueIdentifier>
+    <Filter Include="Graphic\渲染器\RenderState">
+      <UniqueIdentifier>{8dc7815c-334a-48cb-afb1-7edf4a03032f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Graphic\Node\Model">
-      <UniqueIdentifier>{05038ec6-ed8a-4491-8db3-b4bfb41b7379}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Graphic\Node\Terrain">
-      <UniqueIdentifier>{b6d31c9a-46c4-40db-bb98-d48899fb7c5e}</UniqueIdentifier>
+    <Filter Include="Graphic\渲染器\Pass">
+      <UniqueIdentifier>{74a2a3a2-4aa4-4537-ad7c-07000c618326}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -87,30 +81,6 @@
     <ClCompile Include="Graphic\Core\MWDObject.cpp">
       <Filter>Graphic\Core</Filter>
     </ClCompile>
-    <ClCompile Include="Graphic\场景管理\组件\MWDComponent.cpp">
-      <Filter>Graphic\场景管理\组件</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphic\场景管理\Entity\MWDEntity.cpp">
-      <Filter>Graphic\场景管理\实体</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphic\场景管理\组件\MWDLight.cpp">
-      <Filter>Graphic\场景管理\组件</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphic\场景管理\组件\MWDTransform.cpp">
-      <Filter>Graphic\场景管理\组件</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphic\场景管理\Entity\MWDCamera.cpp">
-      <Filter>Graphic\场景管理\实体</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphic\场景管理\Entity\MWDLightEntity.cpp">
-      <Filter>Graphic\场景管理\实体</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphic\场景管理\MWDScene.cpp">
-      <Filter>Graphic\场景管理</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphic\场景管理\MWDWorld.cpp">
-      <Filter>Graphic\场景管理</Filter>
-    </ClCompile>
     <ClCompile Include="..\depend\glad\src\glad.c">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -135,83 +105,122 @@
     <ClCompile Include="..\depend\imgui\imgui_widgets.cpp">
       <Filter>头文件\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDEBO.cpp">
-      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    <ClCompile Include="MWDVAO.cpp">
+      <Filter>Graphic\渲染器\OpenglAPI</Filter>
     </ClCompile>
-    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDFBO.cpp">
-      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    <ClCompile Include="MWDVBO.cpp">
+      <Filter>Graphic\渲染器\OpenglAPI</Filter>
     </ClCompile>
-    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDOpenglShader.cpp">
-      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    <ClCompile Include="MWDIBO.cpp">
+      <Filter>Graphic\渲染器\OpenglAPI</Filter>
     </ClCompile>
-    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDOpenglShaderProgram.cpp">
-      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    <ClCompile Include="MWDRBO.cpp">
+      <Filter>Graphic\渲染器\OpenglAPI</Filter>
     </ClCompile>
-    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDOpenglTexture.cpp">
-      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    <ClCompile Include="MWDFBO.cpp">
+      <Filter>Graphic\渲染器\OpenglAPI</Filter>
     </ClCompile>
-    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDRBO.cpp">
-      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    <ClCompile Include="MWDGLTexture.cpp">
+      <Filter>Graphic\渲染器\OpenglAPI</Filter>
     </ClCompile>
-    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDVAO.cpp">
-      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    <ClCompile Include="MWDGLShader.cpp">
+      <Filter>Graphic\渲染器\OpenglAPI</Filter>
     </ClCompile>
-    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDVBO.cpp">
-      <Filter>Graphic\渲染器\OpenglApi</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphic\渲染器\MWDBind.cpp">
+    <ClCompile Include="MWDBind.cpp">
       <Filter>Graphic\渲染器</Filter>
     </ClCompile>
-    <ClCompile Include="Graphic\渲染器\渲染状态\MWDBlendState.cpp">
-      <Filter>Graphic\渲染器\渲染状态</Filter>
+    <ClCompile Include="MWDDataBuffer.cpp">
+      <Filter>Graphic\渲染器\DataBuffer</Filter>
     </ClCompile>
-    <ClCompile Include="Graphic\渲染器\渲染状态\MWDDepthStencilState.cpp">
-      <Filter>Graphic\渲染器\渲染状态</Filter>
+    <ClCompile Include="MWDIndexBuffer.cpp">
+      <Filter>Graphic\渲染器\DataBuffer</Filter>
     </ClCompile>
-    <ClCompile Include="Graphic\渲染器\渲染状态\MWDRasterizerState.cpp">
-      <Filter>Graphic\渲染器\渲染状态</Filter>
+    <ClCompile Include="MWDGLShaderProgram.cpp">
+      <Filter>Graphic\渲染器\OpenglAPI</Filter>
     </ClCompile>
-    <ClCompile Include="Graphic\渲染器\渲染状态\MWDRenderState.cpp">
-      <Filter>Graphic\渲染器\渲染状态</Filter>
+    <ClCompile Include="MWDVertexFormat.cpp">
+      <Filter>Graphic\渲染器\DataBuffer</Filter>
     </ClCompile>
-    <ClCompile Include="Graphic\渲染器\渲染状态\MWDSamplerState.cpp">
-      <Filter>Graphic\渲染器\渲染状态</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphic\Vertex&amp;Index\MWDDataBuffer.cpp">
-      <Filter>Graphic\渲染器\Vertex&amp;Index</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphic\Vertex&amp;Index\MWDIndexBuffer.cpp">
-      <Filter>Graphic\渲染器\Vertex&amp;Index</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphic\Vertex&amp;Index\MWDVertexBuffer.cpp">
-      <Filter>Graphic\渲染器\Vertex&amp;Index</Filter>
-    </ClCompile>
-    <ClCompile Include="Graphic\Vertex&amp;Index\MWDVertexFormat.cpp">
-      <Filter>Graphic\渲染器\Vertex&amp;Index</Filter>
-    </ClCompile>
-    <ClCompile Include="MWDTexture.cpp">
-      <Filter>Graphic\渲染器</Filter>
+    <ClCompile Include="MWDVertexBuffer.cpp">
+      <Filter>Graphic\渲染器\DataBuffer</Filter>
     </ClCompile>
     <ClCompile Include="MWDMeshData.cpp">
-      <Filter>Graphic\Node\Mesh</Filter>
+      <Filter>Graphic\Mesh</Filter>
     </ClCompile>
     <ClCompile Include="MWDTriangleMeshData.cpp">
-      <Filter>Graphic\Node\Mesh</Filter>
-    </ClCompile>
-    <ClCompile Include="MWDLineMeshData.cpp">
-      <Filter>Graphic\Node\Mesh</Filter>
+      <Filter>Graphic\Mesh</Filter>
     </ClCompile>
     <ClCompile Include="MWDPointMeshData.cpp">
-      <Filter>Graphic\Node\Mesh</Filter>
+      <Filter>Graphic\Mesh</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDLineMeshData.cpp">
+      <Filter>Graphic\Mesh</Filter>
     </ClCompile>
     <ClCompile Include="MWDBasicGeometryTriangleMeshData.cpp">
-      <Filter>Graphic\Node\Mesh</Filter>
+      <Filter>Graphic\Mesh</Filter>
     </ClCompile>
-    <ClCompile Include="Graphic\材质\MWDShaderConstant.cpp">
+    <ClCompile Include="MWDComponent.cpp">
+      <Filter>Graphic\场景管理\组件</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDLight.cpp">
+      <Filter>Graphic\场景管理\组件</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDEntity.cpp">
+      <Filter>Graphic\场景管理\实体</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDLightEntity.cpp">
+      <Filter>Graphic\场景管理\实体</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDTransform.cpp">
+      <Filter>Graphic\场景管理\组件</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDCamera.cpp">
+      <Filter>Graphic\场景管理\实体</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDScene.cpp">
+      <Filter>Graphic\场景管理</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDWorld.cpp">
+      <Filter>Graphic\场景管理</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDMeshComponent.cpp">
+      <Filter>Graphic\场景管理\组件</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDBlendState.cpp">
+      <Filter>Graphic\渲染器\RenderState</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDDepthStencilState.cpp">
+      <Filter>Graphic\渲染器\RenderState</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDRasterizerState.cpp">
+      <Filter>Graphic\渲染器\RenderState</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDRenderState.cpp">
+      <Filter>Graphic\渲染器\RenderState</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDTexture.cpp">
       <Filter>Graphic\材质</Filter>
     </ClCompile>
-    <ClCompile Include="Graphic\材质\MWDShaderSampler.cpp">
+    <ClCompile Include="MWDShaderConstant.cpp">
+      <Filter>Graphic\材质\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDShaderSampler.cpp">
+      <Filter>Graphic\材质\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDShader.cpp">
+      <Filter>Graphic\材质\Shader</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDPass.cpp">
+      <Filter>Graphic\渲染器\Pass</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDMaterial.cpp">
       <Filter>Graphic\材质</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDMeshRenderer.cpp">
+      <Filter>Graphic\场景管理\组件</Filter>
+    </ClCompile>
+    <ClCompile Include="MWDRenderer.cpp">
+      <Filter>Graphic\渲染器</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -244,30 +253,6 @@
     </ClInclude>
     <ClInclude Include="Graphic\Core\MWDObject.h">
       <Filter>Graphic\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphic\场景管理\组件\MWDComponent.h">
-      <Filter>Graphic\场景管理\组件</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphic\场景管理\Entity\MWDEntity.h">
-      <Filter>Graphic\场景管理\实体</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphic\场景管理\组件\MWDLight.h">
-      <Filter>Graphic\场景管理\组件</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphic\场景管理\组件\MWDTransform.h">
-      <Filter>Graphic\场景管理\组件</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphic\场景管理\Entity\MWDCamera.h">
-      <Filter>Graphic\场景管理\实体</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphic\场景管理\Entity\MWDLightEntity.h">
-      <Filter>Graphic\场景管理\实体</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphic\场景管理\MWDScene.h">
-      <Filter>Graphic\场景管理</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphic\场景管理\MWDWorld.h">
-      <Filter>Graphic\场景管理</Filter>
     </ClInclude>
     <ClInclude Include="..\depend\imgui\imconfig.h">
       <Filter>头文件\imgui</Filter>
@@ -302,86 +287,122 @@
     <ClInclude Include="MWDCommand.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDEBO.h">
-      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    <ClInclude Include="MWDVAO.h">
+      <Filter>Graphic\渲染器\OpenglAPI</Filter>
     </ClInclude>
-    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDFBO.h">
-      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    <ClInclude Include="MWDVBO.h">
+      <Filter>Graphic\渲染器\OpenglAPI</Filter>
     </ClInclude>
-    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDOpenglShader.h">
-      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    <ClInclude Include="MWDIBO.h">
+      <Filter>Graphic\渲染器\OpenglAPI</Filter>
     </ClInclude>
-    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDOpenglShaderProgram.h">
-      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    <ClInclude Include="MWDRBO.h">
+      <Filter>Graphic\渲染器\OpenglAPI</Filter>
     </ClInclude>
-    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDOpenglTexture.h">
-      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    <ClInclude Include="MWDFBO.h">
+      <Filter>Graphic\渲染器\OpenglAPI</Filter>
     </ClInclude>
-    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDRBO.h">
-      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    <ClInclude Include="MWDGLTexture.h">
+      <Filter>Graphic\渲染器\OpenglAPI</Filter>
     </ClInclude>
-    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDVAO.h">
-      <Filter>Graphic\渲染器\OpenglApi</Filter>
+    <ClInclude Include="MWDGLShader.h">
+      <Filter>Graphic\渲染器\OpenglAPI</Filter>
     </ClInclude>
-    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDVBO.h">
-      <Filter>Graphic\渲染器\OpenglApi</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphic\渲染器\OpenGLAPI\OpenglAPIInclude.h">
-      <Filter>Graphic\渲染器\OpenglApi</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphic\渲染器\MWDBind.h">
+    <ClInclude Include="MWDBind.h">
       <Filter>Graphic\渲染器</Filter>
     </ClInclude>
-    <ClInclude Include="Graphic\渲染器\渲染状态\MWDBlendState.h">
-      <Filter>Graphic\渲染器\渲染状态</Filter>
+    <ClInclude Include="MWDDataBuffer.h">
+      <Filter>Graphic\渲染器\DataBuffer</Filter>
     </ClInclude>
-    <ClInclude Include="Graphic\渲染器\渲染状态\MWDDepthStencilState.h">
-      <Filter>Graphic\渲染器\渲染状态</Filter>
+    <ClInclude Include="MWDIndexBuffer.h">
+      <Filter>Graphic\渲染器\DataBuffer</Filter>
     </ClInclude>
-    <ClInclude Include="Graphic\渲染器\渲染状态\MWDRasterizerState.h">
-      <Filter>Graphic\渲染器\渲染状态</Filter>
+    <ClInclude Include="MWDGLShaderProgram.h">
+      <Filter>Graphic\渲染器\OpenglAPI</Filter>
     </ClInclude>
-    <ClInclude Include="Graphic\渲染器\渲染状态\MWDRenderState.h">
-      <Filter>Graphic\渲染器\渲染状态</Filter>
+    <ClInclude Include="MWDVertexFormat.h">
+      <Filter>Graphic\渲染器\DataBuffer</Filter>
     </ClInclude>
-    <ClInclude Include="Graphic\渲染器\渲染状态\MWDSamplerState.h">
-      <Filter>Graphic\渲染器\渲染状态</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphic\Vertex&amp;Index\MWDDataBuffer.h">
-      <Filter>Graphic\渲染器\Vertex&amp;Index</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphic\Vertex&amp;Index\MWDIndexBuffer.h">
-      <Filter>Graphic\渲染器\Vertex&amp;Index</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphic\Vertex&amp;Index\MWDVertexBuffer.h">
-      <Filter>Graphic\渲染器\Vertex&amp;Index</Filter>
-    </ClInclude>
-    <ClInclude Include="Graphic\Vertex&amp;Index\MWDVertexFormat.h">
-      <Filter>Graphic\渲染器\Vertex&amp;Index</Filter>
-    </ClInclude>
-    <ClInclude Include="MWDTexture.h">
-      <Filter>Graphic\渲染器</Filter>
+    <ClInclude Include="MWDVertexBuffer.h">
+      <Filter>Graphic\渲染器\DataBuffer</Filter>
     </ClInclude>
     <ClInclude Include="MWDMeshData.h">
-      <Filter>Graphic\Node\Mesh</Filter>
+      <Filter>Graphic\Mesh</Filter>
     </ClInclude>
     <ClInclude Include="MWDTriangleMeshData.h">
-      <Filter>Graphic\Node\Mesh</Filter>
-    </ClInclude>
-    <ClInclude Include="MWDLineMeshData.h">
-      <Filter>Graphic\Node\Mesh</Filter>
+      <Filter>Graphic\Mesh</Filter>
     </ClInclude>
     <ClInclude Include="MWDPointMeshData.h">
-      <Filter>Graphic\Node\Mesh</Filter>
+      <Filter>Graphic\Mesh</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDLineMeshData.h">
+      <Filter>Graphic\Mesh</Filter>
     </ClInclude>
     <ClInclude Include="MWDBasicGeometryTriangleMeshData.h">
-      <Filter>Graphic\Node\Mesh</Filter>
+      <Filter>Graphic\Mesh</Filter>
     </ClInclude>
-    <ClInclude Include="Graphic\材质\MWDShaderConstant.h">
+    <ClInclude Include="MWDComponent.h">
+      <Filter>Graphic\场景管理\组件</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDLight.h">
+      <Filter>Graphic\场景管理\组件</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDEntity.h">
+      <Filter>Graphic\场景管理\实体</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDLightEntity.h">
+      <Filter>Graphic\场景管理\实体</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDTransform.h">
+      <Filter>Graphic\场景管理\组件</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDCamera.h">
+      <Filter>Graphic\场景管理\实体</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDScene.h">
+      <Filter>Graphic\场景管理</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDWorld.h">
+      <Filter>Graphic\场景管理</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDMeshComponent.h">
+      <Filter>Graphic\场景管理\组件</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDBlendState.h">
+      <Filter>Graphic\渲染器\RenderState</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDDepthStencilState.h">
+      <Filter>Graphic\渲染器\RenderState</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDRasterizerState.h">
+      <Filter>Graphic\渲染器\RenderState</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDRenderState.h">
+      <Filter>Graphic\渲染器\RenderState</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDTexture.h">
       <Filter>Graphic\材质</Filter>
     </ClInclude>
-    <ClInclude Include="Graphic\材质\MWDShaderSampler.h">
+    <ClInclude Include="MWDShaderConstant.h">
+      <Filter>Graphic\材质\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDShaderSampler.h">
+      <Filter>Graphic\材质\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDShader.h">
+      <Filter>Graphic\材质\Shader</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDPass.h">
+      <Filter>Graphic\渲染器\Pass</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDMaterial.h">
       <Filter>Graphic\材质</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDMeshRenderer.h">
+      <Filter>Graphic\场景管理\组件</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDRenderer.h">
+      <Filter>Graphic\渲染器</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

@@ -85,7 +85,7 @@ namespace MWDEngine {
 			}
 			if (!m_pIndexBuffer)
 			{
-				m_pIndexBuffer = new MWDIndexBuffer();
+				m_pIndexBuffer =new MWDIndexBuffer();
 				if (!m_pIndexBuffer)
 				{
 					return 0;

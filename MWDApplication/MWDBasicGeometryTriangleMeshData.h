@@ -11,11 +11,12 @@ namespace MWDEngine {
 	public:
 		MWDBasicGeometryTriangleMeshData(const MWDAABB3& AABB) {
 			MWDVector3 VertexData[8];
-			MWD::GetPoint(AABB,VertexData);
-			MWDDataBuffer* pVertex = new MWDDataBuffer;
+			MWD::GetPoint(AABB, VertexData);
+			MWDDataBuffer* pVertex = new MWDDataBuffer();
 			pVertex->SetData(VertexData, 8, MWDDataBuffer::DataType_FLOAT32_3);
-			m_pVertexBuffer = new MWDVertexBuffer(true);
+			m_pVertexBuffer =new MWDVertexBuffer();
 			m_pVertexBuffer->SetData(pVertex, MWDVertexFormat::VF_POSITION);
+			
 			MWDUSHORT_INDEX Index[36];
 			//前面的2个三角形
 			Index[0] = 0;  Index[1] = 1;  Index[2] = 2;
@@ -38,22 +39,20 @@ namespace MWDEngine {
 			Index[30] = 2;  Index[31] = 6;  Index[32] = 7;
 			Index[33] = 2;  Index[34] = 7;  Index[35] = 3;
 
-			MWDDataBuffer* pIndexDataBuffer = new MWDDataBuffer;
-			pIndexDataBuffer->SetData(Index, 36, MWDDataBuffer::DataType_USHORT);
-
+			MWDDataBuffer* pIndexDataBuffer = new MWDDataBuffer();
+			pIndexDataBuffer->SetData(&Index[0], 36, MWDDataBuffer::DataType_USHORT);
 			if (!m_pIndexBuffer)
 			{
-				m_pIndexBuffer = new MWDIndexBuffer();
+				m_pIndexBuffer =new MWDIndexBuffer();
 			}
-
 			m_pIndexBuffer->SetData(pIndexDataBuffer);
 		};
 		MWDBasicGeometryTriangleMeshData(const MWDOBB3& OBB) {
 			MWDVector3 VertexData[8];
-			MWD::GetPoint(OBB,VertexData);
+			MWD::GetPoint(OBB, VertexData);
 			MWDDataBuffer* pVertex = new MWDDataBuffer;
 			pVertex->SetData(VertexData, 8, MWDDataBuffer::DataType_FLOAT32_3);
-			m_pVertexBuffer = new MWDVertexBuffer(true);
+			m_pVertexBuffer = new MWDVertexBuffer();
 			m_pVertexBuffer->SetData(pVertex, MWDVertexFormat::VF_POSITION);
 			MWDUSHORT_INDEX Index[36];
 			//前面的2个三角形
@@ -82,7 +81,7 @@ namespace MWDEngine {
 
 			if (!m_pIndexBuffer)
 			{
-				m_pIndexBuffer = new MWDIndexBuffer();
+				m_pIndexBuffer =new MWDIndexBuffer();
 
 			}
 
@@ -102,7 +101,7 @@ namespace MWDEngine {
 			LongitudeNum++;
 			unsigned int LatitudeNum = unsigned int(360.0f / LatitudeAngle) + 1;
 
-			MWDDataBuffer* pVertex = new MWDDataBuffer;
+			MWDDataBuffer* pVertex = new MWDDataBuffer();
 			pVertex->CreateEmptyBuffer(LongitudeNum * LatitudeNum, MWDDataBuffer::DataType_FLOAT32_3);
 
 			MWDVector3* pVertexData = (MWDVector3*)pVertex->GetData();
@@ -126,7 +125,7 @@ namespace MWDEngine {
 				}
 				i = i + LongitudeAngle;
 			}
-			m_pVertexBuffer = new MWDVertexBuffer(true);
+			m_pVertexBuffer =new MWDVertexBuffer();
 			m_pVertexBuffer->SetData(pVertex, MWDVertexFormat::VF_POSITION);
 
 			MWDDataBuffer* pIndexDataBuffer = new MWDDataBuffer;
@@ -166,7 +165,7 @@ namespace MWDEngine {
 
 			if (!m_pIndexBuffer)
 			{
-				m_pIndexBuffer = new MWDIndexBuffer();
+				m_pIndexBuffer =new MWDIndexBuffer();
 
 			}
 
@@ -187,7 +186,7 @@ namespace MWDEngine {
 
 			MWDDataBuffer* pVertex = new MWDDataBuffer;
 			pVertex->SetData(VertexData, 4, MWDDataBuffer::DataType_FLOAT32_3);
-			m_pVertexBuffer = new MWDVertexBuffer(true);
+			m_pVertexBuffer =new MWDVertexBuffer();
 			m_pVertexBuffer->SetData(pVertex, MWDVertexFormat::VF_POSITION);
 
 			MWDUSHORT_INDEX Index[6];
@@ -200,7 +199,7 @@ namespace MWDEngine {
 
 			if (!m_pIndexBuffer)
 			{
-				m_pIndexBuffer = new MWDIndexBuffer();
+				m_pIndexBuffer =new MWDIndexBuffer();
 
 			}
 
@@ -211,7 +210,7 @@ namespace MWDEngine {
 			Triangle.GetPoint(VertexData);
 			MWDDataBuffer* pVertex = new MWDDataBuffer;
 			pVertex->SetData(VertexData, 3, MWDDataBuffer::DataType_FLOAT32_3);
-			m_pVertexBuffer = new MWDVertexBuffer(true);
+			m_pVertexBuffer = new MWDVertexBuffer();
 			m_pVertexBuffer->SetData(pVertex, MWDVertexFormat::VF_POSITION);
 
 			MWDUSHORT_INDEX Index[3];
@@ -232,7 +231,7 @@ namespace MWDEngine {
 			Rectangle.GetPoint(VertexData);
 			MWDDataBuffer* pVertex = new MWDDataBuffer;
 			pVertex->SetData(VertexData, 4, MWDDataBuffer::DataType_FLOAT32_3);
-			m_pVertexBuffer = new MWDVertexBuffer(true);
+			m_pVertexBuffer = new MWDVertexBuffer();
 			m_pVertexBuffer->SetData(pVertex, MWDVertexFormat::VF_POSITION);
 
 			MWDUSHORT_INDEX Index[6];
@@ -255,13 +254,15 @@ namespace MWDEngine {
 			MWDMAC_ASSERT(Polyon.GetpPoint() && Polyon.GetPointNum());
 
 			MWDDataBuffer* pVertex = new MWDDataBuffer;
-			pVertex->SetData(Polyon.GetpPoint(), Polyon.GetPointNum(), MWDDataBuffer::DataType_FLOAT32_3);
-			m_pVertexBuffer = new MWDVertexBuffer(true);
+			MWDVector3 tmp = *Polyon.GetpPoint();
+			int buf[3] = { tmp.x,tmp.y,tmp.z };
+			pVertex->SetData(&buf[0], Polyon.GetPointNum(), MWDDataBuffer::DataType_FLOAT32_3);
+			m_pVertexBuffer = new MWDVertexBuffer(); 
 			m_pVertexBuffer->SetData(pVertex, MWDVertexFormat::VF_POSITION);
 
 
 			MWDDataBuffer* pIndexDataBuffer = new MWDDataBuffer;
-			pIndexDataBuffer->SetData(Polyon.GetpIndex(), Polyon.GetIndexNum(), MWDDataBuffer::DataType_USHORT);
+			pIndexDataBuffer->SetData((void*)Polyon.GetpIndex(), Polyon.GetIndexNum(), MWDDataBuffer::DataType_USHORT);
 
 			if (!m_pIndexBuffer)
 			{

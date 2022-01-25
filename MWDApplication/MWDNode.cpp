@@ -1,9 +1,0 @@
-#include "pch.h"
-#include "MWDNode.h"
-namespace MWDEngine {
-	INITIAL_WITH_INIT_TERMINAL_BEGIN(MWDNode)
-	INITIAL_WITH_INIT_TERMINAL_END(MWDNode)
-
-	BEGIN_ADD_PROPERTY(MWDNode)
-	END_ADD_PROPERTY
-}

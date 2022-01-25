@@ -112,10 +112,10 @@ int  main(int argc, char* argv[])
 //REGISTER_RETURN_FUNCTION_FOURPARAMETER(testClassA, testK, 0, int, int, a, double, b, char, c, int, d)
 //#define STB_IMAGE_IMPLEMENTATION
 //#include <stb_image.h>
-#include "MWDBasicGeometryTriangleMeshData.h"
 int main() {
     MWDMain::Initialize(); 
-	MWDAABB3 aabb3 = *new MWDAABB3();
+	MWDAABB3 aabb = MWDAABB3();
+	MWDSphere3 s = MWDSphere3();
 	#pragma region glfw³õÊ¼»¯
 	if (!glfwInit())
 		return -1;
@@ -138,19 +138,26 @@ int main() {
 	ImGuiInit(Hwindow);
 
 	#pragma endregion
-
-
-
-
+	
+	/*MWDBasicGeometryTriangleMeshData* mesh = new MWDBasicGeometryTriangleMeshData(s); 
+	MWDMeshComponent* component = new MWDMeshComponent();
+	component->SetMesh(mesh);
+	MWDWorld* mainWorld = MWDWorld::GetMainWorld();
+	mainWorld->CreateNewScene();
+	MWDScene* scene = mainWorld->GetSceneByName(_T("default_scene"));
+	MWDCamera* camera = new MWDCamera();
+	camera->AddComponent(*component);
+	scene->AddCamera(camera);
+	cout<<mainWorld->GetSceneByName(_T("default_scene"))->GetAllCamera()[0]->GetComponentByType<MWDMeshComponent>()->GetMeshData()->GetVertexBuffer()->GetNum()<<endl;
+	cout << mainWorld->GetSceneByName(_T("default_scene"))->GetAllCamera()[0]->GetComponentByType<MWDMeshComponent>()->GetMeshData()->GetIndexBuffer()->GetNum() << endl;*/
 	while (!glfwWindowShouldClose(Hwindow)) {
 		ImGuiFrameBegin();
-		//ImGui::ShowDemoWindow();
-		MWDCamera* maincamera = MWDCamera::GetMainCamera();
-		ImGui::Begin(maincamera->GetName().MWDNameToChar());
-		ImGui::End();
+		ImGui::ShowDemoWindow();
 		ImGuiFrameEnd(Hwindow);
 	};
+
 	#pragma region glfw½áÊø
+	//MWDMAC_DELETE(mesh);
 	ImGuiTerminate();
 	#pragma endregion
 	MWDMain::Terminate();

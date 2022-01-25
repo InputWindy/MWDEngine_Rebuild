@@ -2,7 +2,9 @@
 #include "MWDMeshData.h"
 namespace MWDEngine {
 
-	//只负责实现相关方法，不维护新数据
+	//可以手动设置顶点，索引。
+	//也可以只设置顶点，自动解析出索引。
+	//也可以只有顶点位置，解析出法线，副法线，切线数据。
 	class MWDTriangleMeshData : public MWDMeshData
 	{
 		DECLARE_CLASS_FUNCTION(MWDTriangleMeshData)
@@ -38,7 +40,7 @@ namespace MWDEngine {
 			}
 			if (!m_pIndexBuffer)
 			{
-				m_pIndexBuffer = new MWDIndexBuffer();
+				m_pIndexBuffer =new MWDIndexBuffer();
 				if (!m_pIndexBuffer)
 				{
 					return 0;
@@ -49,7 +51,6 @@ namespace MWDEngine {
 
 			return 1;
 		};
-
 		//通过顶点Position，自动解析生成顶点法线
 		bool CreateNormal() {
 			if (m_pVertexBuffer == NULL)
@@ -80,7 +81,7 @@ namespace MWDEngine {
 
 			unsigned int TriangleNum = GetTotleNum();
 
-			MWDDataBuffer* pIndexData = m_pIndexBuffer->GetIndexData();
+			MWDDataBuffer* pIndexData = m_pIndexBuffer->GetData();
 			if (!pIndexData)
 			{
 				return 0;
@@ -183,7 +184,7 @@ namespace MWDEngine {
 			unsigned int TriangleNum = GetTotleNum();
 
 
-			MWDDataBuffer* pIndexData = m_pIndexBuffer->GetIndexData();
+			MWDDataBuffer* pIndexData = m_pIndexBuffer->GetData();
 			if (!pIndexData)
 			{
 				return 0;
@@ -273,7 +274,7 @@ namespace MWDEngine {
 		};
 
 		//获取三角形数量（如果没有创建索引，就是顶点个数/3。如果创建了索引，就是索引长度/3）
-		virtual unsigned int GetTotleNum()const {
+		virtual unsigned int GetPrimitivesNum()const {
 			if (!m_pIndexBuffer && !m_pVertexBuffer)
 			{
 				return 0;
@@ -288,7 +289,6 @@ namespace MWDEngine {
 			}
 		};
 		virtual unsigned int GetMeshDataType() { return MDT_TRIANGLE; }
-
 
 	};
 	DECLARE_Ptr(MWDTriangleMeshData);

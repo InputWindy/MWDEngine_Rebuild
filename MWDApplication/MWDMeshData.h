@@ -1,7 +1,7 @@
 #pragma once
-#include "../../Vertex&Index/MWDVertexBuffer.h"
-#include "../../Vertex&Index/MWDIndexBuffer.h"
-namespace MWDEngine{
+#include "MWDIndexBuffer.h"
+#include "MWDVertexBuffer.h"
+namespace MWDEngine {
 	//MeshData维护IndexBuffer和VertexBuffer
 	//IndexBuffer和VertexBuffer的数据都可以从Obj文件解析获得
 	//IndexBuffer长度要比顶点数量多
@@ -11,6 +11,7 @@ namespace MWDEngine{
 		DECLARE_RTTI_NoCreateFun(MWDMeshData, MWDObject)
 		DECLARE_INITIAL_WITH_INIT_TERMINAL(MWDMeshData)
 	public:
+		enum { DRAW_MATH_ELEMENT_LENGTH = 10000 };
 		enum //MeshData Type
 		{
 			MDT_POINT,
@@ -19,28 +20,41 @@ namespace MWDEngine{
 			MDT_MAX
 		};
 		virtual ~MWDMeshData() {
-			m_pVertexBuffer = NULL;
-			m_pIndexBuffer = NULL;
+			MWDMAC_DELETE(m_pVertexBuffer)
+			MWDMAC_DELETE(m_pIndexBuffer)
 		};
-		MWDMeshData() {
-			m_pVertexBuffer = NULL;
-			m_pIndexBuffer = NULL;
+		MWDMeshData(MWDIndexBuffer* pIndexBuffer, MWDVertexBuffer* pVertexBuffer) {
+			SetIndexBuffer(pIndexBuffer);
+			SetVertexBuffer(pVertexBuffer);
 		};
+		MWDMeshData(unsigned int index_usage = GL_STATIC_DRAW,unsigned int vertex_target = GL_ARRAY_BUFFER, unsigned int vertex_usage = GL_STATIC_DRAW) {
+			MWDIndexBuffer* idx_buf = new MWDIndexBuffer(index_usage);
+			MWDVertexBuffer* vert_buf = new MWDVertexBuffer(vertex_target, vertex_usage);
+			SetIndexBuffer(idx_buf);
+			SetVertexBuffer(vert_buf);
+		};
+	protected:
+		MWDVertexBuffer* m_pVertexBuffer;
+		MWDIndexBuffer* m_pIndexBuffer;
+
+		unsigned int m_meshType;
+	public:
 		bool SetIndexBuffer(MWDIndexBuffer* pIndexBuffer) {
 			if (!pIndexBuffer)
 				return 0;
 
 			if (pIndexBuffer->GetNum())
 			{
-				m_pIndexBuffer = pIndexBuffer;
+				m_pIndexBuffer =pIndexBuffer ;
 				return 1;
 			}
 			else
 			{
 				return 0;
 			}
+
 		};
-		FORCEINLINE MWDIndexBuffer* GetIndexBuffer()const {
+		MWDIndexBuffer* GetIndexBuffer()const {
 			return m_pIndexBuffer;
 		};
 
@@ -49,36 +63,27 @@ namespace MWDEngine{
 				return 0;
 			if (pVertexBuffer->GetVertexNum())
 			{
-				m_pVertexBuffer = pVertexBuffer;
+				m_pVertexBuffer =pVertexBuffer ;
 				return 1;
 			}
 			else
 			{
 				return 0;
 			}
+
 		};
-		FORCEINLINE MWDVertexBuffer* GetVertexBuffer()const {
+		MWDVertexBuffer* GetVertexBuffer()const {
 			return m_pVertexBuffer;
 		};
 
 		virtual unsigned int GetTotleNum()const {
 			return 0;
-		};
-
-		virtual unsigned int GetMeshDataType() {
-			return MDT_MAX;
-		};
-		virtual unsigned int GetActiveNum()const { 
-			return GetTotleNum();
 		}
-	protected:
-		friend class MWDGeometry;
-		enum
-		{
-			DRAW_MATH_ELEMENT_LENGTH = 10000
-		};
-		MWDVertexBufferPtr	m_pVertexBuffer;
-		MWDIndexBufferPtr	m_pIndexBuffer;
+		//获取Mesh片元数量                        
+		virtual unsigned int GetPrimitivesNum()const {
+			return 0;
+		};                
+		
 	};
 	DECLARE_Ptr(MWDMeshData);
 	MWDTYPE_MARCO(MWDMeshData);

@@ -1,0 +1,11 @@
+#include "MWDVertexBuffer.h"
+namespace MWDEngine {
+	INITIAL_WITH_INIT_TERMINAL_BEGIN(MWDVertexBuffer)
+	ADD_PRIORITY(MWDBind)
+    ADD_INITIAL_FUNCTION(InitialClassFactory)
+    INITIAL_WITH_INIT_TERMINAL_END(MWDVertexBuffer)
+
+    BEGIN_ADD_PROPERTY(MWDVertexBuffer)
+    END_ADD_PROPERTY
+
+}

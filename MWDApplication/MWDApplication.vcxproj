@@ -89,7 +89,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)MWDApplication\Graphic\渲染器\渲染状态;$(SolutionDir)MWDApplication\Graphic\渲染器\OpenGLAPI;$(SolutionDir)depend\imgui;$(SolutionDir)depend\glad\include;$(SolutionDir)depend\glfw\include;$(SolutionDir)MWDDataStruct;$(SolutionDir)MWDMath;$(SolutionDir)MWDSystem;$(SolutionDir)depend\stbimg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MWDApplication\Graphic;$(SolutionDir)depend\imgui;$(SolutionDir)depend\glad\include;$(SolutionDir)depend\glfw\include;$(SolutionDir)MWDDataStruct;$(SolutionDir)MWDMath;$(SolutionDir)MWDSystem;$(SolutionDir)depend\stbimg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -107,7 +107,7 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)MWDApplication\Graphic\渲染器\渲染状态;$(SolutionDir)MWDApplication\Graphic\渲染器\OpenGLAPI;$(SolutionDir)depend\imgui;$(SolutionDir)depend\glad\include;$(SolutionDir)depend\glfw\include;$(SolutionDir)MWDDataStruct;$(SolutionDir)MWDMath;$(SolutionDir)MWDSystem;$(SolutionDir)depend\stbimg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MWDApplication\Graphic;$(SolutionDir)depend\imgui;$(SolutionDir)depend\glad\include;$(SolutionDir)depend\glfw\include;$(SolutionDir)MWDDataStruct;$(SolutionDir)MWDMath;$(SolutionDir)MWDSystem;$(SolutionDir)depend\stbimg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -125,7 +125,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)MWDApplication\Graphic\渲染器\渲染状态;$(SolutionDir)MWDApplication\Graphic\渲染器\OpenGLAPI;$(SolutionDir)depend\imgui;$(SolutionDir)depend\glad\include;$(SolutionDir)depend\glfw\include;$(SolutionDir)MWDDataStruct;$(SolutionDir)MWDMath;$(SolutionDir)MWDSystem;$(SolutionDir)depend\stbimg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MWDApplication\Graphic;$(SolutionDir)depend\imgui;$(SolutionDir)depend\glad\include;$(SolutionDir)depend\glfw\include;$(SolutionDir)MWDDataStruct;$(SolutionDir)MWDMath;$(SolutionDir)MWDSystem;$(SolutionDir)depend\stbimg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -143,7 +143,7 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)MWDApplication\Graphic\渲染器\渲染状态;$(SolutionDir)MWDApplication\Graphic\渲染器\OpenGLAPI;$(SolutionDir)depend\imgui;$(SolutionDir)depend\glad\include;$(SolutionDir)depend\glfw\include;$(SolutionDir)MWDDataStruct;$(SolutionDir)MWDMath;$(SolutionDir)MWDSystem;$(SolutionDir)depend\stbimg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)MWDApplication\Graphic;$(SolutionDir)depend\imgui;$(SolutionDir)depend\glad\include;$(SolutionDir)depend\glfw\include;$(SolutionDir)MWDDataStruct;$(SolutionDir)MWDMath;$(SolutionDir)MWDSystem;$(SolutionDir)depend\stbimg;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -170,41 +170,46 @@
     <ClCompile Include="Graphic\Core\MWDPriority.cpp" />
     <ClCompile Include="Graphic\Core\MWDProperty.cpp" />
     <ClCompile Include="Graphic\Core\MWDRtti.cpp" />
-    <ClCompile Include="Graphic\Vertex&amp;Index\MWDDataBuffer.cpp" />
-    <ClCompile Include="Graphic\Vertex&amp;Index\MWDIndexBuffer.cpp" />
-    <ClCompile Include="Graphic\Vertex&amp;Index\MWDVertexBuffer.cpp" />
-    <ClCompile Include="Graphic\Vertex&amp;Index\MWDVertexFormat.cpp" />
-    <ClCompile Include="Graphic\场景管理\Entity\MWDCamera.cpp" />
-    <ClCompile Include="Graphic\场景管理\Entity\MWDEntity.cpp" />
-    <ClCompile Include="Graphic\场景管理\Entity\MWDLightEntity.cpp" />
-    <ClCompile Include="Graphic\场景管理\MWDScene.cpp" />
-    <ClCompile Include="Graphic\场景管理\MWDWorld.cpp" />
-    <ClCompile Include="Graphic\场景管理\组件\MWDComponent.cpp" />
-    <ClCompile Include="Graphic\场景管理\组件\MWDLight.cpp" />
-    <ClCompile Include="Graphic\场景管理\组件\MWDTransform.cpp" />
-    <ClCompile Include="Graphic\材质\MWDShaderConstant.cpp" />
-    <ClCompile Include="Graphic\材质\MWDShaderSampler.cpp" />
-    <ClCompile Include="Graphic\渲染器\MWDBind.cpp" />
-    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDEBO.cpp" />
-    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDFBO.cpp" />
-    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDOpenglShader.cpp" />
-    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDOpenglShaderProgram.cpp" />
-    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDOpenglTexture.cpp" />
-    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDRBO.cpp" />
-    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDVAO.cpp" />
-    <ClCompile Include="Graphic\渲染器\OpenGLAPI\MWDVBO.cpp" />
-    <ClCompile Include="Graphic\渲染器\渲染状态\MWDBlendState.cpp" />
-    <ClCompile Include="Graphic\渲染器\渲染状态\MWDDepthStencilState.cpp" />
-    <ClCompile Include="Graphic\渲染器\渲染状态\MWDRasterizerState.cpp" />
-    <ClCompile Include="Graphic\渲染器\渲染状态\MWDRenderState.cpp" />
-    <ClCompile Include="Graphic\渲染器\渲染状态\MWDSamplerState.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="MWDBasicGeometryTriangleMeshData.cpp" />
+    <ClCompile Include="MWDBind.cpp" />
+    <ClCompile Include="MWDBlendState.cpp" />
+    <ClCompile Include="MWDCamera.cpp" />
+    <ClCompile Include="MWDComponent.cpp" />
+    <ClCompile Include="MWDDataBuffer.cpp" />
+    <ClCompile Include="MWDDepthStencilState.cpp" />
+    <ClCompile Include="MWDEntity.cpp" />
+    <ClCompile Include="MWDFBO.cpp" />
+    <ClCompile Include="MWDGLShader.cpp" />
+    <ClCompile Include="MWDGLShaderProgram.cpp" />
+    <ClCompile Include="MWDIBO.cpp" />
+    <ClCompile Include="MWDIndexBuffer.cpp" />
+    <ClCompile Include="MWDLight.cpp" />
+    <ClCompile Include="MWDLightEntity.cpp" />
     <ClCompile Include="MWDLineMeshData.cpp" />
+    <ClCompile Include="MWDMaterial.cpp" />
+    <ClCompile Include="MWDMeshComponent.cpp" />
     <ClCompile Include="MWDMeshData.cpp" />
+    <ClCompile Include="MWDMeshRenderer.cpp" />
+    <ClCompile Include="MWDPass.cpp" />
     <ClCompile Include="MWDPointMeshData.cpp" />
+    <ClCompile Include="MWDRasterizerState.cpp" />
+    <ClCompile Include="MWDRBO.cpp" />
+    <ClCompile Include="MWDGLTexture.cpp" />
+    <ClCompile Include="MWDRenderer.cpp" />
+    <ClCompile Include="MWDRenderState.cpp" />
+    <ClCompile Include="MWDScene.cpp" />
+    <ClCompile Include="MWDShader.cpp" />
+    <ClCompile Include="MWDShaderConstant.cpp" />
+    <ClCompile Include="MWDShaderSampler.cpp" />
     <ClCompile Include="MWDTexture.cpp" />
+    <ClCompile Include="MWDTransform.cpp" />
     <ClCompile Include="MWDTriangleMeshData.cpp" />
+    <ClCompile Include="MWDVAO.cpp" />
+    <ClCompile Include="MWDVBO.cpp" />
+    <ClCompile Include="MWDVertexBuffer.cpp" />
+    <ClCompile Include="MWDVertexFormat.cpp" />
+    <ClCompile Include="MWDWorld.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MWDDataStruct\MWDDataStruct.vcxproj">
@@ -237,43 +242,47 @@
     <ClInclude Include="Graphic\Core\MWDReference.h" />
     <ClInclude Include="Graphic\Core\MWDRtti.h" />
     <ClInclude Include="Graphic\Core\MWDType.h" />
-    <ClInclude Include="Graphic\Vertex&amp;Index\MWDDataBuffer.h" />
-    <ClInclude Include="Graphic\Vertex&amp;Index\MWDIndexBuffer.h" />
-    <ClInclude Include="Graphic\Vertex&amp;Index\MWDVertexBuffer.h" />
-    <ClInclude Include="Graphic\Vertex&amp;Index\MWDVertexFormat.h" />
-    <ClInclude Include="Graphic\场景管理\Entity\MWDCamera.h" />
-    <ClInclude Include="Graphic\场景管理\Entity\MWDEntity.h" />
-    <ClInclude Include="Graphic\场景管理\Entity\MWDLightEntity.h" />
-    <ClInclude Include="Graphic\场景管理\MWDScene.h" />
-    <ClInclude Include="Graphic\场景管理\MWDWorld.h" />
-    <ClInclude Include="Graphic\场景管理\组件\MWDComponent.h" />
-    <ClInclude Include="Graphic\场景管理\组件\MWDLight.h" />
-    <ClInclude Include="Graphic\场景管理\组件\MWDTransform.h" />
-    <ClInclude Include="Graphic\材质\MWDShaderConstant.h" />
-    <ClInclude Include="Graphic\材质\MWDShaderSampler.h" />
-    <ClInclude Include="Graphic\渲染器\MWDBind.h" />
-    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDEBO.h" />
-    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDFBO.h" />
-    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDOpenglShader.h" />
-    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDOpenglShaderProgram.h" />
-    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDOpenglTexture.h" />
-    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDRBO.h" />
-    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDVAO.h" />
-    <ClInclude Include="Graphic\渲染器\OpenGLAPI\MWDVBO.h" />
-    <ClInclude Include="Graphic\渲染器\OpenGLAPI\OpenglAPIInclude.h" />
-    <ClInclude Include="Graphic\渲染器\渲染状态\MWDBlendState.h" />
-    <ClInclude Include="Graphic\渲染器\渲染状态\MWDDepthStencilState.h" />
-    <ClInclude Include="Graphic\渲染器\渲染状态\MWDRasterizerState.h" />
-    <ClInclude Include="Graphic\渲染器\渲染状态\MWDRenderState.h" />
-    <ClInclude Include="Graphic\渲染器\渲染状态\MWDSamplerState.h" />
     <ClInclude Include="MWDApplication.h" />
     <ClInclude Include="MWDBasicGeometryTriangleMeshData.h" />
+    <ClInclude Include="MWDBind.h" />
+    <ClInclude Include="MWDBlendState.h" />
+    <ClInclude Include="MWDCamera.h" />
     <ClInclude Include="MWDCommand.h" />
+    <ClInclude Include="MWDComponent.h" />
+    <ClInclude Include="MWDDataBuffer.h" />
+    <ClInclude Include="MWDDepthStencilState.h" />
+    <ClInclude Include="MWDEntity.h" />
+    <ClInclude Include="MWDFBO.h" />
+    <ClInclude Include="MWDGLShader.h" />
+    <ClInclude Include="MWDGLShaderProgram.h" />
+    <ClInclude Include="MWDIBO.h" />
+    <ClInclude Include="MWDIndexBuffer.h" />
+    <ClInclude Include="MWDLight.h" />
+    <ClInclude Include="MWDLightEntity.h" />
     <ClInclude Include="MWDLineMeshData.h" />
+    <ClInclude Include="MWDMaterial.h" />
+    <ClInclude Include="MWDMeshComponent.h" />
     <ClInclude Include="MWDMeshData.h" />
+    <ClInclude Include="MWDMeshRenderer.h" />
+    <ClInclude Include="MWDPass.h" />
     <ClInclude Include="MWDPointMeshData.h" />
+    <ClInclude Include="MWDRasterizerState.h" />
+    <ClInclude Include="MWDRBO.h" />
+    <ClInclude Include="MWDGLTexture.h" />
+    <ClInclude Include="MWDRenderer.h" />
+    <ClInclude Include="MWDRenderState.h" />
+    <ClInclude Include="MWDScene.h" />
+    <ClInclude Include="MWDShader.h" />
+    <ClInclude Include="MWDShaderConstant.h" />
+    <ClInclude Include="MWDShaderSampler.h" />
     <ClInclude Include="MWDTexture.h" />
+    <ClInclude Include="MWDTransform.h" />
     <ClInclude Include="MWDTriangleMeshData.h" />
+    <ClInclude Include="MWDVAO.h" />
+    <ClInclude Include="MWDVBO.h" />
+    <ClInclude Include="MWDVertexBuffer.h" />
+    <ClInclude Include="MWDVertexFormat.h" />
+    <ClInclude Include="MWDWorld.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\depend\imgui\imgui.ini" />

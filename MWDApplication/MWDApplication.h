@@ -28,20 +28,14 @@
 #include <MWDQueue.h>
 #include <MWDSafeQueue.h>
 #include <MWDStack.h>
-
 #include <../MWDApplication/Graphic/Core/MWDMain.h>
-#include "../MWDApplication/Graphic/场景管理/MWDWorld.h"
 #include "MWDCommand.h"
 
-#include <MWDEBO.h>
-#include <MWDVAO.h>
-#include <MWDVBO.h>
-#include <MWDRBO.h>
-#include <MWDFBO.h>
-#include <MWDOpenglTexture.h>
-#include <MWDOpenglShader.h>
-#include <MWDOpenglShaderProgram.h>
-
+#include "MWDVertexBuffer.h"
+#include "MWDIndexBuffer.h"
+#include "MWDBasicGeometryTriangleMeshData.h"
+#include "MWDMeshComponent.h"
+#include "MWDWorld.h"
 
 //ImGui的使用依赖于glfw_Window
 //初始化顺序：glfw→opengl→imGui

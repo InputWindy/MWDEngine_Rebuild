@@ -16,7 +16,7 @@
 //声明一个指向ClassName的智能指针   ##ClassName##Ptr	(在类外使用)
 #define DECLARE_Ptr(ClassName)\
 	class ClassName;\
-	typedef MWDPointer<ClassName> ##ClassName##Ptr;
+	typedef shared_ptr<ClassName> ##ClassName##Ptr;
 #pragma endregion
 
 	#pragma region RTTI

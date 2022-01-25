@@ -11,13 +11,13 @@ namespace MWDEngine {
 		MWDPointMeshData() {};
 		MWDPointMeshData(const MWDVector3& Point, MWDREAL fSize) {
 			MWDDataBuffer* pVertex = new MWDDataBuffer();
+			int buf[3] = { Point.x,Point.y,Point.z };
+			pVertex->SetData(&buf[0], 1, MWDDataBuffer::DataType_FLOAT32_3);
 
-			pVertex->SetData(&Point, 1, MWDDataBuffer::DataType_FLOAT32_3);
-
-			MWDDataBuffer* PSize = new MWDDataBuffer;
+			MWDDataBuffer* PSize = new MWDDataBuffer();
 			PSize->SetData(&fSize, 1, MWDDataBuffer::DataType_FLOAT32_1);
 
-			m_pVertexBuffer = new MWDVertexBuffer(true);
+			m_pVertexBuffer = new MWDVertexBuffer() ;
 			m_pVertexBuffer->SetData(pVertex, MWDVertexFormat::VF_POSITION);
 			m_pVertexBuffer->SetData(PSize, MWDVertexFormat::VF_PSIZE);
 
@@ -48,7 +48,7 @@ namespace MWDEngine {
 
 			if (!m_pIndexBuffer)
 			{
-				m_pIndexBuffer = new MWDIndexBuffer();
+				m_pIndexBuffer =new MWDIndexBuffer();
 				if (!m_pIndexBuffer)
 				{
 					return 0;
@@ -73,9 +73,8 @@ namespace MWDEngine {
 			}
 		};
 		virtual unsigned int GetMeshDataType() { return MDT_POINT; }
-
 	};
-	DECLARE_Ptr(MWDPointSet);
-	MWDTYPE_MARCO(MWDPointSet);
+	DECLARE_Ptr(MWDPointMeshData);
+	MWDTYPE_MARCO(MWDPointMeshData);
 }
 
