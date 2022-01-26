@@ -1,26 +1,22 @@
 #pragma once
 #include "../MWDBind.h"
 namespace MWDEngine {
-	//最多支持8张texture混合
+	//维护一套混合状态
 	class  MWDBlendDesc : public MWDObject
 	{
 		DECLARE_CLASS_FUNCTION(MWDBlendDesc)
 		DECLARE_RTTI(MWDBlendDesc, MWDObject)
 		DECLARE_INITIAL_WITH_INIT_TERMINAL(MWDBlendDesc)
 	public:
-		enum
-		{
-			MAX_RENDER_TARGET_NUM = 8
-		};
 		//混合参数
 		enum 
 		{
 			BP_ZERO,
 			BP_ONE,
 			BP_SRCCOLOR,
-			BP_INMWDRCCOLOR,
+			BP_INVSRCCOLOR,
 			BP_SRCALPHA,
-			BP_INMWDRCALPHA,
+			BP_INVSRCALPHA,
 			BP_DESTALPHA,
 			BP_INVDESTALPHA,
 			BP_DESTCOLOR,
@@ -32,7 +28,7 @@ namespace MWDEngine {
 		{
 			BO_ADD,
 			BO_SUBTRACT,
-			BO_REMWDUBTRACT,
+			BO_REVSUBTRACT,
 			BO_MIN_SRC_DEST,
 			BO_MAX_SRC_DEST,
 			BO_MAX
@@ -52,19 +48,16 @@ namespace MWDEngine {
 		{
 			bAlphaToCoverageEnable = false;
 			bIndependentBlendEnable = false;
-			for (unsigned int i = 0; i < MAX_RENDER_TARGET_NUM; i++)
-			{
-				bBlendEnable[i] = false;
-				ucSrcBlend[i] = BP_ONE;
-				ucDestBlend[i] = BP_ZERO;
-				ucBlendOp[i] = BO_ADD;
+			bBlendEnable = false;
+			ucSrcBlend = BP_ONE;
+			ucDestBlend = BP_ZERO;
+			ucBlendOp = BO_ADD;
 
-				bAlphaBlendEnable[i] = false;
-				ucSrcBlendAlpha[i] = BP_ONE;
-				ucDestBlendAlpha[i] = BP_ZERO;
-				ucBlendOpAlpha[i] = BO_ADD;
-				ucWriteMask[i] = WM_ALL;
-			}
+			bAlphaBlendEnable = false;
+			ucSrcBlendAlpha = BP_ONE;
+			ucDestBlendAlpha = BP_ZERO;
+			ucBlendOpAlpha = BO_ADD;
+			ucWriteMask = WM_ALL;
 			fBlendColor[0] = fBlendColor[1] = fBlendColor[2] = fBlendColor[3] = 0.0f;
 			ucSampleMask = 0xffffffff;
 		}
@@ -76,32 +69,34 @@ namespace MWDEngine {
 		bool			bIndependentBlendEnable;
 		//初始黑色
 		MWDREAL			fBlendColor[4];
+
+		//未使用
 		unsigned int	ucSampleMask;
 
 		//混合是否开启
-		bool			bBlendEnable[MAX_RENDER_TARGET_NUM];
+		bool			bBlendEnable;
 		//源颜色
-		unsigned char   ucSrcBlend[MAX_RENDER_TARGET_NUM];
+		unsigned char   ucSrcBlend;
 		//目标颜色
-		unsigned char   ucDestBlend[MAX_RENDER_TARGET_NUM];
+		unsigned char   ucDestBlend;
 		//混合操作
-		unsigned char	ucBlendOp[MAX_RENDER_TARGET_NUM];
+		unsigned char	ucBlendOp;
 
 		//是否开启透明度混合
-		bool			bAlphaBlendEnable[MAX_RENDER_TARGET_NUM];
+		bool			bAlphaBlendEnable;
 		//源透明度
-		unsigned char   ucSrcBlendAlpha[MAX_RENDER_TARGET_NUM];
+		unsigned char   ucSrcBlendAlpha;
 		//目标透明度
-		unsigned char	ucDestBlendAlpha[MAX_RENDER_TARGET_NUM];
-		//透明度混合操作
-		unsigned char	ucBlendOpAlpha[MAX_RENDER_TARGET_NUM];
-		//写掩码
-		unsigned char   ucWriteMask[MAX_RENDER_TARGET_NUM];
+		unsigned char	ucDestBlendAlpha;
+		//透明度混合操作（未使用）
+		unsigned char	ucBlendOpAlpha;
+		//写掩码（未使用）
+		unsigned char   ucWriteMask;
 
 		//判断某通道是否使能开启
-		bool IsBlendUsed(unsigned int uiChannal = 0)const
+		bool IsBlendUsed()const
 		{
-			return (bBlendEnable[uiChannal] || bAlphaBlendEnable[uiChannal]);
+			return (bBlendEnable || bAlphaBlendEnable);
 		}
 		//MWDBlendDesc二进制比特数据(传出地址和bit长度)
 		void* GetCRC32Data(unsigned int& DataSize)const

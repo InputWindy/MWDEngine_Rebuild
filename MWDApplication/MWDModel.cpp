@@ -1,0 +1,10 @@
+#include "MWDModel.h"
+#include "MWDEntity.h"
+namespace MWDEngine {
+	INITIAL_WITH_INIT_TERMINAL_BEGIN(MWDModel)
+	ADD_PRIORITY(MWDEntity)
+	INITIAL_WITH_INIT_TERMINAL_END(MWDModel)
+
+	BEGIN_ADD_PROPERTY(MWDModel)
+	END_ADD_PROPERTY
+}

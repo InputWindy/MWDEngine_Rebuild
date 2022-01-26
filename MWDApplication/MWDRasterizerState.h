@@ -1,6 +1,8 @@
 #pragma once
 #include "../MWDBind.h"
 namespace MWDEngine{
+
+	//暂时没使用光栅化状态
 	class  MWDRasterizerDesc : public MWDObject
 	{
 		DECLARE_CLASS_FUNCTION(MWDRasterizerDesc)

@@ -134,7 +134,9 @@ namespace MWDEngine {
 		void SetTexture(void* texture_data, unsigned int textureformat) {
 			m_tex->SetTexture(texture_data, textureformat);
 		}
-
+		void* GetData() {
+			return m_tex->GetData();
+		}
 	};
 	DECLARE_Ptr(MWDTexture2D);
 	DECLARE_Proxy(MWDTexture2D);

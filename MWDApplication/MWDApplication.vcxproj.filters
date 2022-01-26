@@ -222,6 +222,9 @@
     <ClCompile Include="MWDRenderer.cpp">
       <Filter>Graphic\渲染器</Filter>
     </ClCompile>
+    <ClCompile Include="MWDModel.cpp">
+      <Filter>Graphic\场景管理\实体</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graphic\Core\MWDGraphic.h">
@@ -403,6 +406,9 @@
     </ClInclude>
     <ClInclude Include="MWDRenderer.h">
       <Filter>Graphic\渲染器</Filter>
+    </ClInclude>
+    <ClInclude Include="MWDModel.h">
+      <Filter>Graphic\场景管理\实体</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

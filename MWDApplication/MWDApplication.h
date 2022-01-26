@@ -36,6 +36,15 @@
 #include "MWDBasicGeometryTriangleMeshData.h"
 #include "MWDMeshComponent.h"
 #include "MWDWorld.h"
+#include "MWDRenderer.h"
+
+#define STB_IMAGE_IMPLEMENTATION
+#include <stb_image.h>
+#include "MWDModel.h"
+
+
+
+
 
 //ImGui的使用依赖于glfw_Window
 //初始化顺序：glfw→opengl→imGui

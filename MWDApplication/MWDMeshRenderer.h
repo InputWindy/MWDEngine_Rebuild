@@ -15,6 +15,8 @@ namespace MWDEngine {
 	public:
 		friend class MWDRenderer;
 		bool m_bEnable;
+		//组件类型
+		static inline unsigned int m_uiType = MWDComponent::MESHRENDERER;
 		MWDMeshRenderer(MWDEntity* pParent);
 		~MWDMeshRenderer() {
 			MWDMAC_DELETE(m_data)

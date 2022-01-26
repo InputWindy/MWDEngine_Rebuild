@@ -11,6 +11,7 @@ namespace MWDEngine {
 
 	MWDMeshRenderer::MWDMeshRenderer(MWDEntity* pParent)
 	{
+		m_Name = MWDName(_T("MeshRenderer"));
 		MWDMAC_ASSERT(pParent)
 		m_data = NULL;
 		m_Material = NULL;

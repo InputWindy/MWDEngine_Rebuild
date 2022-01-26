@@ -1,4 +1,3 @@
-#include "pch.h"
 #include "MWDCamera.h"
 #include "MWDEntity.h"
 namespace MWDEngine {

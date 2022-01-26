@@ -138,21 +138,25 @@ int main() {
 	ImGuiInit(Hwindow);
 
 	#pragma endregion
-	
-	/*MWDBasicGeometryTriangleMeshData* mesh = new MWDBasicGeometryTriangleMeshData(s); 
-	MWDMeshComponent* component = new MWDMeshComponent();
-	component->SetMesh(mesh);
-	MWDWorld* mainWorld = MWDWorld::GetMainWorld();
-	mainWorld->CreateNewScene();
-	MWDScene* scene = mainWorld->GetSceneByName(_T("default_scene"));
-	MWDCamera* camera = new MWDCamera();
-	camera->AddComponent(*component);
-	scene->AddCamera(camera);
-	cout<<mainWorld->GetSceneByName(_T("default_scene"))->GetAllCamera()[0]->GetComponentByType<MWDMeshComponent>()->GetMeshData()->GetVertexBuffer()->GetNum()<<endl;
-	cout << mainWorld->GetSceneByName(_T("default_scene"))->GetAllCamera()[0]->GetComponentByType<MWDMeshComponent>()->GetMeshData()->GetIndexBuffer()->GetNum() << endl;*/
+	MWDRenderer::GetMainRenderer()->DrawMesh();
+	int x, y, com;
+	void* data = stbi_load("C:/Users/InputWindy/Desktop/testpic.png",&x,&y,&com,0);
+	MWDTexture2D tex2D(0,MWDTexture::TexMode::WRAP_S,MWDTexture::TexParam::LINEAR,x,y,MWDTexture::TexFormat::RGB,data,false);
+	MWDTransform trans = MWDTransform();
+	trans.GetType().GetName().Print();
+	//MWDModel model = MWDModel();
+	//model.GetName().Print();
 	while (!glfwWindowShouldClose(Hwindow)) {
 		ImGuiFrameBegin();
-		ImGui::ShowDemoWindow();
+		//ImGui::ShowDemoWindow();
+		ImGui::Begin("showPNG");
+		// 第一个参数：生成的纹理的id
+		// 第2个参数：Image的大小
+		// 第3，4个参数：UV的起点坐标和终点坐标，UV是被规范化到（0，1）之间的坐标
+		// 第5个参数：图片的色调
+		// 第6个参数：图片边框的颜色
+		ImGui::Image((ImTextureID)tex2D.GetData(), ImGui::GetContentRegionAvail(), ImVec2(0.0, 0.0), ImVec2(1.0, 1.0), ImVec4(0, 0, 0, 1), ImVec4(0, 0, 0, 1));
+		ImGui::End();
 		ImGuiFrameEnd(Hwindow);
 	};
 

@@ -8,7 +8,7 @@ namespace MWDEngine {
 		DECLARE_RTTI(MWDDepthStencilDesc, MWDObject)
 		DECLARE_INITIAL_WITH_INIT_TERMINAL(MWDDepthStencilDesc)
 	public:
-		//比较方法
+		//比较方法(depth,stencil)
 		enum 
 		{
 			CM_NEVER,
@@ -22,7 +22,7 @@ namespace MWDEngine {
 			CM_MAX
 
 		};
-		//操作方法
+		//操作方法(stencil)
 		enum 
 		{
 			OT_KEEP,
@@ -34,6 +34,15 @@ namespace MWDEngine {
 			OT_INCREMENT_STA,
 			OT_DECREMENT_STA,
 			OT_MAX
+		};
+		enum {
+			CULL_CW,
+			CULL_CCW
+		};
+		enum {
+			C_FRONT_BACK,
+			C_FRONT,
+			C_BACK
 		};
 		//默认开启深度测试，深度写入。默认关闭模板测试
 		MWDDepthStencilDesc()
@@ -56,6 +65,10 @@ namespace MWDEngine {
 			m_uiCCW_SPassZFailOP = OT_KEEP;
 			m_uiCCW_SFailZPassOP = OT_KEEP;
 			m_bTwoSideStencilMode = false;
+
+			m_bEnableCullingFace = false;
+			m_uiCullFaceMode = C_BACK;
+			m_uiCCW_CW = CULL_CCW;
 		}
 		~MWDDepthStencilDesc()
 		{
@@ -84,6 +97,11 @@ namespace MWDEngine {
 		unsigned char m_uiCCW_SPassZFailOP;
 		unsigned char m_uiCCW_SFailZPassOP;
 		bool m_bTwoSideStencilMode;
+
+		//面剔除
+		bool m_bEnableCullingFace;
+		unsigned char m_uiCullFaceMode;
+		unsigned char m_uiCCW_CW;
 
 		//获取深度，模板测试状态数据
 		void* GetCRC32Data(unsigned int& DataSize)const

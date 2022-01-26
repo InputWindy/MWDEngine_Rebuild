@@ -20,6 +20,7 @@ namespace MWDEngine {
 		}
 
 		MWDMeshComponent(MWDIndexBuffer* pIndexBuffer, MWDVertexBuffer* pVertexBuffer) {
+			m_Name = MWDName(_T("MeshComponent"));
 			MWDMAC_ASSERT(pIndexBuffer)
 			MWDMAC_ASSERT(pVertexBuffer)
 			m_meshData = new MWDMeshData(pIndexBuffer, pVertexBuffer);

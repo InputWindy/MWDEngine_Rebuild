@@ -87,12 +87,12 @@ namespace MWDEngine {
 			m_bIsBind = false;
 			m_mipmap = mipmap;
 			ui_dataBitLength = 0;
-			m_data = NULL;
+			m_data = data;
 		}
 		~MWDGLTexture2D() {
 			UnBind();
 			glDeleteTextures(1, &m_uiID);
-			delete[] m_data;
+			delete m_data;
 		}
 		void SetParameter(unsigned int texmode, unsigned int param) {
 			m_texmode = texmode;
@@ -107,6 +107,9 @@ namespace MWDEngine {
 			Bind();
 			glTexImage2D(GL_TEXTURE_2D, 0, textureformat, m_width, m_height, 0, textureformat, GL_UNSIGNED_BYTE, texture_data);
 			UnBind();
+		}
+		void* GetData() {
+			return m_data;
 		}
 
 	};
