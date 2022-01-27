@@ -23,6 +23,8 @@ namespace MWDEngine {
 		MWDShader*							m_FShader;								//自定义Pass的Shader
 
 		MWDRenderState*						m_RenderState;							//自定义Pass的RenderState
+
+		static inline MWDMaterial* ms_DefaultModelMaterial = NULL;
 	public:
 		
 		bool m_CastShadow;							//是否参与生成Shadow（不参与生成Shadow，在ShadowPass的时候会被Culler剔除掉）
@@ -116,6 +118,13 @@ namespace MWDEngine {
 			}
 			m_pShaderSampler.AddElement(SS);
 			return true;
+		}
+		static MWDMaterial* GetDefaultModelMaterial() {
+			if (!ms_DefaultModelMaterial) {
+				//这里应该加载默认的shader和renderstate，但是还没写
+				ms_DefaultModelMaterial = new MWDMaterial(NULL,NULL,NULL);
+			}
+			return ms_DefaultModelMaterial;
 		}
 	};
 }

@@ -47,14 +47,17 @@ namespace MWDEngine {
 			return TRANSFORM;
 		};
 		virtual void ComponentInfoLog()const;
-		MWDTransform(){
-			m_bEnable = true;
+		void SetEntity(MWDEntity* entity);
+		MWDTransform(MWDEntity* Owner = NULL){
 			m_Name = MWDName(_T("Transform"));
+			SetEntity(Owner);
+			m_bEnable = true;
 			m_WorldRight = MWDVector3(MWDVector3::Right());
 			m_WorldUp = MWDVector3(MWDVector3::Up());
 			m_WorldForward = MWDVector3(MWDVector3::Forward());
 			m_WorldScale = MWDVector3(1, 1, 1);
 			m_LocalScale = MWDVector3(1, 1, 1);
+			
 			m_Parent = NULL;
 			m_Root   = NULL;
 			m_ChildCount = 0;

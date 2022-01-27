@@ -1,7 +1,5 @@
 #pragma once
 #include "MWDMeshRenderer.h"
-#include "MWDWorld.h"
-
 #include "MWDVAO.h"
 #include "MWDVBO.h"
 #include "MWDIBO.h"
@@ -9,6 +7,7 @@
 #include "MWDRBO.h"
 #include "MWDGLShaderProgram.h"
 #include "MWDGLTexture.h"
+#include "MWDCamera.h"
 namespace MWDEngine {
 
 	class MWDRenderContex {
@@ -34,7 +33,7 @@ namespace MWDEngine {
 		MWDCamera*							m_curCamera;                            //当前的摄像机
 
 		//Light
-		MWDArray<MWDLightEntity*>			m_curLight;                             //所有参与渲染的光源。每一个光源都会维护一张ShadowMap
+		//MWDArray<MWDLightEntity*>			m_curLight;                             //所有参与渲染的光源。每一个光源都会维护一张ShadowMap
 
 		//渲染结果缓冲（FBO离屏渲染结果）
 		MWDTexture2D*						m_FrameBuffer;							//屏幕渲染缓冲

@@ -1,4 +1,3 @@
-#include "pch.h"
 #include "MWDLightEntity.h"
 namespace MWDEngine {
 	INITIAL_WITH_INIT_TERMINAL_BEGIN(MWDLightEntity)

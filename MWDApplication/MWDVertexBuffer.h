@@ -54,11 +54,8 @@ namespace MWDEngine {
 				return NULL;
 			return m_pData[Attribute][channel];
 		};
-		//把数据提交给Renderer
-		void LoadResource(MWDRenderer* pRenderer) {
-			
-		};
-		bool SetData(MWDDataBuffer* pData, unsigned int Attribute) {
+		
+		bool SetData(MWDDataBuffer* pData, unsigned int Attribute,bool load = false) {
 			if (!pData || m_pVertexFormat || Attribute >= MWDVertexFormat::VF_MAX)
 				return 0;
 
@@ -157,6 +154,9 @@ namespace MWDEngine {
 					return 0;
 			}
 			m_uiOneVertexSize += pData->GetStride();
+			if (load) {
+				LoadDataToVBO();
+			}
 			return 1;
 
 		};
@@ -404,7 +404,7 @@ namespace MWDEngine {
 			return GetSemanticsDataType(MWDVertexFormat::VF_BINORMAL, 0);
 		};
 
-		//设置完数据之后，自动解析出m_pVertexFormat
+		//设置完数据之后，自动解析出m_pVertexFormat(该方法丢失)
 		MWDVertexFormat* GetVertexFormat() {
 			return m_pVertexFormat;
 		};

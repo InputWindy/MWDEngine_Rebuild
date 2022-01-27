@@ -114,8 +114,6 @@ int  main(int argc, char* argv[])
 //#include <stb_image.h>
 int main() {
     MWDMain::Initialize(); 
-	MWDAABB3 aabb = MWDAABB3();
-	MWDSphere3 s = MWDSphere3();
 	#pragma region glfw初始化
 	if (!glfwInit())
 		return -1;
@@ -142,10 +140,20 @@ int main() {
 	int x, y, com;
 	void* data = stbi_load("C:/Users/InputWindy/Desktop/testpic.png",&x,&y,&com,0);
 	MWDTexture2D tex2D(0,MWDTexture::TexMode::WRAP_S,MWDTexture::TexParam::LINEAR,x,y,MWDTexture::TexFormat::RGB,data,false);
-	MWDTransform trans = MWDTransform();
-	trans.GetType().GetName().Print();
-	//MWDModel model = MWDModel();
-	//model.GetName().Print();
+	
+
+	GLuint textureID;
+	glGenTextures(1, &textureID);
+	glBindTexture(GL_TEXTURE_2D, textureID);
+	glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, x, y, 0, GL_BGR, GL_UNSIGNED_BYTE, data);
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+	glBindTexture(GL_TEXTURE_2D, 0);
+
+	ImTextureID image_id = (GLuint*)textureID;
+	MWDModel model = MWDModel(_T("test_model"), _T("C:/Users/InputWindy/Desktop/My3DEngine-master/resource/objModel/car.obj"));
+
+	cout << sizeof(float) << endl;
 	while (!glfwWindowShouldClose(Hwindow)) {
 		ImGuiFrameBegin();
 		//ImGui::ShowDemoWindow();
@@ -155,7 +163,7 @@ int main() {
 		// 第3，4个参数：UV的起点坐标和终点坐标，UV是被规范化到（0，1）之间的坐标
 		// 第5个参数：图片的色调
 		// 第6个参数：图片边框的颜色
-		ImGui::Image((ImTextureID)tex2D.GetData(), ImGui::GetContentRegionAvail(), ImVec2(0.0, 0.0), ImVec2(1.0, 1.0), ImVec4(0, 0, 0, 1), ImVec4(0, 0, 0, 1));
+		ImGui::Image(image_id, ImGui::GetContentRegionAvail(), ImVec2(0.0, 0.0), ImVec2(1.0, 1.0), ImVec4(0, 0, 0, 1), ImVec4(0, 0, 0, 1));
 		ImGui::End();
 		ImGuiFrameEnd(Hwindow);
 	};

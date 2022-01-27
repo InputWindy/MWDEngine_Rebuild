@@ -17,7 +17,8 @@ namespace MWDEngine {
 		bool m_bEnable;
 		//组件类型
 		static inline unsigned int m_uiType = MWDComponent::MESHRENDERER;
-		MWDMeshRenderer(MWDEntity* pParent);
+		void SetEntity(MWDEntity* entity);
+		MWDMeshRenderer(MWDEntity* pParent = NULL);
 		~MWDMeshRenderer() {
 			MWDMAC_DELETE(m_data)
 			MWDMAC_DELETE(m_Material)

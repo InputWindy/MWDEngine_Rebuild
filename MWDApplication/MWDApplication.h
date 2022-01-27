@@ -35,7 +35,6 @@
 #include "MWDIndexBuffer.h"
 #include "MWDBasicGeometryTriangleMeshData.h"
 #include "MWDMeshComponent.h"
-#include "MWDWorld.h"
 #include "MWDRenderer.h"
 
 #define STB_IMAGE_IMPLEMENTATION

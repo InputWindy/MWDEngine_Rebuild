@@ -18,15 +18,17 @@ namespace MWDEngine {
 		virtual void ComponentInfoLog()const {
 
 		}
-
+		void SetEntity(MWDEntity* entity);
 		MWDMeshComponent(MWDIndexBuffer* pIndexBuffer, MWDVertexBuffer* pVertexBuffer) {
 			m_Name = MWDName(_T("MeshComponent"));
 			MWDMAC_ASSERT(pIndexBuffer)
 			MWDMAC_ASSERT(pVertexBuffer)
 			m_meshData = new MWDMeshData(pIndexBuffer, pVertexBuffer);
 		}
-		MWDMeshComponent(unsigned int index_usage = GL_STATIC_DRAW, unsigned int vertex_target = GL_ARRAY_BUFFER, unsigned int vertex_usage = GL_STATIC_DRAW) {
+		MWDMeshComponent(MWDEntity* Owner = NULL , unsigned int index_usage = GL_STATIC_DRAW, unsigned int vertex_target = GL_ARRAY_BUFFER, unsigned int vertex_usage = GL_STATIC_DRAW) {
+			m_Name = MWDName(_T("MeshComponent"));
 			m_meshData = new MWDMeshData(index_usage, vertex_target, vertex_usage);
+			SetEntity(Owner);
 		}
 		~MWDMeshComponent() {
 			MWDMAC_DELETE(m_meshData)

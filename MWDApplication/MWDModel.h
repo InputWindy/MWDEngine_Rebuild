@@ -2,12 +2,18 @@
 #include "MWDTransform.h"
 #include "MWDMeshComponent.h"
 #include "MWDMeshRenderer.h"
+#include "MWDDataBuffer.h"
 #include "MWDEntity.h"
 
 #include <../assimp/Importer.hpp>
 #include <../assimp/scene.h>
 #include <../assimp/postprocess.h>
 namespace MWDEngine {
+
+    //Model：维护各种组件，实例化时需要填写名称和模型文件路径
+    //      实例化时需要读取模型文件数据，解析成为MWDDataBuffer，填写进入MeshData。
+    //      Model初始化时只有全空的MWDVertexBuffer和MWDIndexBuffer，需要调用SetData()给vbo，ibo填数据，填完会自动上传到显存。
+    //      模型导入完成。
 	class MWDModel:public MWDEntity
 	{
 		DECLARE_CLASS_FUNCTION(MWDModel)
@@ -16,23 +22,30 @@ namespace MWDEngine {
     protected:
         string directory;
     public:
+        
         //Model自带Transform和MeshComponent和MeshRenderer
         MWDModel(const TCHAR* model_name = NULL,const TCHAR* file_path = NULL) {
             SetName(model_name);
-            MWDTransform& trans = *new MWDTransform();
-            trans.SetEntity(this);
-            AddComponent(trans);
-            MWDMeshComponent& mesh = *new MWDMeshComponent();
-            mesh.SetEntity(this);
-            AddComponent(mesh);
+            AddComponent(*new MWDTransform(this));
+            AddComponent(*new MWDMeshComponent(this));
             AddComponent(*new MWDMeshRenderer(this));
-            string fp((char*)file_path);
-            LoadModelMesh(fp);
+            if (file_path) {
+                LoadModelMesh(format_change(file_path));
+            }
+            
         }
         ~MWDModel() {
 
         }
 	private:
+        string format_change(const TCHAR* STR)
+        {
+            unsigned int iLen = WideCharToMultiByte(CP_ACP, 0, STR, -1, NULL, 0, NULL, NULL);   //首先计算TCHAR 长度。
+            char* chRtn = new char[iLen * sizeof(char)];  //定义一个 TCHAR 长度大小的 CHAR 类型。
+            WideCharToMultiByte(CP_ACP, 0, STR, -1, chRtn, iLen, NULL, NULL);  //将TCHAR 类型的数据转换为 CHAR 类型。
+            std::string str(chRtn); //最后将CHAR 类型数据 转换为 STRING 类型数据。
+            return str;
+        }
         void LoadModelMesh(string const& path)
         {
             Assimp::Importer importer;
@@ -45,21 +58,99 @@ namespace MWDEngine {
             }
             directory = path.substr(0, path.find_last_of('/'));
             //传入根节点和scene，递归解析顶点信息，并填充进Mesh
-            //processNode(scene->mRootNode, scene);
+            MWDMeshData* mesh_data = GetComponentByType<MWDMeshComponent>()->GetMeshData();
+            processNode(mesh_data,scene->mRootNode, scene);
         }
-        //void processNode(aiNode* node, const aiScene* scene)
-        //{
-        //    for (unsigned int i = 0; i < node->mNumMeshes; i++)
-        //    {
-        //        aiMesh* mesh = scene->mMeshes[node->mMeshes[i]];
-        //        meshes.push_back(processMesh(mesh, scene));
-        //    }
-        //    for (unsigned int i = 0; i < node->mNumChildren; i++)
-        //    {
-        //        processNode(node->mChildren[i], scene);
-        //    }
-        //}
-        //Mesh processMesh(aiMesh* mesh, const aiScene* scene)
+        void processNode(MWDMeshData* mesh_data,aiNode* node, const aiScene* scene)
+        {
+            //cout << node->mNumChildren << endl;
+            for (unsigned int i = 0; i < node->mNumMeshes; i++)
+            {
+                aiMesh* mesh = scene->mMeshes[node->mMeshes[i]];
+                processMesh(mesh_data,mesh, scene);
+            }
+            for (unsigned int i = 0; i < node->mNumChildren; i++)
+            {
+                processNode(mesh_data,node->mChildren[i], scene);
+            }
+        }
+        void processMesh(MWDMeshData* mesh_data, aiMesh* mesh, const aiScene* scene) {
+            //读取索引信息
+            MWDDataBuffer* indices = new MWDDataBuffer();
+            for (unsigned int i = 0; i < mesh->mNumFaces; i++)
+            {
+                aiFace face = mesh->mFaces[i];
+                for (unsigned int j = 0; j < face.mNumIndices; j++) {
+                    indices->AddData(&face.mIndices[j],1,MWDDataBuffer::DataType_UINT);
+                }
+            }
+            mesh_data->GetIndexBuffer()->SetData(indices,true);
+
+            //读取位置信息,法线信息，UV信息
+            MWDVertexBuffer* vertex_buf = mesh_data->GetVertexBuffer();
+            MWDDataBuffer* position = new MWDDataBuffer();
+            MWDDataBuffer* normal = new MWDDataBuffer();
+            MWDDataBuffer* uv = new MWDDataBuffer();
+            MWDDataBuffer* tangent = new MWDDataBuffer();
+            MWDDataBuffer* binormal = new MWDDataBuffer();
+            for (unsigned int i = 0; i < mesh->mNumVertices; i++)
+            {
+                float pos[3] ;
+                float nor[3] ;
+                float texcoord[2] ;
+                float tan[3] ;
+                float binor[3] ;
+                // positions
+                pos[0] = mesh->mVertices[i].x;
+                pos[1] = mesh->mVertices[i].y;
+                pos[2] = mesh->mVertices[i].z;
+                position->AddData(&pos[0],1,MWDDataBuffer::DataType_FLOAT32_3);
+                // normals
+                if (mesh->HasNormals())
+                {
+                    nor[0] = mesh->mNormals[i].x;
+                    nor[1] = mesh->mNormals[i].y;
+                    nor[2] = mesh->mNormals[i].z;
+                    normal->AddData(&nor[0], 1, MWDDataBuffer::DataType_FLOAT32_3);
+                }
+                
+                // texture coordinates
+                if (mesh->mTextureCoords[0]) // does the mesh contain texture coordinates?
+                {
+                    texcoord[0] = mesh->mTextureCoords[0][i].x;
+                    texcoord[1] = mesh->mTextureCoords[0][i].y;
+                    uv->AddData(&texcoord[0],1, MWDDataBuffer::DataType_FLOAT32_2);
+
+                    // tangent
+                    tan[0] = mesh->mTangents[i].x;
+                    tan[1] = mesh->mTangents[i].y;
+                    tan[2] = mesh->mTangents[i].z;
+                    tangent->AddData(&tan[0], 1, MWDDataBuffer::DataType_FLOAT32_3);
+
+                    // bitangent
+                    binor[0] = mesh->mBitangents[i].x;
+                    binor[1] = mesh->mBitangents[i].y;
+                    binor[2] = mesh->mBitangents[i].z;
+                    binormal->AddData(&binor[0], 1, MWDDataBuffer::DataType_FLOAT32_3);
+                }
+            }
+            if (position->GetNum()!=0) {
+                vertex_buf->SetData(position,MWDVertexFormat::VF_POSITION);
+            }
+            if (normal->GetNum() != 0) {
+                vertex_buf->SetData(normal, MWDVertexFormat::VF_NORMAL);
+            }
+            if (uv->GetNum() != 0) {
+                vertex_buf->SetData(uv, MWDVertexFormat::VF_TEXCOORD);
+            }
+            if (tangent->GetNum() != 0) {
+                vertex_buf->SetData(tangent, MWDVertexFormat::VF_TANGENT);
+            }
+            if (binormal->GetNum() != 0) {
+                vertex_buf->SetData(binormal, MWDVertexFormat::VF_BINORMAL);
+            }
+        }
+        //Mesh processMesh()
         //{
         //    // data to fill
         //    vector<Vertex> vertices;

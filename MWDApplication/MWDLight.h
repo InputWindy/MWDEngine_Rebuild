@@ -19,6 +19,7 @@ namespace MWDEngine {
 			None,
 			ST_MAX
 		};
+		virtual void SetEntity(MWDEntity* entity) {};
 		~MWDLightComponent() {
 
 		}
@@ -69,6 +70,7 @@ namespace MWDEngine {
 	public:
 		//组件类型
 		static inline unsigned int m_uiType = DirectionalLight;
+		virtual void SetEntity(MWDEntity* entity);
 		unsigned int GetComponentType() {
 			return DirectionalLight;
 		};
@@ -128,6 +130,7 @@ namespace MWDEngine {
 		unsigned int GetComponentType() {
 			return PointLight;
 		};
+		virtual void SetEntity(MWDEntity* entity);
 		MWDPointLightComponent() {
 			m_Name = MWDName(_T("PointLightComponent"));
 			m_ShadowType = None;
@@ -201,6 +204,7 @@ namespace MWDEngine {
 		unsigned int GetComponentType() {
 			return AreaLight;
 		};
+		virtual void SetEntity(MWDEntity* entity);
 		MWDAreaLightComponent() {
 			m_Name = MWDName(_T("AreaLightComponent"));
 			m_ShadowType = None;
@@ -279,6 +283,7 @@ namespace MWDEngine {
 		unsigned int GetComponentType() {
 			return SpotLight;
 		};
+		virtual void SetEntity(MWDEntity* entity);
 		MWDSpotLightComponent() {
 			m_Name = MWDName(_T("SpotLightComponent"));
 			m_ShadowType = None;

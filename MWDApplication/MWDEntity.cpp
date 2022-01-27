@@ -1,6 +1,6 @@
 #include "pch.h"
 #include "MWDEntity.h"
-#include "MWDScene.h"
+//#include "MWDScene.h"
 namespace MWDEngine {
 	INITIAL_WITH_INIT_TERMINAL_BEGIN(MWDEntity)
 	INITIAL_WITH_INIT_TERMINAL_END(MWDEntity)
@@ -11,11 +11,14 @@ namespace MWDEngine {
 	MWDEntity::~MWDEntity() {
 		m_pChildren.Destroy();
 		m_pComponent.Destroy();
-		m_pParent->DeleteChildByName(m_Name);
-		m_Scene->DeleteStaticEntityByName(m_Name);
+		if (m_pParent) {
+			m_pParent->DeleteChildByName(m_Name);
+		}
+		
+		/*m_Scene->DeleteStaticEntityByName(m_Name);
 		m_Scene->DeleteDynamicEntityByName(m_Name);
 		m_Scene->DeleteCameraByName(m_Name);
-		m_Scene->DeleteLightEntityByName(m_Name);
+		m_Scene->DeleteLightEntityByName(m_Name);*/
 	};
 
 	MWDScene* MWDEntity::GetScene()const {

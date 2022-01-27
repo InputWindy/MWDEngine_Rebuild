@@ -42,16 +42,8 @@ namespace MWDEngine {
 		bool SetIndexBuffer(MWDIndexBuffer* pIndexBuffer) {
 			if (!pIndexBuffer)
 				return 0;
-
-			if (pIndexBuffer->GetNum())
-			{
-				m_pIndexBuffer =pIndexBuffer ;
+			m_pIndexBuffer =pIndexBuffer ;
 				return 1;
-			}
-			else
-			{
-				return 0;
-			}
 
 		};
 		MWDIndexBuffer* GetIndexBuffer()const {
@@ -61,15 +53,9 @@ namespace MWDEngine {
 		bool SetVertexBuffer(MWDVertexBuffer* pVertexBuffer) {
 			if (!pVertexBuffer)
 				return 0;
-			if (pVertexBuffer->GetVertexNum())
-			{
-				m_pVertexBuffer =pVertexBuffer ;
+			
+			m_pVertexBuffer =pVertexBuffer ;
 				return 1;
-			}
-			else
-			{
-				return 0;
-			}
 
 		};
 		MWDVertexBuffer* GetVertexBuffer()const {

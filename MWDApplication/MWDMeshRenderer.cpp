@@ -9,12 +9,18 @@ namespace MWDEngine {
 	BEGIN_ADD_PROPERTY(MWDMeshRenderer)
 	END_ADD_PROPERTY
 
+
+	void MWDMeshRenderer::SetEntity(MWDEntity* entity) {
+		m_pEntity = entity;
+	}
+	//模型实例化的时候，Mesh和Material都已经有了。
 	MWDMeshRenderer::MWDMeshRenderer(MWDEntity* pParent)
 	{
+		m_bEnable = true;
 		m_Name = MWDName(_T("MeshRenderer"));
 		MWDMAC_ASSERT(pParent)
 		m_data = NULL;
-		m_Material = NULL;
+		m_Material = NULL;//MWDMaterial::GetDefaultModelMaterial();
 		SetEntity(pParent);
 
 		MWDEntity* parent = GetEntity();

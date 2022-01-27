@@ -9,9 +9,6 @@ namespace MWDEngine {
 	BEGIN_ADD_PROPERTY(MWDComponent)
 	END_ADD_PROPERTY
 
-	void MWDComponent::SetEntity(MWDEntity* entity) {
-		m_pEntity = entity;
-	}
 	MWDEntity* MWDComponent::GetEntity()const {
 		return m_pEntity;
 	};

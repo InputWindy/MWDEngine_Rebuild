@@ -29,7 +29,7 @@ namespace MWDEngine {
 			return  m_bEnable ;
 		}
 		virtual unsigned int GetComponentType() { return COMPONENT_MAX; };
-		void SetEntity(MWDEntity* entity);
+		virtual void SetEntity(MWDEntity* entity) =0;
 		MWDEntity* GetEntity()const;
 		FORCEINLINE MWDName GetName()const {
 			return m_Name;

@@ -184,8 +184,6 @@
     <ClCompile Include="MWDGLShaderProgram.cpp" />
     <ClCompile Include="MWDIBO.cpp" />
     <ClCompile Include="MWDIndexBuffer.cpp" />
-    <ClCompile Include="MWDLight.cpp" />
-    <ClCompile Include="MWDLightEntity.cpp" />
     <ClCompile Include="MWDLineMeshData.cpp" />
     <ClCompile Include="MWDMaterial.cpp" />
     <ClCompile Include="MWDMeshComponent.cpp" />
@@ -199,7 +197,6 @@
     <ClCompile Include="MWDGLTexture.cpp" />
     <ClCompile Include="MWDRenderer.cpp" />
     <ClCompile Include="MWDRenderState.cpp" />
-    <ClCompile Include="MWDScene.cpp" />
     <ClCompile Include="MWDShader.cpp" />
     <ClCompile Include="MWDShaderConstant.cpp" />
     <ClCompile Include="MWDShaderSampler.cpp" />
@@ -210,7 +207,6 @@
     <ClCompile Include="MWDVBO.cpp" />
     <ClCompile Include="MWDVertexBuffer.cpp" />
     <ClCompile Include="MWDVertexFormat.cpp" />
-    <ClCompile Include="MWDWorld.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MWDDataStruct\MWDDataStruct.vcxproj">
@@ -258,8 +254,6 @@
     <ClInclude Include="MWDGLShaderProgram.h" />
     <ClInclude Include="MWDIBO.h" />
     <ClInclude Include="MWDIndexBuffer.h" />
-    <ClInclude Include="MWDLight.h" />
-    <ClInclude Include="MWDLightEntity.h" />
     <ClInclude Include="MWDLineMeshData.h" />
     <ClInclude Include="MWDMaterial.h" />
     <ClInclude Include="MWDMeshComponent.h" />
@@ -273,7 +267,6 @@
     <ClInclude Include="MWDGLTexture.h" />
     <ClInclude Include="MWDRenderer.h" />
     <ClInclude Include="MWDRenderState.h" />
-    <ClInclude Include="MWDScene.h" />
     <ClInclude Include="MWDShader.h" />
     <ClInclude Include="MWDShaderConstant.h" />
     <ClInclude Include="MWDShaderSampler.h" />
@@ -284,7 +277,6 @@
     <ClInclude Include="MWDVBO.h" />
     <ClInclude Include="MWDVertexBuffer.h" />
     <ClInclude Include="MWDVertexFormat.h" />
-    <ClInclude Include="MWDWorld.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\depend\imgui\imgui.ini" />

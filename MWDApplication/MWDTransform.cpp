@@ -11,6 +11,9 @@ namespace MWDEngine {
 
     END_ADD_PROPERTY
 
+	void MWDTransform::SetEntity(MWDEntity* entity) {
+		m_pEntity = entity;
+	}
     unsigned int MWDTransform::GetChildCount() const
     {
         return m_pEntity->GetChildCount();

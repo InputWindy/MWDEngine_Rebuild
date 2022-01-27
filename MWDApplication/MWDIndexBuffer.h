@@ -13,6 +13,7 @@ namespace MWDEngine {
 
 	protected:
 		friend class MWDRenderer;
+		friend class MWDModel;
 		MWDDataBuffer* m_pData;         //内存数据(一份)
 	public:
 		MWDIndexBuffer(unsigned int usage = GL_STATIC_DRAW) {
@@ -27,6 +28,7 @@ namespace MWDEngine {
 		}
 		//获取顶点数
 		unsigned int GetNum()const {
+			MWDMAC_ASSERT(m_pData)
 			return m_pData->GetNum();
 		};
 		//获取Buffer总Byte长度
@@ -42,7 +44,7 @@ namespace MWDEngine {
 			return m_pData;
 		};
 		//设置数据，并提交给显存
-		bool SetData(MWDDataBuffer* pData) {
+		bool SetData(MWDDataBuffer* pData,bool load = false) {
 			if (!pData) {
 				return false;
 			}
@@ -51,11 +53,11 @@ namespace MWDEngine {
 			{
 				return false;
 			}
-			m_pData =pData ;
-			LoadDataToIBO();
-		};
-		//帮当前实例的数据提交给渲染器
-		void LoadResource(MWDRenderer* pRenderer) {
+			if (load) {
+				m_pData =pData ;
+				LoadDataToIBO();
+			}
+			return true;
 			
 		};
 	protected:

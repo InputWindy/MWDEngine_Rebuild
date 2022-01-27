@@ -162,13 +162,7 @@
     <ClCompile Include="MWDComponent.cpp">
       <Filter>Graphic\场景管理\组件</Filter>
     </ClCompile>
-    <ClCompile Include="MWDLight.cpp">
-      <Filter>Graphic\场景管理\组件</Filter>
-    </ClCompile>
     <ClCompile Include="MWDEntity.cpp">
-      <Filter>Graphic\场景管理\实体</Filter>
-    </ClCompile>
-    <ClCompile Include="MWDLightEntity.cpp">
       <Filter>Graphic\场景管理\实体</Filter>
     </ClCompile>
     <ClCompile Include="MWDTransform.cpp">
@@ -176,12 +170,6 @@
     </ClCompile>
     <ClCompile Include="MWDCamera.cpp">
       <Filter>Graphic\场景管理\实体</Filter>
-    </ClCompile>
-    <ClCompile Include="MWDScene.cpp">
-      <Filter>Graphic\场景管理</Filter>
-    </ClCompile>
-    <ClCompile Include="MWDWorld.cpp">
-      <Filter>Graphic\场景管理</Filter>
     </ClCompile>
     <ClCompile Include="MWDMeshComponent.cpp">
       <Filter>Graphic\场景管理\组件</Filter>
@@ -347,13 +335,7 @@
     <ClInclude Include="MWDComponent.h">
       <Filter>Graphic\场景管理\组件</Filter>
     </ClInclude>
-    <ClInclude Include="MWDLight.h">
-      <Filter>Graphic\场景管理\组件</Filter>
-    </ClInclude>
     <ClInclude Include="MWDEntity.h">
-      <Filter>Graphic\场景管理\实体</Filter>
-    </ClInclude>
-    <ClInclude Include="MWDLightEntity.h">
       <Filter>Graphic\场景管理\实体</Filter>
     </ClInclude>
     <ClInclude Include="MWDTransform.h">
@@ -361,12 +343,6 @@
     </ClInclude>
     <ClInclude Include="MWDCamera.h">
       <Filter>Graphic\场景管理\实体</Filter>
-    </ClInclude>
-    <ClInclude Include="MWDScene.h">
-      <Filter>Graphic\场景管理</Filter>
-    </ClInclude>
-    <ClInclude Include="MWDWorld.h">
-      <Filter>Graphic\场景管理</Filter>
     </ClInclude>
     <ClInclude Include="MWDMeshComponent.h">
       <Filter>Graphic\场景管理\组件</Filter>

@@ -1,5 +1,6 @@
 #include "pch.h"
 #include "MWDLight.h"
+#include "MWDEntity.h"
 namespace MWDEngine {
 	INITIAL_WITH_INIT_TERMINAL_BEGIN(MWDDirectionalLightComponent)
 	ADD_INITIAL_FUNCTION(InitialClassFactory)
@@ -7,8 +8,7 @@ namespace MWDEngine {
 
 	BEGIN_ADD_PROPERTY(MWDDirectionalLightComponent)
 	END_ADD_PROPERTY
-
-
+	
 
 	INITIAL_WITH_INIT_TERMINAL_BEGIN(MWDPointLightComponent)
 	ADD_INITIAL_FUNCTION(InitialClassFactory)
@@ -34,5 +34,24 @@ namespace MWDEngine {
 
 	BEGIN_ADD_PROPERTY(MWDSpotLightComponent)
 	END_ADD_PROPERTY
+
+
+
+	void MWDDirectionalLightComponent::SetEntity(MWDEntity* entity) {
+		entity->AddComponent(*this);
+		m_pEntity = entity;
+	}
+	void MWDPointLightComponent::SetEntity(MWDEntity* entity) {
+		entity->AddComponent(*this);
+		m_pEntity = entity;
+	}
+	void MWDAreaLightComponent::SetEntity(MWDEntity* entity) {
+		entity->AddComponent(*this);
+		m_pEntity = entity;
+	}
+	void MWDSpotLightComponent::SetEntity(MWDEntity* entity) {
+		entity->AddComponent(*this);
+		m_pEntity = entity;
+	}
 
 }
