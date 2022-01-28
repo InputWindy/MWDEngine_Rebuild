@@ -14,7 +14,7 @@ namespace MWDEngine {
 		MWDMatrix3X3 m_mRotate;
 		MWDVector3 m_vTranslate;
 
-		//世界坐标
+		//世界坐标(静态坐标)
 		MWDVector3 m_WorldPosition;
 		MWDVector3 m_WorldScale;
 		MWDVector3 m_WorldEulerAngles;

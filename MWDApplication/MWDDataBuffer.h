@@ -2,6 +2,8 @@
 #include <MWDMemManager.h>
 #include "../Graphic/Core/MWDObject.h"
 namespace MWDEngine {
+
+	//使用方法：实例化（填写buffer存储的数据类型），然后一直AddData即可
 	class MWDDataBuffer:public MWDObject
 	{
 		friend class MWDVertexBuffer;
@@ -35,8 +37,7 @@ namespace MWDEngine {
 			DataType_MAXNUM
 		};
 
-		DECLARE_CLASS_FUNCTION(MWDDataBuffer)
-		DECLARE_RTTI(MWDDataBuffer, MWDObject)
+		DECLARE_RTTI_NoCreateFun(MWDDataBuffer, MWDObject)
 		DECLARE_INITIAL_WITH_INIT_TERMINAL(MWDDataBuffer)
 	protected:
 		void*				m_buffer;					//Byte流
@@ -70,16 +71,21 @@ namespace MWDEngine {
 		virtual ~MWDDataBuffer() { 
 			MWDMAC_DELETEA(m_buffer);
 		};
-
-		MWDDataBuffer() {
+		MWDDataBuffer(UINT data_type) {
+			m_type = data_type;
 			m_buffer = NULL;
+			m_num = 0;
+			m_byteLength = 0;
+		}
+		void operator+=(const MWDDataBuffer& buf) {
+			AddData(buf.m_buffer,buf.m_num,buf.m_type);
 		}
 
-		bool CreateEmptyBuffer(UINT num, UINT data_type) {
+		//开辟空间（不能为0）
+		bool CreateEmptyBuffer(UINT num) {
 			if (m_type >= DataType_MAXNUM || !num)
 				return 0;
 
-			m_type = data_type;
 			m_num = num;
 			MWDMAC_DELETEA(m_buffer);
 
@@ -92,17 +98,16 @@ namespace MWDEngine {
 			return 1;
 
 		};
+
+		//覆盖掉原来的数据（连数据类型都改变了）
 		void SetData(void* buf, UINT num, UINT type) {
 			if (m_type >= DataType_MAXNUM || !buf || !num) {
 				//cout << "buf=" << buf << endl;
 				return ;
 			}
-				
+			MWDMAC_DELETEA(m_buffer);
 			m_type = type;
 			m_num = num;
-
-			MWDMAC_DELETEA(m_buffer);
-
 			m_buffer = new unsigned char[GetSize()];
 
 			if (!m_buffer)
@@ -112,20 +117,36 @@ namespace MWDEngine {
 			return ;
 
 		};
+
+
+		//在原来基础上追加数据，类型要相同（不能追加0个数据）
 		void AddData(void* buf, UINT num, UINT type) {
-			if (type >= DataType_MAXNUM || !buf || !num)
-				return ;
+			//不能追加空数据
+			if (type >= DataType_MAXNUM || !buf || !num) {
+				cout << "error:1" << endl;
+					return ;
+			}
+			//不能追加不同类型数据
 			if (m_type != MWDMAX_INTEGER && m_type != type)
-				return ;
-
-
+			{
+				cout << "error:2" << endl;
+				return;
+			}
+			//如果当前DataBuffer是空的，就创建num个空间
+			if (!m_buffer) {
+				CreateEmptyBuffer(num);
+				SetData(buf,num,m_type);
+				return;
+			}
 			unsigned char* Temp = NULL;
 			Temp = new unsigned char[(num + m_num) * GetStride()];
 			if (!Temp)
-				return ;
+			{
+				cout << "error:3" << endl;
+				return;
+			}
 			MWDMemcpy(Temp, m_buffer, GetStride() * m_num);
-			MWDMemcpy(Temp + GetStride() * m_num, m_buffer, GetStride() * num);
-
+			MWDMemcpy(Temp + GetStride() * m_num, buf, GetStride() * num);
 			MWDMAC_DELETEA(m_buffer);
 			m_num += num;
 			m_buffer = Temp;
@@ -145,7 +166,7 @@ namespace MWDEngine {
 		unsigned int GetDataType() {
 			return m_type;
 		};
-		//获取步长
+		//获取步长(一个顶点的Byte长度)
 		unsigned int GetStride() {
 			return ms_DataTypeByte[m_type];
 		};
@@ -153,23 +174,26 @@ namespace MWDEngine {
 		unsigned int GetChannel() {
 			return ms_DataTypeChannel[m_type];
 		};
-		//获取第i个顶点的数据
-		void* GetOneVertexData(UINT i) {
-			char* ret = new char[GetStride()];
-			MWDMemcpy(ret,&((char*)m_buffer)[GetStride()*i] , GetStride());
-			return ret;
-
+		//获取第i个顶点的数据地址
+		void* GetOneVertexData(UINT i,int& byte_size) {
+			byte_size = GetStride();
+			return (char*)m_buffer + GetStride() * i;
 		};
-		//buffer数据个数
-		unsigned int GetNum()const {
-			return m_num; 
-		}
 		//获取总Byte长度
 		unsigned int GetSize() { 
 			return GetStride() * m_num;
 		}
 
-
+		void PrintUINT() {
+			for(int i=0;i<GetNum();++i){
+				cout << *((unsigned int*)m_buffer + i * sizeof(unsigned int)) << " ";
+			}
+		}
+		void PrintFloat() {
+			for (int i = 0; i < GetNum(); ++i) {
+				cout << *((float*)m_buffer + i * sizeof(float)) << " ";
+			}
+		}
 	};
 	DECLARE_Ptr(MWDDataBuffer);
 	MWDTYPE_MARCO(MWDDataBuffer);

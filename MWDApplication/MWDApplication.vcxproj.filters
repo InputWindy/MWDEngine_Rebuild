@@ -138,25 +138,10 @@
     <ClCompile Include="MWDGLShaderProgram.cpp">
       <Filter>Graphic\渲染器\OpenglAPI</Filter>
     </ClCompile>
-    <ClCompile Include="MWDVertexFormat.cpp">
-      <Filter>Graphic\渲染器\DataBuffer</Filter>
-    </ClCompile>
     <ClCompile Include="MWDVertexBuffer.cpp">
       <Filter>Graphic\渲染器\DataBuffer</Filter>
     </ClCompile>
     <ClCompile Include="MWDMeshData.cpp">
-      <Filter>Graphic\Mesh</Filter>
-    </ClCompile>
-    <ClCompile Include="MWDTriangleMeshData.cpp">
-      <Filter>Graphic\Mesh</Filter>
-    </ClCompile>
-    <ClCompile Include="MWDPointMeshData.cpp">
-      <Filter>Graphic\Mesh</Filter>
-    </ClCompile>
-    <ClCompile Include="MWDLineMeshData.cpp">
-      <Filter>Graphic\Mesh</Filter>
-    </ClCompile>
-    <ClCompile Include="MWDBasicGeometryTriangleMeshData.cpp">
       <Filter>Graphic\Mesh</Filter>
     </ClCompile>
     <ClCompile Include="MWDComponent.cpp">
@@ -311,25 +296,10 @@
     <ClInclude Include="MWDGLShaderProgram.h">
       <Filter>Graphic\渲染器\OpenglAPI</Filter>
     </ClInclude>
-    <ClInclude Include="MWDVertexFormat.h">
-      <Filter>Graphic\渲染器\DataBuffer</Filter>
-    </ClInclude>
     <ClInclude Include="MWDVertexBuffer.h">
       <Filter>Graphic\渲染器\DataBuffer</Filter>
     </ClInclude>
     <ClInclude Include="MWDMeshData.h">
-      <Filter>Graphic\Mesh</Filter>
-    </ClInclude>
-    <ClInclude Include="MWDTriangleMeshData.h">
-      <Filter>Graphic\Mesh</Filter>
-    </ClInclude>
-    <ClInclude Include="MWDPointMeshData.h">
-      <Filter>Graphic\Mesh</Filter>
-    </ClInclude>
-    <ClInclude Include="MWDLineMeshData.h">
-      <Filter>Graphic\Mesh</Filter>
-    </ClInclude>
-    <ClInclude Include="MWDBasicGeometryTriangleMeshData.h">
       <Filter>Graphic\Mesh</Filter>
     </ClInclude>
     <ClInclude Include="MWDComponent.h">

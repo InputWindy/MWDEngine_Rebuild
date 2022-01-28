@@ -1,4 +1,57 @@
-﻿  main.cpp
+﻿  MWDModel.cpp
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDSystem.h(40,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(220,1): warning C4311: “类型强制转换”: 从“MWDEngine::MWDHeapMemManager::FMem *”到“INT”的指针截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(220,1): warning C4302: “类型强制转换”: 从“MWDEngine::MWDHeapMemManager::FMem *”到“INT”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(220,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“MWDEngine::MWDHeapMemManager::FPool *”
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(290,1): warning C4311: “类型强制转换”: 从“void *”到“INT”的指针截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(290,1): warning C4302: “类型强制转换”: 从“void *”到“INT”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(290,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“MWDEngine::MWDHeapMemManager::FPool *”
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(326,1): warning C4311: “类型强制转换”: 从“BYTE *”到“unsigned int”的指针截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(326,1): warning C4302: “类型强制转换”: 从“BYTE *”到“unsigned int”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(326,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“BYTE *”
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(338,1): warning C4311: “类型强制转换”: 从“BYTE *”到“unsigned int”的指针截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(338,1): warning C4302: “类型强制转换”: 从“BYTE *”到“unsigned int”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(338,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“BYTE *”
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\MWDString.h(111,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\MWDString.h(569,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\MWDString.h(577,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\Windows Kits\10\Include\10.0.19041.0\ucrt\assert.h(33,10): warning C4273: “_wassert”: dll 链接不一致
+D:\Windows Kits\10\Include\10.0.19041.0\ucrt\assert.h(30,27): message : 参见“_wassert”的前一个定义
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDFile.h(13,1): warning C4302: “类型强制转换”: 从“const char *”到“TCHAR”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDLog.h(9,37): warning C4302: “类型强制转换”: 从“const char *”到“TCHAR”截断
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDDataBuffer.h(188,17): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDDataBuffer.h(193,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDVBO.h(63,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“void *”
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDVertexBuffer.h(185,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLTexture.h(106,1): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLTexture.h(285,1): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLTexture.h(293,1): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLTexture.h(301,1): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLTexture.h(309,1): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLTexture.h(317,1): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLTexture.h(325,1): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLShader.h(29,1): warning C4267: “初始化”: 从“size_t”转换到“GLint”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLShader.h(39,1): warning C4267: “初始化”: 从“size_t”转换到“GLint”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDPass.h(20,1): warning C4150: 删除指向不完整“MWDEngine::MWDMaterial”类型的指针；没有调用析构函数
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\Core\MWDType.h(53): message : 参见“MWDEngine::MWDMaterial”的声明
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(63,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(64,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(73,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(74,23): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(88,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(100,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(107,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(116,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(128,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(182,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(193,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(138,22): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDModel.h(60): message : 查看对正在编译的函数 模板 实例化“T *MWDEngine::MWDEntity::GetComponentByType<MWDEngine::MWDMeshComponent>(void)”的引用
+          with
+          [
+              T=MWDEngine::MWDMeshComponent
+          ]
+  main.cpp
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(499,1): warning C4005: “glActiveTexture”: 宏重定义
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\glad\include\glad\glad.h(3048): message : 参见“glActiveTexture”的前一个定义
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\depend\imgui\imgui_impl_opengl3_loader.h(500,1): warning C4005: “glAttachShader”: 宏重定义
@@ -125,16 +178,10 @@ C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDLog.h(9,37): 
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\MWDString.h(111,22): warning C4018: “<”: 有符号/无符号不匹配
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\MWDString.h(569,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\MWDString.h(577,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDDataBuffer.h(188,17): warning C4018: “<”: 有符号/无符号不匹配
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDDataBuffer.h(193,22): warning C4018: “<”: 有符号/无符号不匹配
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDVBO.h(63,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“void *”
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDVertexBuffer.h(429,22): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDVertexBuffer.h(425,17): warning C4101: “offset”: 未引用的局部变量
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDVertexBuffer.h(425,25): warning C4101: “DataType”: 未引用的局部变量
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDBasicGeometryTriangleMeshData.h(258,22): warning C4838: 从“float”转换到“int”需要收缩转换
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDBasicGeometryTriangleMeshData.h(258,22): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDBasicGeometryTriangleMeshData.h(258,28): warning C4838: 从“float”转换到“int”需要收缩转换
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDBasicGeometryTriangleMeshData.h(258,28): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDBasicGeometryTriangleMeshData.h(258,34): warning C4838: 从“float”转换到“int”需要收缩转换
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDBasicGeometryTriangleMeshData.h(258,34): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDVertexBuffer.h(185,22): warning C4018: “<”: 有符号/无符号不匹配
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLTexture.h(106,1): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLTexture.h(285,1): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLTexture.h(293,1): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
@@ -162,69 +209,15 @@ D:\Windows Kits\10\Include\10.0.19041.0\ucrt\assert.h(30,27): message : 参见�
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDApplication.h(406,1): warning C4305: “return”: 从“int”到“bool”截断
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDApplication.h(415,1): warning C4305: “return”: 从“int”到“bool”截断
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDApplication.h(421,1): warning C4305: “return”: 从“int”到“bool”截断
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\main.cpp(153,43): warning C4312: “类型强制转换”: 从“GLuint”转换到更大的“GLuint *”
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\main.cpp(152,43): warning C4312: “类型强制转换”: 从“GLuint”转换到更大的“GLuint *”
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\main.cpp(156,6): warning C4101: “len”: 未引用的局部变量
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(138,22): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDModel.h(61): message : 查看对正在编译的函数 模板 实例化“T *MWDEngine::MWDEntity::GetComponentByType<MWDEngine::MWDMeshComponent>(void)”的引用
-          with
-          [
-              T=MWDEngine::MWDMeshComponent
-          ]
-  MWDModel.cpp
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDSystem.h(40,1): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(220,1): warning C4311: “类型强制转换”: 从“MWDEngine::MWDHeapMemManager::FMem *”到“INT”的指针截断
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(220,1): warning C4302: “类型强制转换”: 从“MWDEngine::MWDHeapMemManager::FMem *”到“INT”截断
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(220,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“MWDEngine::MWDHeapMemManager::FPool *”
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(290,1): warning C4311: “类型强制转换”: 从“void *”到“INT”的指针截断
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(290,1): warning C4302: “类型强制转换”: 从“void *”到“INT”截断
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(290,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“MWDEngine::MWDHeapMemManager::FPool *”
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(326,1): warning C4311: “类型强制转换”: 从“BYTE *”到“unsigned int”的指针截断
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(326,1): warning C4302: “类型强制转换”: 从“BYTE *”到“unsigned int”截断
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(326,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“BYTE *”
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(338,1): warning C4311: “类型强制转换”: 从“BYTE *”到“unsigned int”的指针截断
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(338,1): warning C4302: “类型强制转换”: 从“BYTE *”到“unsigned int”截断
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDMemManager.h(338,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“BYTE *”
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\MWDString.h(111,22): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\MWDString.h(569,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDDataStruct\MWDString.h(577,1): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-D:\Windows Kits\10\Include\10.0.19041.0\ucrt\assert.h(33,10): warning C4273: “_wassert”: dll 链接不一致
-D:\Windows Kits\10\Include\10.0.19041.0\ucrt\assert.h(30,27): message : 参见“_wassert”的前一个定义
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDFile.h(13,1): warning C4302: “类型强制转换”: 从“const char *”到“TCHAR”截断
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDSystem\MWDLog.h(9,37): warning C4302: “类型强制转换”: 从“const char *”到“TCHAR”截断
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDVBO.h(63,1): warning C4312: “类型强制转换”: 从“unsigned int”转换到更大的“void *”
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDVertexBuffer.h(429,22): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDVertexBuffer.h(425,17): warning C4101: “offset”: 未引用的局部变量
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDVertexBuffer.h(425,25): warning C4101: “DataType”: 未引用的局部变量
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLTexture.h(106,1): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLTexture.h(285,1): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLTexture.h(293,1): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLTexture.h(301,1): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLTexture.h(309,1): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLTexture.h(317,1): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLTexture.h(325,1): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLShader.h(29,1): warning C4267: “初始化”: 从“size_t”转换到“GLint”，可能丢失数据
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDGLShader.h(39,1): warning C4267: “初始化”: 从“size_t”转换到“GLint”，可能丢失数据
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDPass.h(20,1): warning C4150: 删除指向不完整“MWDEngine::MWDMaterial”类型的指针；没有调用析构函数
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\Graphic\Core\MWDType.h(53): message : 参见“MWDEngine::MWDMaterial”的声明
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(63,22): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(64,23): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(73,22): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(74,23): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(88,22): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(100,22): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(107,22): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(116,22): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(128,22): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(182,22): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(193,22): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDEntity.h(138,22): warning C4018: “<”: 有符号/无符号不匹配
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDModel.h(61): message : 查看对正在编译的函数 模板 实例化“T *MWDEngine::MWDEntity::GetComponentByType<MWDEngine::MWDMeshComponent>(void)”的引用
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDModel.h(60): message : 查看对正在编译的函数 模板 实例化“T *MWDEngine::MWDEntity::GetComponentByType<MWDEngine::MWDMeshComponent>(void)”的引用
           with
           [
               T=MWDEngine::MWDMeshComponent
           ]
   正在生成代码...
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDVertexBuffer.h(432): error C4700: 使用了未初始化的局部变量“Semantics”
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDVertexBuffer.h(432): error C4700: 使用了未初始化的局部变量“SemanticsIndex”
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1285): warning C4717: “MWDEngine::MWD::GetParameter”: 如递归所有控件路径，函数将导致运行时堆栈溢出
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1288): warning C4717: “MWDEngine::MWD::Transform”: 如递归所有控件路径，函数将导致运行时堆栈溢出
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1296): warning C4717: “MWDEngine::MWD::RelationWith”: 如递归所有控件路径，函数将导致运行时堆栈溢出
@@ -239,9 +232,9 @@ C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1421)
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1430): warning C4717: “MWDEngine::MWD::SquaredDistance”: 如递归所有控件路径，函数将导致运行时堆栈溢出
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1448): warning C4717: “MWDEngine::MWD::SquaredDistance”: 如递归所有控件路径，函数将导致运行时堆栈溢出
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1461): warning C4717: “MWDEngine::MWD::GetParameter”: 如递归所有控件路径，函数将导致运行时堆栈溢出
+C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1495): warning C4717: “MWDEngine::MWD::RelationWith”: 如递归所有控件路径，函数将导致运行时堆栈溢出
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1478): warning C4717: “MWDEngine::MWD::RelationWith”: 如递归所有控件路径，函数将导致运行时堆栈溢出
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1488): warning C4717: “MWDEngine::MWD::RelationWith”: 如递归所有控件路径，函数将导致运行时堆栈溢出
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1495): warning C4717: “MWDEngine::MWD::RelationWith”: 如递归所有控件路径，函数将导致运行时堆栈溢出
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1513): warning C4717: “MWDEngine::MWD::RelationWith”: 如递归所有控件路径，函数将导致运行时堆栈溢出
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1531): warning C4717: “MWDEngine::MWD::RelationWith”: 如递归所有控件路径，函数将导致运行时堆栈溢出
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1549): warning C4717: “MWDEngine::MWD::RelationWith”: 如递归所有控件路径，函数将导致运行时堆栈溢出
@@ -250,5 +243,7 @@ C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1595)
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1606): warning C4717: “MWDEngine::MWD::SquaredDistance”: 如递归所有控件路径，函数将导致运行时堆栈溢出
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1618): warning C4717: “MWDEngine::MWD::SquaredDistance”: 如递归所有控件路径，函数将导致运行时堆栈溢出
 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDMath\MWDCompute.h(1634): warning C4717: “MWDEngine::MWD::SquaredDistance”: 如递归所有控件路径，函数将导致运行时堆栈溢出
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDVertexBuffer.h(432): error C4700: 使用了未初始化的局部变量“Semantics”
-C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\MWDApplication\MWDVertexBuffer.h(432): error C4700: 使用了未初始化的局部变量“SemanticsIndex”
+  LINK : 没有找到 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\x64\Debug\MWDApplication.exe 或上一个增量链接没有生成它；正在执行完全链接
+    正在创建库 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\x64\Debug\MWDApplication.lib 和对象 C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\x64\Debug\MWDApplication.exp
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+  MWDApplication.vcxproj -> C:\Users\InputWindy\Desktop\再重构引擎\MWDEngine\x64\Debug\MWDApplication.exe

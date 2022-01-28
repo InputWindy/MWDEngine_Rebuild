@@ -329,7 +329,7 @@ namespace MWDEngine {
 				MWDContainer<T, MMFun>::Delete(pBuffer, uiEnd - uiBegin + 1);
 			};
 			
-			//找不到返回
+			//找不到返回元素个数
 			unsigned int FindElement(const T& Element) {
 				for (unsigned int i = 0; i < m_CurUse; i++)
 				{

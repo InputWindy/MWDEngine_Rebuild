@@ -2,18 +2,33 @@
 #include "MWDBind.h"
 #include "MWDDataBuffer.h"
 #include "MWDVBO.h"
-#include "MWDVertexFormat.h"
 namespace MWDEngine {
 	class MWDVertexBuffer:public MWDBind
 	{
 		DECLARE_CLASS_FUNCTION(MWDVertexBuffer)
 		DECLARE_RTTI(MWDVertexBuffer, MWDBind)
 		DECLARE_INITIAL_WITH_INIT_TERMINAL(MWDVertexBuffer)
+	public:
+		friend class MWDModel;
+		enum Semantics {
+			POSITION,
+			NORMAL,
+			BINORMAL,
+			TANGENT,
+			BLEND_WEIGHT,
+			BLEND_INDICES,
+			UV
+		};
 	protected:
-		MWDArray<MWDDataBuffer*> m_pData[MWDVertexFormat::VF_MAX];    //每一个Arr保存多通道的一种顶点属性
-		MWDVertexFormat* m_pVertexFormat;								//维护当前VertexBuffer的顶点解析方案(AttributePointer)
-		unsigned int m_uiOneVertexSize;									//维护每一个顶点的Byte长度
-		unsigned int m_uiVertexNum;										//顶点个数
+		MWDDataBuffer* m_position;									//坐标
+		MWDDataBuffer* m_normal;									//法线
+		MWDDataBuffer* m_binormal;									//副法线
+		MWDDataBuffer* m_tangent;									//切线
+		MWDDataBuffer* m_blend_weight;								//骨骼动画混合权重
+		MWDDataBuffer* m_blendindices;								//骨骼动画索引
+
+		MWDArray<MWDDataBuffer*> m_uv;								//纹理坐标集合
+		
 		void* vbo_data;													//解析完成后的vbo数据
 	public:
 		MWDVertexBuffer(unsigned int target = GL_ARRAY_BUFFER, unsigned int usage = GL_STATIC_DRAW) {
@@ -22,445 +37,239 @@ namespace MWDEngine {
 				MWDVBO* vbo = new MWDVBO(target, usage);
 				AddResource(vbo);
 			}
+			m_position = new MWDDataBuffer(MWDDataBuffer::DataType_FLOAT32_3);//步长12，一个float为4，存放3个float数据
+			m_normal = new MWDDataBuffer(MWDDataBuffer::DataType_FLOAT32_3);//步长12，一个float为4，存放3个float数据
+			m_binormal = new MWDDataBuffer(MWDDataBuffer::DataType_FLOAT32_3);//步长12，一个float为4，存放3个float数据
+			m_tangent = new MWDDataBuffer(MWDDataBuffer::DataType_FLOAT32_3);//步长12，一个float为4，存放3个float数据
+			m_blend_weight = new MWDDataBuffer(MWDDataBuffer::DataType_UINT);//步长4，一个uint为4
+			m_blendindices = new MWDDataBuffer(MWDDataBuffer::DataType_UINT);//步长4，一个uint为4
+			for (int i = 0; i < 8; ++i) {
+				MWDDataBuffer* uv = new MWDDataBuffer(MWDDataBuffer::DataType_FLOAT32_2);
+				m_uv.AddElement(uv);
+			}
 		}
 		~MWDVertexBuffer() {
-			MWDMAC_DELETE(vbo_data)
-			m_pVertexFormat = NULL;
-			for (int i = 0; i < MWDVertexFormat::VF_MAX; ++i) {
-				m_pData[i].Destroy();
-			}
+			MWDMAC_DELETEA(vbo_data)
+			MWDMAC_DELETE(m_position)
+			MWDMAC_DELETE(m_normal)
+			MWDMAC_DELETE(m_binormal)
+			MWDMAC_DELETE(m_tangent)
+			MWDMAC_DELETE(m_blend_weight)
+			MWDMAC_DELETE(m_blendindices)
+			m_uv.Destroy();
 		}
 		//获取一个顶点的字节长度
 		unsigned int GetOneVertexSize()const {
-			return m_uiOneVertexSize;
+			int cnt = 0;
+			if (m_position->GetData()) {
+				cnt += m_position->GetStride();
+			}
+			if (m_normal->GetData()) {
+				cnt += m_normal->GetStride();
+			}
+			if (m_binormal->GetData()) {
+				cnt += m_binormal->GetStride();
+			}
+			if (m_tangent->GetData()) {
+				cnt += m_tangent->GetStride();
+			}
+			if (m_blend_weight->GetData()) {
+				cnt += m_blend_weight->GetStride();
+			}
+			if (m_blendindices->GetData()) {
+				cnt += m_blendindices->GetStride();
+			}
+			int channel = m_uv.GetNum();
+			for (int i = 0; i < channel; ++i) {
+				if (m_uv[i]->GetData()) {
+					cnt += m_uv[i]->GetStride();
+				}
+			}
+			return cnt;
 		};
 		//获取顶点数目
-		unsigned int GetNum()const {
-			return m_uiVertexNum;
-		};
-		//获取Buffer总Byte长度
-		unsigned int GetByteSize(unsigned int Attribute,unsigned int level = 0)const {
-			return m_uiVertexNum * m_uiOneVertexSize;
+		unsigned int GetNum() {
+			return GetPositionData()->GetNum();
 		};
 		//获取存储数据类型(int ,float.........)
-		unsigned int GetDataType(unsigned int Attribute)const {
-			return  (*m_pData[Attribute][0]).GetDataType();
+		unsigned int GetDataType(Semantics Attribute,unsigned int uv_channel=0)const {
+			switch (Attribute)
+			{
+			case MWDEngine::MWDVertexBuffer::POSITION:
+				return m_position->GetDataType(); break;
+			case MWDEngine::MWDVertexBuffer::NORMAL:
+				return m_normal->GetDataType(); break;
+			case MWDEngine::MWDVertexBuffer::BINORMAL:
+				return m_binormal->GetDataType(); break;
+			case MWDEngine::MWDVertexBuffer::TANGENT:
+				return m_tangent->GetDataType(); break;
+			case MWDEngine::MWDVertexBuffer::BLEND_WEIGHT:
+				return m_blend_weight->GetDataType(); break;
+			case MWDEngine::MWDVertexBuffer::BLEND_INDICES:
+				return m_blendindices->GetDataType(); break;
+			case MWDEngine::MWDVertexBuffer::UV:
+				return m_uv[uv_channel]->GetDataType(); break;
+			default:
+				break;
+			}
+			return 0; 
 		};
+
 		//除了textureCoord支持多通道，其他都是单通道
-		void* GetData(unsigned int Attribute, unsigned int channel = 0)const {
-			if (Attribute >= MWDVertexFormat::VF_MAX)
-				return NULL;
-			if (channel >= (unsigned int)m_pData[Attribute].GetNum())
-				return NULL;
-			return m_pData[Attribute][channel];
+		void* GetData(Semantics Attribute, unsigned int uv_channel = 0) {
+			switch (Attribute)
+			{
+			case MWDEngine::MWDVertexBuffer::POSITION:
+				return m_position->GetData(); break;
+			case MWDEngine::MWDVertexBuffer::NORMAL:
+				return m_normal->GetData(); break;
+			case MWDEngine::MWDVertexBuffer::BINORMAL:
+				return m_binormal->GetData(); break;
+			case MWDEngine::MWDVertexBuffer::TANGENT:
+				return m_tangent->GetData(); break;
+			case MWDEngine::MWDVertexBuffer::BLEND_WEIGHT:
+				return m_blend_weight->GetData(); break;
+			case MWDEngine::MWDVertexBuffer::BLEND_INDICES:
+				return m_blendindices->GetData(); break;
+			case MWDEngine::MWDVertexBuffer::UV:
+				return m_uv[uv_channel]->GetData(); break;
+			default:
+				break;
+			}
+			return NULL;
 		};
 		
-		bool SetData(MWDDataBuffer* pData, unsigned int Attribute,bool load = false) {
-			if (!pData || m_pVertexFormat || Attribute >= MWDVertexFormat::VF_MAX)
-				return 0;
-
-			if (!pData->GetData())
-				return 0;
-
-			//坐标（一套）
-			if (Attribute == MWDVertexFormat::VF_POSITION)
-			{
-				if (!m_pData[Attribute].GetNum())
-					(m_pData[Attribute]).AddElement(pData);
-				else
-					return 0;
-			}
-			//法线（一套）
-			else if (Attribute == MWDVertexFormat::VF_NORMAL)
-			{
-				m_pData[Attribute].AddElement(pData);
-			}
-			else if (Attribute == MWDVertexFormat::VF_PSIZE)
-			{
-				if (!m_pData[Attribute].GetNum())
-					m_pData[Attribute].AddElement(pData);
-				else
-					return 0;
-			}
-			//颜色（一套）
-			else if (Attribute == MWDVertexFormat::VF_COLOR)
-			{
-				if (!m_pData[Attribute].GetNum())
-					m_pData[Attribute].AddElement(pData);
-				else
-					return 0;
-			}
-			//混合权重(一套)
-			else if (Attribute == MWDVertexFormat::VF_BLENDWEIGHT)
-			{
-				if (!m_pData[Attribute].GetNum())
-					m_pData[Attribute].AddElement(pData);
-				else
-					return 0;
-			}
-			//通用属性，用于骨骼蒙皮动画（一套）
-			else if (Attribute == MWDVertexFormat::VF_BLENDINDICES)
-			{
-				if (!m_pData[Attribute].GetNum())
-					m_pData[Attribute].AddElement(pData);
-				else
-					return 0;
-			}
-			//副法线（一套）
-			else if (Attribute == MWDVertexFormat::VF_BINORMAL)
-			{
-				if (!m_pData[Attribute].GetNum())
-					m_pData[Attribute].AddElement(pData);
-				else
-					return 0;
-			}
-			//切线（一套）
-			else if (Attribute == MWDVertexFormat::VF_TANGENT)
-			{
-				if (!m_pData[Attribute].GetNum())
-					m_pData[Attribute].AddElement(pData);
-				else
-					return 0;
-			}
-			//雾效（一套）
-			else if (Attribute == MWDVertexFormat::VF_FOG)
-			{
-				if (!m_pData[Attribute].GetNum())
-					m_pData[Attribute].AddElement(pData);
-				else
-					return 0;
-			}
-			//深度（一套）
-			else if (Attribute == MWDVertexFormat::VF_DEPTH)
-			{
-				if (!m_pData[Attribute].GetNum())
-					m_pData[Attribute].AddElement(pData);
-				else
-					return 0;
-			}
-			//纹理UV（很多套）
-			else if (Attribute == MWDVertexFormat::VF_TEXCOORD)
-			{
-				m_pData[Attribute].AddElement(pData);
-			}
-			else
-				return 0;
-			//Mesh包含的顶点个数就是DataBuffer的长度
-			if (!GetNum())
-				m_uiVertexNum = pData->GetNum();
-			else
-			{
-				if (m_uiVertexNum != pData->GetNum())
-					return 0;
-			}
-			m_uiOneVertexSize += pData->GetStride();
-			if (load) {
-				LoadDataToVBO();
-			}
-			return 1;
-
+		FORCEINLINE MWDDataBuffer* GetPositionData() {
+			return m_position;
 		};
-	
-		unsigned int GetSemanticsNum(unsigned int uiSemantics)const {
-			if (!m_pVertexFormat)
-			{
-				return m_pData[uiSemantics].GetNum();
-			}
-			else
-			{
-				unsigned int uiNum = 0;
-				for (unsigned int i = 0; i < m_pVertexFormat->m_FormatArray.GetNum(); i++)
-				{
-					if (m_pVertexFormat->m_FormatArray[i].Semantics == uiSemantics)
-					{
-						uiNum++;
-					}
-				}
-				return uiNum;
-			}
+		FORCEINLINE MWDDataBuffer* GetNormalData() {
+			return m_normal;
 		};
-
-		//获取uiVF类型的顶点属性有几套
-		FORCEINLINE unsigned int GetLevel(unsigned int uiVF)const {
-			if (uiVF >= MWDVertexFormat::VF_MAX)
-				return 0;
-			else
-				return GetSemanticsNum(uiVF);
+		FORCEINLINE MWDDataBuffer* GetBlendWeightData() {
+			return m_blend_weight;
 		};
-		FORCEINLINE MWDDataBuffer* GetPositionData()const {
-			if (m_pData[MWDVertexFormat::VF_PSIZE].GetNum())
-				return m_pData[MWDVertexFormat::VF_PSIZE][0];
-			else
-				return NULL;
+		FORCEINLINE MWDDataBuffer* GetBlendIndicesData() {
+			return m_blendindices;
 		};
-		FORCEINLINE MWDDataBuffer* GetNormalData()const {
-			if ((unsigned int)m_pData[MWDVertexFormat::VF_NORMAL].GetNum())
-				return m_pData[MWDVertexFormat::VF_NORMAL][0];
-			else
-				return NULL;
+		FORCEINLINE MWDDataBuffer* GetTangentData() {
+			return m_tangent;
 		};
-		FORCEINLINE MWDDataBuffer* GetPSizeData()const {
-			if (m_pData[MWDVertexFormat::VF_PSIZE].GetNum())
-				return m_pData[MWDVertexFormat::VF_PSIZE][0];
-			else
-				return NULL;
-		};
-		FORCEINLINE MWDDataBuffer* GetColorData()const {
-			if ((unsigned int)m_pData[MWDVertexFormat::VF_COLOR].GetNum())
-				return m_pData[MWDVertexFormat::VF_COLOR][0];
-			else
-				return NULL;
-		};
-		FORCEINLINE MWDDataBuffer* GetBlendWeightData()const {
-			if (m_pData[MWDVertexFormat::VF_BLENDWEIGHT].GetNum())
-				return m_pData[MWDVertexFormat::VF_BLENDWEIGHT][0];
-			else
-				return NULL;
-		};
-		FORCEINLINE MWDDataBuffer* GetBlendIndicesData()const {
-			if (m_pData[MWDVertexFormat::VF_BLENDINDICES].GetNum())
-				return m_pData[MWDVertexFormat::VF_BLENDINDICES][0];
-			else
-				return NULL;
-		};
-		FORCEINLINE MWDDataBuffer* GetTangentData()const {
-			if (m_pData[MWDVertexFormat::VF_TANGENT].GetNum())
-				return m_pData[MWDVertexFormat::VF_TANGENT][0];
-			else
-				return NULL;
-		};
-		FORCEINLINE MWDDataBuffer* GetBinormalData()const {
-			if (m_pData[MWDVertexFormat::VF_BINORMAL].GetNum())
-				return m_pData[MWDVertexFormat::VF_BINORMAL][0];
-			else
-				return NULL;
-		};
-		FORCEINLINE MWDDataBuffer* GetFogData()const {
-			if (m_pData[MWDVertexFormat::VF_FOG].GetNum())
-				return m_pData[MWDVertexFormat::VF_FOG][0];
-			else
-				return NULL;
-		};
-		FORCEINLINE MWDDataBuffer* GetDepthData()const {
-			if (m_pData[MWDVertexFormat::VF_DEPTH].GetNum())
-				return m_pData[MWDVertexFormat::VF_DEPTH][0];
-			else
-				return NULL;
+		FORCEINLINE MWDDataBuffer* GetBinormalData() {
+			return m_binormal;
 		};
 		//获取第uiLevel套UV坐标
-		FORCEINLINE MWDDataBuffer* GetTexCoordData(unsigned int uiLevel)const {
-			if (uiLevel < (unsigned int)m_pData[MWDVertexFormat::VF_TEXCOORD].GetNum())
-				return m_pData[MWDVertexFormat::VF_TEXCOORD][uiLevel];
-			else
-				return NULL;
+		FORCEINLINE MWDDataBuffer* GetTexCoordData(unsigned int channel)const {
+			return m_uv[channel];
 		};
 
-		FORCEINLINE unsigned int GetPositionLevel()const {
-			return GetSemanticsNum(MWDVertexFormat::VF_POSITION);
+		void LoadDataToVBO() {
+			GenerateVboData();
+			LoadData();
 		};
-		FORCEINLINE unsigned int GetColorLevel()const {
-			return GetSemanticsNum(MWDVertexFormat::VF_COLOR);
-		};
-		FORCEINLINE unsigned int GetNormalLevel()const {
-			return GetSemanticsNum(MWDVertexFormat::VF_NORMAL);
-		};
-		FORCEINLINE unsigned int GetTexCoordLevel()const {
-			return GetSemanticsNum(MWDVertexFormat::VF_TEXCOORD);
-		};
-		FORCEINLINE unsigned int GetVertexNum()const {
-			return m_uiVertexNum;
-		};
-
-		FORCEINLINE bool HavePositionInfo(unsigned int uiLevel)const {
-			return GetSemanticsNum(MWDVertexFormat::VF_POSITION) > uiLevel;
-		};
-		FORCEINLINE bool HaveNormalInfo(unsigned int uiLevel)const {
-			return GetSemanticsNum(MWDVertexFormat::VF_NORMAL) > uiLevel;
-		};
-		FORCEINLINE bool HavePSizeInfo()const {
-			return GetSemanticsNum(MWDVertexFormat::VF_PSIZE) > 0;
-		};
-		FORCEINLINE bool HaveColorInfo(unsigned int uiLevel)const {
-			return GetSemanticsNum(MWDVertexFormat::VF_COLOR) > uiLevel;
-		};
-		FORCEINLINE bool HaveBlendWeightInfo()const {
-			return GetSemanticsNum(MWDVertexFormat::VF_BLENDWEIGHT) > 0;
-		};
-		FORCEINLINE bool HaveBlendIndicesInfo()const {
-			return GetSemanticsNum(MWDVertexFormat::VF_BLENDINDICES) > 0;
-		};
-		FORCEINLINE bool HaveTangentInfo()const {
-			return GetSemanticsNum(MWDVertexFormat::VF_TANGENT) > 0;
-		};
-		FORCEINLINE bool HaveBinormalInfo()const {
-			return GetSemanticsNum(MWDVertexFormat::VF_BINORMAL) > 0;
-		};
-		FORCEINLINE bool HaveFogInfo()const {
-			return GetSemanticsNum(MWDVertexFormat::VF_FOG) > 0;
-		};
-		FORCEINLINE bool HaveDepthInfo()const {
-			return GetSemanticsNum(MWDVertexFormat::VF_DEPTH) > 0;
-		};
-		FORCEINLINE bool HaveTexCoordInfo(unsigned int uiLevel)const {
-			return GetSemanticsNum(MWDVertexFormat::VF_TEXCOORD) > uiLevel;
-		};
-
-		unsigned int GetSemanticsChannel(unsigned int uiSemantics, unsigned int uiLevel)const {
-			if (!m_pVertexFormat)
-			{
-				if (uiLevel >= m_pData[uiSemantics].GetNum())
-				{
-					return 0;
-				}
-				return m_pData[uiSemantics][uiLevel]->GetChannel();
-			}
-			else
-			{
-				unsigned int uiNum = 0;
-				for (unsigned int i = 0; i < m_pVertexFormat->m_FormatArray.GetNum(); i++)
-				{
-					if (m_pVertexFormat->m_FormatArray[i].Semantics == uiSemantics)
-					{
-						if (uiLevel == uiNum)
-						{
-							return MWDDataBuffer::ms_DataTypeChannel[m_pVertexFormat->m_FormatArray[i].DataType];
-						}
-						uiNum++;
-					}
-				}
-				return 0;
-			}
-
-		};
-		unsigned int PositionChannel(unsigned int uiLevel)const {
-			return GetSemanticsChannel(MWDVertexFormat::VF_POSITION, uiLevel);
-		};
-		unsigned int NormalChannel(unsigned int uiLevel)const {
-			return GetSemanticsChannel(MWDVertexFormat::VF_NORMAL, uiLevel);
-		};
-		unsigned int PSizeChannel()const {
-			return GetSemanticsChannel(MWDVertexFormat::VF_PSIZE, 0);
-		};
-		unsigned int ColorChannel(unsigned int uiLevel)const {
-			return GetSemanticsChannel(MWDVertexFormat::VF_COLOR, uiLevel);
-		};
-		unsigned int BlendWeightChannel()const {
-			return GetSemanticsChannel(MWDVertexFormat::VF_BLENDWEIGHT, 0);
-		};
-		unsigned int BlendIndicesChannel()const {
-			return GetSemanticsChannel(MWDVertexFormat::VF_BLENDINDICES, 0);
-		};
-		unsigned int TangentChannel()const {
-			return GetSemanticsChannel(MWDVertexFormat::VF_TANGENT, 0);
-		};
-		unsigned int BinormalChannel()const {
-			return GetSemanticsChannel(MWDVertexFormat::VF_BINORMAL, 0);
-		};
-		unsigned int FogChannel()const {
-			return GetSemanticsChannel(MWDVertexFormat::VF_FOG, 0);
-		};
-		unsigned int DepthChannel()const {
-			return GetSemanticsChannel(MWDVertexFormat::VF_DEPTH, 0);
-		};
-		unsigned int TexCoordChannel(unsigned int uiLevel)const {
-			return GetSemanticsChannel(MWDVertexFormat::VF_TEXCOORD, uiLevel);
-		};
-
-		unsigned int GetSemanticsDataType(unsigned int uiSemantics, unsigned int uiLevel)const {
-			if (!m_pVertexFormat)
-			{
-				if (uiLevel >= m_pData[uiSemantics].GetNum())
-				{
-					return 0;
-				}
-				return m_pData[uiSemantics][uiLevel]->GetDataType();
-			}
-			else
-			{
-				unsigned int uiNum = 0;
-				for (unsigned int i = 0; i < m_pVertexFormat->m_FormatArray.GetNum(); i++)
-				{
-					if (m_pVertexFormat->m_FormatArray[i].Semantics == uiSemantics)
-					{
-						if (uiLevel == uiNum)
-						{
-							return m_pVertexFormat->m_FormatArray[i].DataType;
-						}
-						uiNum++;
-					}
-				}
-				return 0;
-			}
-
-		};
-
-		unsigned int NormalDataType(unsigned int uiLevel)const {
-			return GetSemanticsDataType(MWDVertexFormat::VF_NORMAL, uiLevel);
-		};
-		unsigned int TangentDataType()const {
-			return GetSemanticsDataType(MWDVertexFormat::VF_TANGENT, 0);
-		};
-		unsigned int BinormalDataType()const {
-			return GetSemanticsDataType(MWDVertexFormat::VF_BINORMAL, 0);
-		};
-
-		//设置完数据之后，自动解析出m_pVertexFormat(该方法丢失)
-		MWDVertexFormat* GetVertexFormat() {
-			return m_pVertexFormat;
-		};
+		
 	private:
 		//解析重构内存数据为显存格式
-		char* GenerateVboData() {
+		void* GenerateVboData() {
 			if (vbo_data) {
-				return (char*)vbo_data;
+				return vbo_data;
 			}
 			if (!GetNum()) {
 				return NULL;
 			}
-			if (!m_pVertexFormat->m_FormatArray.GetNum()) {
-				return NULL;
-			}
-			TCHAR* vbo = new TCHAR[(int)m_uiOneVertexSize * (int)GetNum()];
 
-			unsigned int offset, DataType, Semantics, SemanticsIndex;
-			int semantic_num = m_pVertexFormat->m_FormatArray.GetNum();
-			MWDArray<MWDVertexFormat::VERTEXFORMAT_TYPE> format_arr = m_pVertexFormat->m_FormatArray;
+			void* vbo = new char[(int)GetOneVertexSize() * (int)GetNum()];
 
+			//遍历所有节点
+			int offset = 0;
+			int len = 0;
 			for (int i = 0; i < GetNum(); i++) {
-				TCHAR* one_vertex_data = NULL;
-				for (int j = 0; j < semantic_num; j++) {
-					MWDDataBuffer* temp = m_pData[Semantics][SemanticsIndex];
-					MWDStrcat(one_vertex_data, temp->GetStride(), MWDString::CharToTCHAR((char*)(temp->GetOneVertexData(i))));
+				if (m_position->GetData()) {
+					
+					void* t_data = m_position->GetOneVertexData(i,len);
+					MWDMemcpy((char*)vbo+offset, t_data, len);
+					offset += len;
 				}
-				MWDStrcat(vbo, m_uiOneVertexSize, one_vertex_data);
+				if (m_normal->GetData()) {
+					
+					void* t_data = m_normal->GetOneVertexData(i, len);
+					MWDMemcpy((char*)vbo + offset, t_data, len);
+					offset += len;
+				}
+				if (m_binormal->GetData()) {
+					
+					void* t_data = m_binormal->GetOneVertexData(i, len);
+					MWDMemcpy((char*)vbo + offset, t_data, len);
+					offset += len;
+				}
+				if (m_tangent->GetData()) {
+					
+					void* t_data = m_tangent->GetOneVertexData(i, len);
+					MWDMemcpy((char*)vbo + offset, t_data, len);
+					offset += len;
+				}
+				if (m_blend_weight->GetData()) {
+					
+					void* t_data = m_blend_weight->GetOneVertexData(i, len);
+					MWDMemcpy((char*)vbo + offset, t_data, len);
+					offset += len;
+				}
+				if (m_blendindices->GetData()) {
+					
+					void* t_data = m_blendindices->GetOneVertexData(i, len);
+					MWDMemcpy((char*)vbo + offset, t_data, len);
+					offset += len;
+				}
+				for (int j = 0; j < 8; ++j) {
+					if (m_uv[j]->GetData()) {
+						
+						void* t_data = m_uv[j]->GetOneVertexData(i, len);
+						MWDMemcpy((char*)vbo + offset, t_data, len);
+						offset += len;
+					}
+				}
 			}
-			vbo_data = MWDString::TCHARToChar(vbo);
-			return (char*)vbo_data;
+			vbo_data =vbo ;
+			return vbo_data;
 
 		};
-		//把内存数据提交到显存
+		//把内存数据提交到显存(提交数据，设置解析方式)
 		void LoadData() {
-			((MWDVBO*)GetResource())->SetData(vbo_data, GetNum() * m_uiOneVertexSize);//填充vbo数据
-			SwitchResource();
-			int attribute_num = m_pVertexFormat->m_FormatArray.GetNum();
-			unsigned int datatype, offset, semantics, semantics_index;
-			for (int i = 0; i < attribute_num; ++i) {
-				datatype = m_pVertexFormat->m_FormatArray[i].DataType;
-				offset = m_pVertexFormat->m_FormatArray[i].OffSet;
-				semantics = m_pVertexFormat->m_FormatArray[i].Semantics;
-				semantics_index = m_pVertexFormat->m_FormatArray[i].SemanticsIndex;
-				((MWDVBO*)GetResource())->SetAttributePointer(semantics, MWDDataBuffer::ms_DataTypeByte[datatype], GL_UNSIGNED_INT, false, m_uiOneVertexSize, offset);//设置vbo解析格式
+			((MWDVBO*)GetResource())->SetData(vbo_data, GetNum() * GetOneVertexSize());//填充vbo数据
+			MWDVBO* vbo = ((MWDVBO*)GetResource()); 
+			int offset = 0;
+			vbo->SetAttributePointer(POSITION, m_position->GetChannel(), GL_FLOAT, false, GetOneVertexSize(), offset);//设置vbo解析格式
+			offset += m_position->GetStride();
+			vbo->SetAttributePointer(NORMAL, m_normal->GetChannel(), GL_FLOAT, true, GetOneVertexSize(), offset);//设置vbo解析格式
+			offset += m_normal->GetStride();
+			vbo->SetAttributePointer(BINORMAL, m_binormal->GetChannel(), GL_FLOAT, true, GetOneVertexSize(), offset);//设置vbo解析格式
+			offset += m_binormal->GetStride();
+			vbo->SetAttributePointer(TANGENT, m_tangent->GetChannel(), GL_FLOAT, true, GetOneVertexSize(), offset);//设置vbo解析格式
+			offset += m_tangent->GetStride();
+			vbo->SetAttributePointer(BLEND_WEIGHT, m_blend_weight->GetChannel(), GL_FLOAT, false, GetOneVertexSize(), offset);//设置vbo解析格式
+			offset += m_blend_weight->GetStride();
+			vbo->SetAttributePointer(BLEND_INDICES, m_blendindices->GetChannel(), GL_FLOAT, false, GetOneVertexSize(), offset);//设置vbo解析格式
+			offset += m_blendindices->GetStride();
+			for (int j = 0; j < 8; ++j) {
+				if (m_uv[j]->GetData()) {
+					vbo->SetAttributePointer(UV+j, m_uv[j]->GetChannel(), GL_FLOAT, false, GetOneVertexSize(), offset);//设置vbo解析格式
+					offset += m_uv[j]->GetStride();
+				}
 			}
-
+			SwitchResource();
 		};
 		//将内存数据提交到显存，看设置调用ClearInfo            
-		void LoadDataToVBO() {
-			GetVertexFormat();
-			GenerateVboData();
-			LoadData();
-		};
+		
 		//如果只存在内存，就把显存vbo删掉；如果只存在显存，就把内存数据释放掉     
-		void ClearInfo() {};      
+		void ClearInfo() {
+			MWDMAC_DELETEA(vbo_data)
+			MWDMAC_DELETE(m_position)
+			MWDMAC_DELETE(m_normal)
+			MWDMAC_DELETE(m_binormal)
+			MWDMAC_DELETE(m_tangent)
+			MWDMAC_DELETE(m_blend_weight)
+			MWDMAC_DELETE(m_blendindices)
+			m_uv.Destroy();
+		};     
 	};
 	DECLARE_Ptr(MWDVertexBuffer);
 	MWDTYPE_MARCO(MWDVertexBuffer);

@@ -141,7 +141,7 @@ int main() {
 	void* data = stbi_load("C:/Users/InputWindy/Desktop/testpic.png",&x,&y,&com,0);
 	MWDTexture2D tex2D(0,MWDTexture::TexMode::WRAP_S,MWDTexture::TexParam::LINEAR,x,y,MWDTexture::TexFormat::RGB,data,false);
 	
-
+	#pragma region œ‘ æÕº∆¨
 	GLuint textureID;
 	glGenTextures(1, &textureID);
 	glBindTexture(GL_TEXTURE_2D, textureID);
@@ -149,11 +149,19 @@ int main() {
 	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	glTexParameterf(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 	glBindTexture(GL_TEXTURE_2D, 0);
-
 	ImTextureID image_id = (GLuint*)textureID;
-	MWDModel model = MWDModel(_T("test_model"), _T("C:/Users/InputWindy/Desktop/My3DEngine-master/resource/objModel/car.obj"));
+	#pragma endregion
 
-	cout << sizeof(float) << endl;
+	MWDModel model = MWDModel(_T("test_model"), _T("C:/Users/InputWindy/Desktop/My3DEngine-master/resource/objModel/car.obj"),false);
+	int len;
+	model.GetComponentByType<MWDMeshComponent>()->GetMeshData()->GetVertexBuffer()->GetPositionData()->PrintFloat();
+	int size = model.GetComponentByType<MWDMeshComponent>()->GetMeshData()->GetVertexBuffer()->GetNum();
+	int size2 = model.GetComponentByType<MWDMeshComponent>()->GetMeshData()->GetVertexBuffer()->GetNormalData()->GetNum();
+	int size3 = model.GetComponentByType<MWDMeshComponent>()->GetMeshData()->GetIndexBuffer()->GetNum();
+	/*for (int i = 0; i < size; ++i) {
+		cout << *((float*)vert + i*sizeof(float))<< " ";
+	}*/
+	cout << size << " " << size2 << " " << size3 << endl;
 	while (!glfwWindowShouldClose(Hwindow)) {
 		ImGuiFrameBegin();
 		//ImGui::ShowDemoWindow();

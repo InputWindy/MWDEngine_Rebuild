@@ -24,15 +24,14 @@ namespace MWDEngine {
     public:
         
         //Model自带Transform和MeshComponent和MeshRenderer
-        MWDModel(const TCHAR* model_name = NULL,const TCHAR* file_path = NULL) {
+        MWDModel(const TCHAR* model_name = NULL,const TCHAR* file_path = NULL,bool clear = false) {
             SetName(model_name);
             AddComponent(*new MWDTransform(this));
             AddComponent(*new MWDMeshComponent(this));
             AddComponent(*new MWDMeshRenderer(this));
             if (file_path) {
-                LoadModelMesh(format_change(file_path));
+                LoadModelMesh(format_change(file_path),clear);
             }
-            
         }
         ~MWDModel() {
 
@@ -46,7 +45,7 @@ namespace MWDEngine {
             std::string str(chRtn); //最后将CHAR 类型数据 转换为 STRING 类型数据。
             return str;
         }
-        void LoadModelMesh(string const& path)
+        void LoadModelMesh(string const& path,bool clear)
         {
             Assimp::Importer importer;
             const aiScene* scene = importer.ReadFile(path, aiProcess_Triangulate | aiProcess_GenSmoothNormals | aiProcess_FlipUVs | aiProcess_CalcTangentSpace);
@@ -60,6 +59,13 @@ namespace MWDEngine {
             //传入根节点和scene，递归解析顶点信息，并填充进Mesh
             MWDMeshData* mesh_data = GetComponentByType<MWDMeshComponent>()->GetMeshData();
             processNode(mesh_data,scene->mRootNode, scene);
+            mesh_data->GetIndexBuffer()->LoadDataToIBO();
+            mesh_data->GetVertexBuffer()->LoadDataToVBO();
+            if (clear) {
+                mesh_data->GetIndexBuffer()->ClearInfo();
+                mesh_data->GetVertexBuffer()->ClearInfo();
+            }
+            
         }
         void processNode(MWDMeshData* mesh_data,aiNode* node, const aiScene* scene)
         {
@@ -75,8 +81,11 @@ namespace MWDEngine {
             }
         }
         void processMesh(MWDMeshData* mesh_data, aiMesh* mesh, const aiScene* scene) {
-            //读取索引信息
-            MWDDataBuffer* indices = new MWDDataBuffer();
+            //读取索引信息(读取成功)
+            MWDDataBuffer* indices = mesh_data->GetIndexBuffer()->GetData();
+            if (!indices) {
+                indices = new MWDDataBuffer(MWDDataBuffer::DataType_UINT);
+            }
             for (unsigned int i = 0; i < mesh->mNumFaces; i++)
             {
                 aiFace face = mesh->mFaces[i];
@@ -84,15 +93,18 @@ namespace MWDEngine {
                     indices->AddData(&face.mIndices[j],1,MWDDataBuffer::DataType_UINT);
                 }
             }
-            mesh_data->GetIndexBuffer()->SetData(indices,true);
+            if (!mesh_data->GetIndexBuffer()->SetData(indices)) {
+                cout << "indices解析失败！" << endl;
+            }
 
             //读取位置信息,法线信息，UV信息
             MWDVertexBuffer* vertex_buf = mesh_data->GetVertexBuffer();
-            MWDDataBuffer* position = new MWDDataBuffer();
-            MWDDataBuffer* normal = new MWDDataBuffer();
-            MWDDataBuffer* uv = new MWDDataBuffer();
-            MWDDataBuffer* tangent = new MWDDataBuffer();
-            MWDDataBuffer* binormal = new MWDDataBuffer();
+            
+            MWDDataBuffer* position = vertex_buf->GetPositionData();
+            MWDDataBuffer* normal = vertex_buf->GetNormalData();
+            MWDDataBuffer* binormal = vertex_buf->GetBinormalData();
+            MWDDataBuffer* tangent = vertex_buf->GetTangentData();
+            
             for (unsigned int i = 0; i < mesh->mNumVertices; i++)
             {
                 float pos[3] ;
@@ -104,108 +116,48 @@ namespace MWDEngine {
                 pos[0] = mesh->mVertices[i].x;
                 pos[1] = mesh->mVertices[i].y;
                 pos[2] = mesh->mVertices[i].z;
-                position->AddData(&pos[0],1,MWDDataBuffer::DataType_FLOAT32_3);
+                position->AddData(pos,1,MWDDataBuffer::DataType_FLOAT32_3);
                 // normals
                 if (mesh->HasNormals())
                 {
                     nor[0] = mesh->mNormals[i].x;
                     nor[1] = mesh->mNormals[i].y;
                     nor[2] = mesh->mNormals[i].z;
-                    normal->AddData(&nor[0], 1, MWDDataBuffer::DataType_FLOAT32_3);
+                    normal->AddData(nor, 1, MWDDataBuffer::DataType_FLOAT32_3);
                 }
                 
                 // texture coordinates
                 if (mesh->mTextureCoords[0]) // does the mesh contain texture coordinates?
                 {
-                    texcoord[0] = mesh->mTextureCoords[0][i].x;
-                    texcoord[1] = mesh->mTextureCoords[0][i].y;
-                    uv->AddData(&texcoord[0],1, MWDDataBuffer::DataType_FLOAT32_2);
-
+                    int channel = mesh->GetNumUVChannels();
+                    //解析第j套uv坐标
+                    for (int j = 0; j < channel; ++j) {
+                        texcoord[0] = mesh->mTextureCoords[j][i].x;
+                        texcoord[1] = mesh->mTextureCoords[j][i].y;
+                        mesh_data->GetVertexBuffer()->GetTexCoordData(j)->AddData(texcoord,1, MWDDataBuffer::DataType_FLOAT32_2);
+                    }
+                    
                     // tangent
                     tan[0] = mesh->mTangents[i].x;
                     tan[1] = mesh->mTangents[i].y;
                     tan[2] = mesh->mTangents[i].z;
-                    tangent->AddData(&tan[0], 1, MWDDataBuffer::DataType_FLOAT32_3);
+                    tangent->AddData(tan, 1, MWDDataBuffer::DataType_FLOAT32_3);
 
                     // bitangent
                     binor[0] = mesh->mBitangents[i].x;
                     binor[1] = mesh->mBitangents[i].y;
                     binor[2] = mesh->mBitangents[i].z;
-                    binormal->AddData(&binor[0], 1, MWDDataBuffer::DataType_FLOAT32_3);
+                    binormal->AddData(binor, 1, MWDDataBuffer::DataType_FLOAT32_3);
+                }
+                else {
+                    //cout << "没有纹理坐标" << endl;
                 }
             }
-            if (position->GetNum()!=0) {
-                vertex_buf->SetData(position,MWDVertexFormat::VF_POSITION);
-            }
-            if (normal->GetNum() != 0) {
-                vertex_buf->SetData(normal, MWDVertexFormat::VF_NORMAL);
-            }
-            if (uv->GetNum() != 0) {
-                vertex_buf->SetData(uv, MWDVertexFormat::VF_TEXCOORD);
-            }
-            if (tangent->GetNum() != 0) {
-                vertex_buf->SetData(tangent, MWDVertexFormat::VF_TANGENT);
-            }
-            if (binormal->GetNum() != 0) {
-                vertex_buf->SetData(binormal, MWDVertexFormat::VF_BINORMAL);
-            }
         }
+
+        //texture由Material负责加载
         //Mesh processMesh()
         //{
-        //    // data to fill
-        //    vector<Vertex> vertices;
-        //    vector<unsigned int> indices;
-        //    vector<Texture> textures;
-        //    // walk through each of the mesh's vertices
-        //    for (unsigned int i = 0; i < mesh->mNumVertices; i++)
-        //    {
-        //        Vertex vertex;
-        //        glm::vec3 vector; // we declare a placeholder vector since assimp uses its own vector class that doesn't directly convert to glm's vec3 class so we transfer the data to this placeholder glm::vec3 first.
-        //        // positions
-        //        vector.x = mesh->mVertices[i].x;
-        //        vector.y = mesh->mVertices[i].y;
-        //        vector.z = mesh->mVertices[i].z;
-        //        vertex.Position = vector;
-        //        // normals
-        //        if (mesh->HasNormals())
-        //        {
-        //            vector.x = mesh->mNormals[i].x;
-        //            vector.y = mesh->mNormals[i].y;
-        //            vector.z = mesh->mNormals[i].z;
-        //            vertex.Normal = vector;
-        //        }
-        //        // texture coordinates
-        //        if (mesh->mTextureCoords[0]) // does the mesh contain texture coordinates?
-        //        {
-        //            glm::vec2 vec;
-        //            // a vertex can contain up to 8 different texture coordinates. We thus make the assumption that we won't 
-        //            // use models where a vertex can have multiple texture coordinates so we always take the first set (0).
-        //            vec.x = mesh->mTextureCoords[0][i].x;
-        //            vec.y = mesh->mTextureCoords[0][i].y;
-        //            vertex.TexCoords = vec;
-        //            // tangent
-        //            vector.x = mesh->mTangents[i].x;
-        //            vector.y = mesh->mTangents[i].y;
-        //            vector.z = mesh->mTangents[i].z;
-        //            vertex.Tangent = vector;
-        //            // bitangent
-        //            vector.x = mesh->mBitangents[i].x;
-        //            vector.y = mesh->mBitangents[i].y;
-        //            vector.z = mesh->mBitangents[i].z;
-        //            vertex.Bitangent = vector;
-        //        }
-        //        else
-        //            vertex.TexCoords = glm::vec2(0.0f, 0.0f);
-        //        vertices.push_back(vertex);
-        //    }
-        //    // now wak through each of the mesh's faces (a face is a mesh its triangle) and retrieve the corresponding vertex indices.
-        //    for (unsigned int i = 0; i < mesh->mNumFaces; i++)
-        //    {
-        //        aiFace face = mesh->mFaces[i];
-        //        // retrieve all indices of the face and store them in the indices vector
-        //        for (unsigned int j = 0; j < face.mNumIndices; j++)
-        //            indices.push_back(face.mIndices[j]);
-        //    }
         //    // process materials
         //    aiMaterial* material = scene->mMaterials[mesh->mMaterialIndex];
         //    // we assume a convention for sampler names in the shaders. Each diffuse texture should be named

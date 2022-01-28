@@ -171,7 +171,6 @@
     <ClCompile Include="Graphic\Core\MWDProperty.cpp" />
     <ClCompile Include="Graphic\Core\MWDRtti.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="MWDBasicGeometryTriangleMeshData.cpp" />
     <ClCompile Include="MWDBind.cpp" />
     <ClCompile Include="MWDBlendState.cpp" />
     <ClCompile Include="MWDCamera.cpp" />
@@ -184,14 +183,12 @@
     <ClCompile Include="MWDGLShaderProgram.cpp" />
     <ClCompile Include="MWDIBO.cpp" />
     <ClCompile Include="MWDIndexBuffer.cpp" />
-    <ClCompile Include="MWDLineMeshData.cpp" />
     <ClCompile Include="MWDMaterial.cpp" />
     <ClCompile Include="MWDMeshComponent.cpp" />
     <ClCompile Include="MWDMeshData.cpp" />
     <ClCompile Include="MWDMeshRenderer.cpp" />
     <ClCompile Include="MWDModel.cpp" />
     <ClCompile Include="MWDPass.cpp" />
-    <ClCompile Include="MWDPointMeshData.cpp" />
     <ClCompile Include="MWDRasterizerState.cpp" />
     <ClCompile Include="MWDRBO.cpp" />
     <ClCompile Include="MWDGLTexture.cpp" />
@@ -202,11 +199,9 @@
     <ClCompile Include="MWDShaderSampler.cpp" />
     <ClCompile Include="MWDTexture.cpp" />
     <ClCompile Include="MWDTransform.cpp" />
-    <ClCompile Include="MWDTriangleMeshData.cpp" />
     <ClCompile Include="MWDVAO.cpp" />
     <ClCompile Include="MWDVBO.cpp" />
     <ClCompile Include="MWDVertexBuffer.cpp" />
-    <ClCompile Include="MWDVertexFormat.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MWDDataStruct\MWDDataStruct.vcxproj">
@@ -240,7 +235,6 @@
     <ClInclude Include="Graphic\Core\MWDRtti.h" />
     <ClInclude Include="Graphic\Core\MWDType.h" />
     <ClInclude Include="MWDApplication.h" />
-    <ClInclude Include="MWDBasicGeometryTriangleMeshData.h" />
     <ClInclude Include="MWDBind.h" />
     <ClInclude Include="MWDBlendState.h" />
     <ClInclude Include="MWDCamera.h" />
@@ -254,14 +248,12 @@
     <ClInclude Include="MWDGLShaderProgram.h" />
     <ClInclude Include="MWDIBO.h" />
     <ClInclude Include="MWDIndexBuffer.h" />
-    <ClInclude Include="MWDLineMeshData.h" />
     <ClInclude Include="MWDMaterial.h" />
     <ClInclude Include="MWDMeshComponent.h" />
     <ClInclude Include="MWDMeshData.h" />
     <ClInclude Include="MWDMeshRenderer.h" />
     <ClInclude Include="MWDModel.h" />
     <ClInclude Include="MWDPass.h" />
-    <ClInclude Include="MWDPointMeshData.h" />
     <ClInclude Include="MWDRasterizerState.h" />
     <ClInclude Include="MWDRBO.h" />
     <ClInclude Include="MWDGLTexture.h" />
@@ -272,11 +264,9 @@
     <ClInclude Include="MWDShaderSampler.h" />
     <ClInclude Include="MWDTexture.h" />
     <ClInclude Include="MWDTransform.h" />
-    <ClInclude Include="MWDTriangleMeshData.h" />
     <ClInclude Include="MWDVAO.h" />
     <ClInclude Include="MWDVBO.h" />
     <ClInclude Include="MWDVertexBuffer.h" />
-    <ClInclude Include="MWDVertexFormat.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\depend\imgui\imgui.ini" />

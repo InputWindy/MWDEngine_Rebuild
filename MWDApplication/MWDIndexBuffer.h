@@ -4,7 +4,7 @@
 #include "MWDIBO.h"
 namespace MWDEngine {
 
-	//首先创建MWDIndexBuffer，然后传入数据。
+	//使用方法：实例化，绑定DataBuffer，然后操作DataBuffer
 	class MWDIndexBuffer:public MWDBind
 	{
 		DECLARE_CLASS_FUNCTION(MWDIndexBuffer)
@@ -16,7 +16,7 @@ namespace MWDEngine {
 		friend class MWDModel;
 		MWDDataBuffer* m_pData;         //内存数据(一份)
 	public:
-		MWDIndexBuffer(unsigned int usage = GL_STATIC_DRAW) {
+		MWDIndexBuffer(unsigned int usage = GL_STATIC_DRAW):MWDBind(1) {
 			int num = GetSwapChainNum();
 			for (int i = 0; i < num; ++i) {
 				MWDIBO* ibo = new MWDIBO(usage);
@@ -35,7 +35,7 @@ namespace MWDEngine {
 		unsigned int GetByteSize()const {
 			return m_pData->GetSize();
 		};
-		//获取数据类型（int,double.....）
+		//获取数据类型：DataBuffer类型（int,double.....）
 		unsigned int GetDataType()const {
 			return m_pData->GetDataType();
 		};
@@ -45,16 +45,20 @@ namespace MWDEngine {
 		};
 		//设置数据，并提交给显存
 		bool SetData(MWDDataBuffer* pData,bool load = false) {
+			MWDMAC_ASSERT(pData)
 			if (!pData) {
 				return false;
 			}
 			if ((pData->GetDataType() != MWDDataBuffer::DataType_USHORT && pData->GetDataType() != MWDDataBuffer::DataType_UINT)
 				|| !pData->GetNum() || !pData->GetData())
 			{
+				//cout << "执行到这！" << endl;
 				return false;
 			}
+			m_pData =pData ;
+			//cout << m_pData << endl;
 			if (load) {
-				m_pData =pData ;
+				
 				LoadDataToIBO();
 			}
 			return true;
@@ -68,7 +72,7 @@ namespace MWDEngine {
 			return;
 		};
 		void ClearInfo() {
-
+			MWDMAC_DELETE(m_pData)
 		};
 
 	};
